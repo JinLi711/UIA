@@ -18,7 +18,7 @@ import nltk
 from collections import Counter
 
 
-def getReviews (files, processed_path):
+def getReviews (files, processed_path, strip):
     """
     Extract reviews from raw data.
     
@@ -26,12 +26,14 @@ def getReviews (files, processed_path):
     :type  files: str
     :param processed_path: File path for the extracted reviews
     :type  processed_path: str
+    :param processed_path: Folder name to strip
+    :type  processed_path: str
     :returns (list of dataframes, list of business names, list of csv file names)
     :rtype (list, list, list)
     """
     
     csv_files = glob.glob(files)
-    names = [name.strip('Zip_Code_Scrape/').strip('.csv') for name in csv_files]
+    names = [name.strip(strip).strip('.csv') for name in csv_files]
     csv_reviews = []
     review_files = pd.DataFrame ()
     for (i, file) in enumerate (csv_files):

@@ -28,3 +28,19 @@ This is a log of all the progress made for the art recognition project.
 
 1. Prepare for meeting with Ben at 4:45 p.m. Monday at the Regenstein Library.
 2. Find and explore resources that we can leverage. Jot notes down.
+
+## January 6, 2019
+
+**Today's Progress**
+
+1. Added onto the [resources page](https://github.com/JinLi711/UIA/blob/master/Art_Recognition/Resources.md).
+2. Read up on clustering algorithms.
+  * Source: [Introduction To Clustering Algorithms](https://medium.freecodecamp.org/how-machines-make-sense-of-big-data-an-introduction-to-clustering-algorithms-4bd97d4fbaba)
+  * K-Means Clustering. Basically randomly assign items into different categories, calculate the mean in each category, and then for each item, move that item to the category where the difference between the value of the item and the mean of that category is the lowerst. One variation of this is to randomly assign one item to one group, and then start assigning the other items to the groups. But note that we need to know the categories before hand.
+  * Hierarchical Clustering. Create a distance matrix. Pair the observations with lowest distance. Repeat. End up with an heirchal structure.
+  * Graph Community Detection. Skimmed it since it's not incredibly important for what we are trying to accomplish.
+  * [Edge-Betweenness.](https://en.wikipedia.org/wiki/Girvan%E2%80%93Newman_algorithm) Start with all vertices grouped in one giant cluster. Then iteratively removes least important edges, producing a hierarchal structure.
+  * [Clique Percolation.](https://en.wikipedia.org/wiki/Clique_percolation_method) 
+  * [Spectral clustering](https://en.wikipedia.org/wiki/Spectral_clustering)
+  
+3. Took a look at [OpenCV](https://opencv.org/). This is not used for training (we use keras or tensorflow for that) but more for analyzing the results of the training.

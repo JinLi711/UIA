@@ -10,7 +10,7 @@ This is a log of all the progress made for the art recognition project.
   * We discussed possibilities of scraping artworks from Wikipedia or [MoMa](https://www.moma.org/collection/?fbclid=IwAR2YrXrfWNHidoUsCB86_s_C28h-_NnxOsggwxTO5WeJkHBrSbw_FR4cbak)
   * We decided that machine learning (more specifically semi-supervised deep learning with convolutional neural network) would be the best way to approach our goals.
   * However, we can also frame this problem as a unsupervised deep learning.
-  * We wanted to answer questions like: 
+  * We wanted to answer questions like:  
     Do certain neighborhoods have preferences?  
     Do they favor certain types of art?  
     How are we going to categorize the art in a neighborhood?  
@@ -27,4 +27,4 @@ This is a log of all the progress made for the art recognition project.
 **Things To Do** 
 
 1. Prepare for meeting with Ben at 4:45 p.m. Monday at the Regenstein Library.
-2. Find resources that we can leverage.
+2. Find and explore resources that we can leverage. Jot notes down.

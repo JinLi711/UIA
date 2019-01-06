@@ -6,13 +6,18 @@ This is a repository for representing FAUI from the University of Chicago. For m
 
 This repository contains code for artwork recognitions.
 
+
 ## Yelp
 
 This repository contains code for scraping Yelp and performing text analysis.
+
+For Yelp API, we gathered data on cafes in Chicago through the overlapping circle tessellation method.
+We send a query containing the coordinates of the grid and the radius of search..
 
 ## Instagram
 
 This directory is currently empty. Projects on this will appear soon.
 
-For Yelp API, we gathered data on cafes in Chicago through the overlapping circle tessellation method.
-We send a query containing the coordinates of the grid and the radius of search..
+## Notes and Records Files
+
+This directory is for recording any notes and records (like logs).

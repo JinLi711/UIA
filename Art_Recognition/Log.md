@@ -22,6 +22,8 @@ This is a log of all the progress made for the art recognition project.
 
 **Thoughts** It is important to note that me and Ben have different objectives from Michal. Whereas Michal wants to create an app of some sort to be able to recognize artworks after taking a picture, me and Ben want to analyze how distributions of artwork types vary from location to another.
 
+**Thoughts** There probably is not a need to scrape because there are datasets out there that we can use for free.
+
 **Things To Do** 
 
 1. Prepare for meeting with Ben at 4:45 p.m. Monday at the Regenstein Library.

@@ -9,3 +9,10 @@ Resources that we can leverage for our project. We will mainly use Python for ma
 
 ## Libraries
   * [OpenCV](https://opencv.org/) 
+  * [Keras](https://keras.io/)
+
+## Processing Large Amounts of Data
+  * [Apache Spark](https://spark.apache.org/)
+
+## Guides
+  * [BigQuery](https://cloud.google.com/bigquery/what-is-bigquery?_ga=2.68514329.-987780976.1546634905)

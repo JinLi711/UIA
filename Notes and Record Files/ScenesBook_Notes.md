@@ -135,7 +135,11 @@
 
   * Ideal Scene:
    > "the data should be geographically comprehensive" (257)
+
    > "the data should possess a high degree of spatial resolution" (257)
+   
    > "the data should differentiate amenities as much as possible." (257)
+
    > "an amenity should ideally be spatially invariant in its potential availability and typical practices" (258)
+   
    > "the data should permit analysis of trends over time" (258)

@@ -37,7 +37,7 @@ Resources that we can leverage for our project. We will mainly use Python for ma
 
 ## Libraries
   * [OpenCV](https://opencv.org/) 
-  * [Keras](https://keras.io/) This is a library built on top of TensorFlow. 
+  * [Keras](https://keras.io/) This is a framework (not really a library) built on top of TensorFlow. 
 
 ## Processing Large Amounts of Data
   * [Apache Spark](https://spark.apache.org/) For distributive deep learning.
@@ -52,9 +52,12 @@ Resources that we can leverage for our project. We will mainly use Python for ma
 
 ## Related Research Papers
   * [A large scale database for computational painting categorization](https://www.researchgate.net/publication/272040931_Painting-91_A_large_scale_database_for_computational_painting_categorization)
+  * [Unsupervised Learning of Artistic Styles with Archetypal Style Analysis](https://papers.nips.cc/paper/7893-unsupervised-learning-of-artistic-styles-with-archetypal-style-analysis.pdf?fbclid=IwAR3n9R16iiSD0Nav08bU3JbYSxNsC8zle_fjs3oo_H4IOv5YGhljaC6i6jI)
+  * [BAM! The Behance Artistic Media Dataset for Recognition Beyond Photography](https://arxiv.org/pdf/1704.08614.pdf)
 
 ## Helpful Scripts
   * [Met Image Downloader](https://github.com/trevorfiez/The-Metropolitan-Museum-of-Art-Image-Downloader) This script basically allows us to scrape images from the Met. But note that the code here isn't that great.
+  * [Computer-Vision-Basics-with-Python-Keras-and-OpenCV](https://github.com/jrobchin/Computer-Vision-Basics-with-Python-Keras-and-OpenCV)
 
 ## Questions to ask Google
   * How do you integrate BigQuery with Python?

@@ -1,4 +1,4 @@
-# Log Version 1
+# Log Version 3
 
 This is a log of all the progress made for the art recognition project.
 
@@ -42,5 +42,39 @@ This is a log of all the progress made for the art recognition project.
   * [Edge-Betweenness.](https://en.wikipedia.org/wiki/Girvan%E2%80%93Newman_algorithm) Start with all vertices grouped in one giant cluster. Then iteratively removes least important edges, producing a hierarchal structure.
   * [Clique Percolation.](https://en.wikipedia.org/wiki/Clique_percolation_method) 
   * [Spectral clustering](https://en.wikipedia.org/wiki/Spectral_clustering)
-  
+
 3. Took a look at [OpenCV](https://opencv.org/). This is not used for training (we use keras or tensorflow for that) but more for analyzing the results of the training.
+
+**Thoughts** OpenCV might not support Keras (not sure)
+
+
+## January 7, 2019
+
+**Today's Progress** 
+
+1. Spent almost two hours talking to Ben about our objectives and plans.
+
+2. Looked up different clustering algorithms metrics
+  * [Silhouette Score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html)
+  * [Homogeneity, completeness and V-measure](https://scikit-learn.org/stable/modules/clustering.html#homogeneity-completeness-and-v-measure)
+  * [Calinski-Harabaz Index](https://scikit-learn.org/stable/modules/clustering.html#calinski-harabaz-index)  
+
+## January 9, 2019
+
+**Today's Progress** 
+
+1. Spent some time discussing possible clustering algorithms and metrics.
+
+2. Read this research [paper](https://arxiv.org/abs/1704.08614). This paper is quite relevant since it discusses using a semilabeled dataset to classify both style and mood. It also explains the BAM dataset, which might be a good alternative since it focuses on comtemporary art.
+
+**Things To Do** 
+
+1. Get Google Cloud started. Start training.
+
+## January 10, 2019
+
+**Today's Progress** 
+
+1. Learned how to use Google Cloud and helped Ben set up Google Cloud.
+
+**Thoughts** Ben's going to talk to his father, who has access to resources that we might need. Also, I am going to work on a much smaller dataset at first simply because it would be quicker to produce results to see what goes wrong.

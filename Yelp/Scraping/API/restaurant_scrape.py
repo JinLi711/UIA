@@ -16,7 +16,7 @@ from urllib.parse import quote
 #from urllib import urlencode
 
 
-API_KEY = 'Z41R0DQquIn-_Y88pmgfAoavZA_kOFv-96EtbOcnGGdPVwqik70FkOXfIy_CRlcikfZ7nuzDtbx18DYg_vKJVJs32T3x7Zgx2y1bSxNGumP2U2S6bYtPBAOig4G3W3Yx'
+API_KEY = 'FILL'
 
 # API constants, you shouldn't have to change these.
 API_HOST = 'https://api.yelp.com'

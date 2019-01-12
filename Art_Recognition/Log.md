@@ -100,14 +100,70 @@ This is a log of all the progress made for the art recognition project.
 **Today's Progress** 
 
 1. Tried Mini-batch. This is just a base model, and not actually intended to be used. Not even sure how to interpret the results. I may have to rethink the clustering method, simply because I'm not familar with it. I've decided to take a step back and do more research. It may be smarter to replicate what already exists.
+  * I keep recieving this warning:
+    > "/Users/jinli/anaconda3/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:763: UserWarning: Possibly corrupt EXIF data.  Expecting to read 1311848 bytes but only got 785. Skipping tag 0" Skipping tag %s" % (size, len(data), tag))"
+  * Not sure why, and the PIL library is poorly documented.
+  * Yet it doesn't seem as if there's any problem, since I was still able to get the tensor representation, and the code still ran.
 
 2. Looked Into Incremental PCA, very useful for online learning [source](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.IncrementalPCA.html), as I can reduce the dimensions of the images while keeping high variance.
 
 3. Looked into many other clustering methods, but found that sklearn only supports two online learning clustering algorithms (has partial_fit). The first one is mini-batch k-means, second one is [Birch clustering method](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.Birch.html#sklearn.cluster.Birch). This method is scalable for large datasets, but not by number of features, so it would not be useful for hundreds of thousands of images.
-  * Basic recap of Birch method:
-  > " It constructs a tree data structure with the cluster centroids being read off the leaf." 
+   * Basic recap of Birch method:
+   > " It constructs a tree data structure with the cluster centroids being read off the leaf." 
 
 4. Checked out feature extraction from [sklearn](https://scikit-learn.org/0.15/modules/feature_extraction.html#feature-extraction). Most important thing to look at is the image feature extraction at the very end. Patch extraction may end up being useful, and graph connectivity for image segmentation may end up being used.
+
+5. Did research on artistic styles. [Source I Used](https://artlandapp.com/art-movements-and-styles/) For examples of images, check out the link.
+
+  * Abstract Expressionism
+    * Postwar American paintings.
+    * Also includes sculptures.
+    * Dynamic art with "sweeping brushstrokes", dripping, and spilling.
+  * Art Nouveau
+    * 1890-1910
+    * European 
+    * Artwork has many curves, assymetrical lines.
+    * Based on organic forms.
+  * Avant-garde
+    * Innovative art
+    * Not specific
+  * Baroque
+    * dramatic motion
+    * wants to produce drama, tension, grandeur
+  * Classicism
+    * focus on elegance and symmetry
+  * Conceptual art
+    * ideas and theoretical practices rather than visual forms
+  * Constructivism
+    * 1915
+    * geometrically composed
+  * Cubism
+    * 1907
+    * challenged traditional representations of forms
+  * Expressionism
+    * prioritized emotional experiences rather than reality
+    * distortion, exaggeration, fantasy, dynamic
+  * Fauvism
+    * strong, vibrant colors
+    * bold brushstrokes
+  * Impressionism
+    * thin, visible brushstrokes
+    * emphasized movement and changing qualities of light
+  * Minimalism
+    * simple geometric shapes
+  * Pop art
+    * popular imagery
+  * Rococo
+    * elaborate ornamention
+    * sensual 
+  * Surrealism
+    * 1924
+    * channels irrationality 
+
+**Thoughts**
+
+1. I'm having doubts about clustering algorithms, simply because I'm not familar with the math behind the algorithms. 
+2. But finding good and labeled art datasets may be difficult. A lot of datasets are partially labeled, and it might be interesting to use autoencoders to make use of the unlabeled dataset, though I know autoencoders have been considered a failure in the industry. 
 
 **Things To Do** 
 

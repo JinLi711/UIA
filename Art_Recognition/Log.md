@@ -204,6 +204,9 @@ This is a log of all the progress made for the art recognition project.
   * [Rating Image Aesthetics Using Deep Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7243357)
     1. Basically tried to estimate how aesthetic an image is through style.
     2. Not really related to art, but pretty interesting and has quite a few citations.
+  * [Image Style Classification based on Learnt Deep Correlation Features](https://www.cs.ccu.edu.tw/~wtchu/papers/2018TMM-chu.pdf). 
+    1. Correlate different features to predict style
+    2. Math oriented, but willing to reread this paper when I've decide to start thinking about the intricacies of the model.
 
 
 **Thoughts** 

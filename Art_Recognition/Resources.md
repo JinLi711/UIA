@@ -49,11 +49,14 @@ Resources that we can leverage for our project. We will mainly use Python for ma
 ## Guides
   * [BigQuery](https://cloud.google.com/bigquery/what-is-bigquery?_ga=2.68514329.-987780976.1546634905)
   * [Deep Learning With OpenCV](https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv/)
+  * [Clustering Algorithms in Sklearn](https://scikit-learn.org/stable/modules/clustering.html)
+  * [Assessment Metrics for Clustering Algorithms](https://medium.com/@ODSC/assessment-metrics-for-clustering-algorithms-4a902e00d92d)
 
 ## Related Research Papers
   * [A large scale database for computational painting categorization](https://www.researchgate.net/publication/272040931_Painting-91_A_large_scale_database_for_computational_painting_categorization)
   * [Unsupervised Learning of Artistic Styles with Archetypal Style Analysis](https://papers.nips.cc/paper/7893-unsupervised-learning-of-artistic-styles-with-archetypal-style-analysis.pdf?fbclid=IwAR3n9R16iiSD0Nav08bU3JbYSxNsC8zle_fjs3oo_H4IOv5YGhljaC6i6jI)
   * [BAM! The Behance Artistic Media Dataset for Recognition Beyond Photography](https://arxiv.org/pdf/1704.08614.pdf)
+  * [Recognizing Art Style Automatically in painting with deep learning](https://www.lamsade.dauphine.fr/~bnegrevergne/webpage/documents/2017_rasta.pdf)
 
 ## Helpful Scripts
   * [Met Image Downloader](https://github.com/trevorfiez/The-Metropolitan-Museum-of-Art-Image-Downloader) This script basically allows us to scrape images from the Met. But note that the code here isn't that great.

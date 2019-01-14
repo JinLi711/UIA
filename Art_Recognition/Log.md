@@ -1,4 +1,4 @@
-# Log Version 3
+# Log Version 14
 
 This is a log of all the progress made for the art recognition project.
 
@@ -110,6 +110,7 @@ This is a log of all the progress made for the art recognition project.
 3. Looked into many other clustering methods, but found that sklearn only supports two online learning clustering algorithms (has partial_fit). The first one is mini-batch k-means, second one is [Birch clustering method](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.Birch.html#sklearn.cluster.Birch). This method is scalable for large datasets, but not by number of features, so it would not be useful for hundreds of thousands of images.
    * Basic recap of Birch method:
    > " It constructs a tree data structure with the cluster centroids being read off the leaf." 
+   * [Here](https://scikit-learn.org/stable/auto_examples/cluster/plot_birch_vs_minibatchkmeans.html#sphx-glr-auto-examples-cluster-plot-birch-vs-minibatchkmeans-py) for comparison between Birch and mini-batch k-means.
 
 4. Checked out feature extraction from [sklearn](https://scikit-learn.org/0.15/modules/feature_extraction.html#feature-extraction). Most important thing to look at is the image feature extraction at the very end. Patch extraction may end up being useful, and graph connectivity for image segmentation may end up being used.
 
@@ -164,8 +165,61 @@ This is a log of all the progress made for the art recognition project.
 
 1. I'm having doubts about clustering algorithms, simply because I'm not familar with the math behind the algorithms. 
 2. But finding good and labeled art datasets may be difficult. A lot of datasets are partially labeled, and it might be interesting to use autoencoders to make use of the unlabeled dataset, though I know autoencoders have been considered a failure in the industry. 
+3. Great News: I got access to the BAM dataset.
+
 
 **Things To Do** 
 
 1. Check out [Restricted Boltzmann Machine](https://skymind.ai/wiki/restricted-boltzmann-machine) and Deep Belief networks. Low priority since these are outdated methods. 
   * [Sklearn](https://scikit-learn.org/stable/modules/neural_networks_unsupervised.html) implementation.
+
+2. Read ALOT more literature.
+
+
+## January 13, 2019
+
+**Today's Progress** 
+
+1. Read this paper: [Recognizing Art Style Automatically in painting with deep learning](https://www.lamsade.dauphine.fr/~bnegrevergne/webpage/documents/2017_rasta.pdf). Notes:
+  * Used the Wikipaintings dataset, Residual Neural Networks, 
+  * Network is pretrained on AlexNet and ResNet, retrained for artistic style.
+  * They showed that style learned from this dataset are consistent with styles from another dataset (ErgSap dataset). To make sure images don't overlap (a painting appearing in both datasets), they compared the metadata and removed paintings if the metadata matched.
+  * Part of their model was based off of Gatys neural style transfer, which is something that I've replicated before. But one thing to note is that in this paper, the authors used the content to help predict style.
+    > "a person is more likely to appear in an impressionist painting than in an abstract painting"
+  * Styles That They Used: 
+    > "Abstract Art, Abstract Expressionism, Art Informel, Art Nouveau (Modern), Baroque, Color Field Painting, Cubism, Early Renaissance, Expressionism, High Renaissance, Impressionism, Magic Realism, Mannerism (Late Renaissance), Minimalism, Naive Art (Primitivism), Neoclassicism, Northern Renaissance, Pop Art, PostImpressionism, Realism, Rococo, Romanticism, Surrealism, Symbolism and Ukiyo-e."
+  * Used the bagging technique (average the output of different predictions on variations of the input). The variation they used was flipping the picture horizontally.
+  * Data Augmentation Methods: 
+    > "random, horizontal flips, rotations, axial translations and zooming"
+
+2. Read this paper: [How the Arts Impact Communities](https://www.princeton.edu/~artspol/workpap/WP20%20-%20Guetzkow.pdf)
+  * art revitalizes neighborhoods and promote economic prosperity
+  * art increases community cohesion
+  * creates social capital (just like the statements in scenesbook)
+  * art attracts tourists, businesses, investments
+  * art improves individual health, psychological well-being
+
+3. Looked through the art institute of chicago to see the types of imagery that are represented.
+4. Skimmed these papers (didn't feel that they were worth reading):
+  * [Rating Image Aesthetics Using Deep Learning](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7243357)
+    1. Basically tried to estimate how aesthetic an image is through style.
+    2. Not really related to art, but pretty interesting and has quite a few citations.
+
+
+**Thoughts** 
+
+1. I've decided that we should not do unsupervised learning.
+
+Reasons why:
+  * I've tried kmeans clustering algorithm, and I do not feel that it is reliable. First, metrics that measure the success of clustering algorithms does not tell me anything meaningful about why images are grouped in a certain way. Second, clustering algorithms focus too much on what the image actually is rather than the style. I tried extracting lower layers, but this makes the process really slow, as the lower layers have huge number of filters.
+  * Most clustering algorithms do not scale very well with large datasets. According to sklearn documentation, the only two clustering algorithms that scale well are k means and Birch, and Birch does not scale well with number of features.
+  * Most clustering algorithms are not online, which is a problem because it is a very bad idea to load the entire dataset into memory. That leaves me with only one option in sklearn: mini-batch k-means. This is a problem because my options are so limited.
+  * Even after clustering, we have to do a lot more manual labor trying to understand why the algorithm clustered certain images together. Sklearn does explicitly support this kind of analysis for images (sklearn only really provides metrics on measuring the clustering algorithm, which is completely meaningless to understanding why images are clustered the way they are.) If we had to understand the clustering model, every time we make even a certain change (like changing a hyperparameter), we would have to manually analyze with our eyes why certain images cluster together.
+
+2. Different datasets dramatically impact the image classifications. There's no way we can apply data from a set with only paintings to the real world because the real world contains other different types of art. What I think we need to do is first classify the type of artwork first (is it a painting, sculpture, watercolor, pencil sketch, 3D graphic.) 
+  * If we know it is not a painting, then there's no need to apply classification to see whether the style is impressionism, surrealism, etc. 
+  * If it is a painting, then apply the style classification.
+
+3. Style is not the only thing that defines a community. 
+  * It would be interesting to look at mood of a painting (gloomy, peaceful, happy, scary).
+  * Maybe also classifying content may say something the community, but we would have to deal with a lot more classes. Also, we would need to do more complicated image recognition (like applying YOLO algorithms to find all objects in an image), which would take more learning and research (since I'm not familar with YOLO).

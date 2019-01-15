@@ -208,6 +208,8 @@ This is a log of all the progress made for the art recognition project.
     1. Correlate different features to predict style
     2. Math oriented, but willing to reread this paper when I've decide to start thinking about the intricacies of the model.
 
+4. So I've got access to the [BAM dataset](https://bam-dataset.org/).
+  * They made me do some manual classification
 
 **Thoughts** 
 
@@ -226,3 +228,35 @@ Reasons why:
 3. Style is not the only thing that defines a community. 
   * It would be interesting to look at mood of a painting (gloomy, peaceful, happy, scary).
   * Maybe also classifying content may say something the community, but we would have to deal with a lot more classes. Also, we would need to do more complicated image recognition (like applying YOLO algorithms to find all objects in an image), which would take more learning and research (since I'm not familar with YOLO).
+
+## January 14, 2019
+
+**Today's Progress** 
+
+1. Spent an hour talking to Ben, where I described how a CNN works, and how we are going to build two classifiers. I also briefed Ben about how in the long run, Google Cloud is not a smart option simply because we will be running CNNs with millions of parameters, and it would be much better to build our own machine learning computer. I also talked to him about the datasets that we plan to use.
+
+2. Reread this research paper from [BAM](https://arxiv.org/pdf/1704.08614.pdf)
+  * they used the dataset of photos collected from Behance, a website that contains millions of artistic items from modern artists
+  * artistic content spans from fine art to technical drawings to graphitti.
+  * precision of their hand labels is 90%
+  * check out related works (not focusing on that right now)
+  * Media attributes:
+    * 3D computer graphics
+    * comics
+    * oil painting
+    * pen ink
+    * pencil
+    * sketches
+    * vector art
+    * watercolor
+  * These categories were chosen mainly because they were easily distinguishable from one another.
+  * Emotion attributes
+    * calm/peaceful
+    * happy/cheerful
+    * sad/gloomy
+    * scary/fearful
+  * Paper also described the annotation pipeline, but I skimmed that part.
+  * Found that object detection in photographs do not perform as well when classifying art images
+    * but we are not doing object detection, so this doesn't really matter for us
+  * it's important for us to be able to validate our trained model with an outside dataset
+  * the more classes of output, the trickier it is to train a model that excels at classifying all the classes

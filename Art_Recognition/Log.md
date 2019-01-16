@@ -260,3 +260,10 @@ Reasons why:
     * but we are not doing object detection, so this doesn't really matter for us
   * it's important for us to be able to validate our trained model with an outside dataset
   * the more classes of output, the trickier it is to train a model that excels at classifying all the classes
+
+## January 15, 2019
+
+**Today's Progress** 
+
+1. Tried to learn sql with python. Got things running and fiddled around with the dataset.
+2. Wrote up my game plan for training our model. Check it out [here](https://github.com/JinLi711/UIA/tree/master/Art_Recognition/medium_classification).

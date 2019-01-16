@@ -52,4 +52,8 @@ We want to create a semi-supervised algorithm to sort images (we will only use s
 ### Mini-batch K-Means
 
   * computational time is lower
-  * 
+
+
+# Decision
+
+After this initial exploration and talking to Ben, we decided that it is best NOT to do unsupervised learning. We will do supervised instead. I explained my reasoning in the Log.

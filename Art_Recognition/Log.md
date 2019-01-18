@@ -229,6 +229,7 @@ Reasons why:
   * It would be interesting to look at mood of a painting (gloomy, peaceful, happy, scary).
   * Maybe also classifying content may say something the community, but we would have to deal with a lot more classes. Also, we would need to do more complicated image recognition (like applying YOLO algorithms to find all objects in an image), which would take more learning and research (since I'm not familar with YOLO).
 
+
 ## January 14, 2019
 
 **Today's Progress** 
@@ -261,9 +262,74 @@ Reasons why:
   * it's important for us to be able to validate our trained model with an outside dataset
   * the more classes of output, the trickier it is to train a model that excels at classifying all the classes
 
+
 ## January 15, 2019
 
 **Today's Progress** 
 
 1. Tried to learn sql with python. Got things running and fiddled around with the dataset.
 2. Wrote up my game plan for training our model. Check it out [here](https://github.com/JinLi711/UIA/tree/master/Art_Recognition/medium_classification).
+
+
+## January 17, 2019
+
+**Today's Progress** 
+
+1. Talked to the RCC about the computing center.
+  * They told me to make an general account under Professor Terry Clark.
+  * For computing, I would probably need 2 GPUs (Nvidia). But I could also work with a cluster of cpus. Not sure what I need yet.
+    * The person I talked to said I probably shouldn't use more than 2 GPUs because GPUs are high in demand right now.
+  * To make sure my script runs in parallel, I should send my code to rcc so they could optimize the code for running tensorflow on the gpus.
+  * I also think python notebooks would not work, so we need to build a script (though it would be a good idea to start with a python notebook, but transfer everything to a script when we are done.) 
+    * Also, create a bash script for executing the python script.
+
+2. Spent some time skyping with Ben to talk about how to best communicate our ideas and our plans.
+  * Ben's going to finish the write up
+  * I'm going start step 1 of the process. 
+
+3. Email About Murals:
+  * Hyesun
+    > Hello, all I want to share three different types of murals that possibly link with cafe as reference. 
+    > 1. Traditional / neighborly/local type mural I was looking at the Englewood street view on Google map, and wondering about the artist. He is native Chicago born in South Side, and he produced more than 400 murals in Chicago and other cities. If you go to this website in mural portfolio section, you can see all murals and their address. I just found there are many of his murals in Hyde Park too! http://www.statikone.net/ARTIST_MISSION.html  We talked about Mexican/ African mural today in the meeting. These murals express humor, satire, political message mixed with heritage of their root too. These murals show more characteristics of ethnicity?
+
+    > 2. Corporate/utilitarian type mural This is Wabash Arts Corridor initiative launched by Columbia College.These works started in Wabash Avenue near South Loop, then now expanding to north side as well. This type presents more art itself as part of street decoration and revitalization project. You can find they are inspirations from geometries, animals, flowers, and nature in different colors and shapes. There is not much link to ethnicity in this type, maybe few. http://wabashartscorridor.org/project/
+
+    > 3. Bohemian type mural I see Wicker Park as an example of murals in bohemian neighborhood. If you see them on this website, there are more likely to be comic or cartoons that convey the idea of “diversity.” They show ethnic diversity or LGBT artistic way, by drawing variation of colors, faces, sign of “love for everyone”, “we all live here”, and signs in Chinese character as well. There is commonality between this type and traditional/neighborly type of mural in that they convey some message on social justice and equality, although traditional one has more linked to cultural heritage. What do you think http://www.wickerparkbucktown.com/muralspublicwork/
+
+    > I am trying to connect the characteristic of street art to three types of neighborhood which I think is possibly useful for case study of cafes too. Can we possibly characterize music in cafe as well? which is a question to find out together. 
+  * Alexis
+    > I looked at all the links that you sent. What you found was very interesting because I found very interesting difference in the type of art that is seen in the neighborhoods.  I noticed that the type of art that is in the neighborhoods you have identified as Bohemian leans more into the arena of pop art, graffiti art, & socially criticizing art. It is telling a story about the area and/or being used to claim the area and give it character, the character that the neighborhood holds.  The art used bright colors and the images were identifiable but mostly cartoon based. 
+
+    > Within the corporate neighborhoods I noticed the art was very geometrical, abstract, and/or seemed to serve the sole purpose of being ascetically pleasing. Within the neighborhoods you have as neighborly or traditionally, I noticed that this art had a reclamation and pride vibe. It seems to serve the purpose of claiming a culture and people and portraying those people and culture in positive light. This art focused a lot on telling the story of black history or focusing on famous and prominent members of the black community like the Obama family. 
+
+    > I feel that what you have found really does highlight how the art is used for different reasons or serves different purposes in different communities.
+
+    > I feel that these characteristics of the art in each community may translate into the type of patrons of the cafes and the music played in the cafes.  For example using these characteristics in art, I would be curious to observe it in the neighborly communities (specifically black) if their cafe's played more neo-soul, r&b, or contemporary/brass jazz music or if in the corporate if they played more Kenny G (elevator jazz) or pop music or if the Bohemian neighborhoods played more contemporary jazz rap, contemporary neo-soul r&b (like jorga smith). 
+
+    > These are just my thoughts. 
+
+  
+  * My Thoughts
+    * I need to be able to fit into this conversion in trying to classify images into different styles to say something about the communities. However, the conversation seems to be about murals, not just any artwork. That means I need to find a dataset that only contains murals and are labeled by the mural's style. Technically I can use the dataset I have now, but it might not generalize well.
+    * I really don't want to label images by hand for the training set, but I would consider it. Or maybe hire someone else to label these images (not sure).
+    * Hyesun wants us to classify emotions (humor, satire, political messages). I don't think that's possible to do with CNNs. 
+      * Maybe humor, but definitely not satire or political messages. 
+      * That's simply because satire and political messages require domain knowledge beyond whats in the image.
+      * Maybe classifying other emotions are possible. However, this is low priority.
+    * It might be possible to classify graphitti art. I'm sure there's a dataset on graphitti.
+        
+3. Researched emotion types.
+  1. Robert Plutchik's theory
+    * The circumplex as a general model of the structure of emotions and personality. [Source](https://psycnet.apa.org/record/1997-97129-001)
+    * Emotions:
+      * Fear, frightened, scared.
+      * Anger, rage
+      * Sadness, sorrow, grief
+      * Joy, happy, gladness
+      * Disgust 
+      * Surprise
+      * Trust
+      * Anticipation
+    * Fear, anger, sadness, joy, disgust would be doable in image classifications.
+
+  2.  

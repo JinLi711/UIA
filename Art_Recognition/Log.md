@@ -281,10 +281,10 @@ Reasons why:
     * The person I talked to said I probably shouldn't use more than 2 GPUs because GPUs are high in demand right now.
   * To make sure my script runs in parallel, I should send my code to rcc so they could optimize the code for running tensorflow on the gpus.
   * I also think python notebooks would not work, so we need to build a script (though it would be a good idea to start with a python notebook, but transfer everything to a script when we are done.) 
-    * Also, create a bash script for executing the python script.
+    * Also, create a [bash script](https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php) for executing the python script.
 
 2. Spent some time skyping with Ben to talk about how to best communicate our ideas and our plans.
-  * Ben's going to finish the write up
+  * Ben's going to finish the write up.
   * I'm going start step 1 of the process. 
 
 3. Email About Murals:
@@ -317,6 +317,9 @@ Reasons why:
       * That's simply because satire and political messages require domain knowledge beyond whats in the image.
       * Maybe classifying other emotions are possible. However, this is low priority.
     * It might be possible to classify graphitti art. I'm sure there's a dataset on graphitti.
+    * Future Project (maybe in a year or so): music classification.
+      * Clark said in his meeting that he had a dataset of 20 million songs somewhere.
+      * Paper to get started: [A Survey of Audio-Based Music Classification and Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5664796).
         
 3. Researched emotion types.
   1. Robert Plutchik's theory
@@ -332,4 +335,34 @@ Reasons why:
       * Anticipation
     * Fear, anger, sadness, joy, disgust would be doable in image classifications.
 
-  2.  
+4. Looked over (skimmed abstract, conclusion) some of the literature on emotion recognition. Picked the ones that may be useful.
+  * Most of the literature talks about facial emotional recognition.
+  * Might be interesting to consider building a model (YOLO model) that can identify a picture of a face. Then run another model that identifies the emotion.
+  * Good place to get started: [Real-time Convolutional Neural Networks for Emotion and Gender Classification](https://arxiv.org/pdf/1710.07557.pdf)
+  * [Medium article](https://medium.com/dair-ai/detecting-emotions-with-cnn-fusion-models-b066944969c8) on combining image and text for emotion recognition
+  * [Learning deep features for image emotion classification](https://ieeexplore.ieee.org/document/7351656)
+  * [Learning Multi-level Deep Representations for Image Emotion Classification](https://arxiv.org/abs/1611.07145)
+  * [A Mixed Bag of Emotions: Model, Predict, and Transfer Emotion Distributions](https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Peng_A_Mixed_Bag_2015_CVPR_paper.html)
+  * [Building Emotional Machines: Recognizing Image Emotions through Deep Neural Networks](https://arxiv.org/pdf/1705.07543.pdf)
+
+5. Read up on some of the graphitti literature.
+  * A decent amount of work has been done on video graphitti detection. We don't need something that advanced.
+  * Should look this over again:
+    * [Efficient Graffiti Image Retrieval](https://viscenter.uncc.edu/sites/viscenter.uncc.edu/files/CVC-UNCC-12-02.pdf).
+
+6. Spent an hour talking to Alexis. She's going to write up what we talked about in her log.
+  * Alexis going to try to search for categorical words and respond to her emails.
+  * I'm going to try write up my game plan for approaching word categorization.
+
+**Thoughts** This paper would be very useful to check out again: [Describing Artworks Using Convolutional Neural Networks](http://cs231n.stanford.edu/reports/2016/pdfs/200_Report.pdf).
+
+
+## January 18, 2019
+
+**Today's Progress** 
+
+1. Spent some time understanding the SQL file and created a plan for how to grab the data.
+
+2. Was able to some data wrangling and memory reduction on the SQL file. Was able to create 2 pickle files that contains the labels and the urls (the sql dataset was set up a bit awkwardly, so it took time to merge different parts of the dataset)
+
+3. Created a scraper that is able to download images into the correct files. I had to be very meticulous about where I put the downloaded files.

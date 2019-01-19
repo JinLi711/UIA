@@ -27,6 +27,7 @@ Currently, I'm using the smaller BAM dataset, which contains metadata for 390,00
 As far as what is valuable for us, the data that we are going to focus on are the labels (the ids), the links to the image, and the crowd labeled scores of the images.
 
   * ids (called mid in the dataset)
+  * project id. Modules within the same project are related in style.
   * Links
     * The links all start with: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/" if it works.
     * If the link doesn't work (meaning there is no image available), then the link seems to start with: "https://mir-cdn.behance.net/v1/rendition/project_modules/disp/"
@@ -67,7 +68,15 @@ This is the current plan after initial exploration. This is bound to change.
 2. Select only the id, link, and scores for each image. 
 3. Remember to dump everything else to reduce memory usage.
 4. Open the sql data into a python dataframe.
+  * for the scores, pick the highest scores and the corresponding label for each output class
 5. Do neccesary data type conversions (like what I did in my water pump project) to further reduce the memory use.
+6. Scrape websites using link.
+7. Resize
+8. Download images.
+  * I need a way to track where I'm at so I don't have to redownload everything everytime I run the python script. I think a good way to do this is to create an external file that contains where I stopped.
+  * I also have to keep track of missing images. If we try to retrieve an image that is dead, there's an http 404 error. How will I store this result?
+  * The image name will be the corresponding ID.
+  * Downloaded paths
 
 ### Step 2: Visualization
 
@@ -86,7 +95,7 @@ This is the current plan after initial exploration. This is bound to change.
 ### Step 4: Model Building
 
 1. Remember to set up check points so if the model stops, I can resume training.
-2. I need to build a scraper that goes to the links and downloads the images into a folder. To reduce the amount of time spent, we need to be able to download the next batch of images while the current batch is being trained.
+2. Send an url request to the image source, and upload it into python as a numpy array. There's no need to download it, since we only care about the numeric representation.
 3. Build a CNN. Need max pooling, seperable Conv 2D, batch normalization, dropout. Should map to TWO dense layers (one for style, another for mood).
 4. Do image augmentation. (flipping, rotating, zooming.) Need to think more about how to augment, and what agumentations make sense. For example, changing the color is not a good idea because color heavily influences mood.
 
@@ -101,6 +110,10 @@ This is the current plan after initial exploration. This is bound to change.
 
 1. Professor Clark was talking about this website that geocodes artworks and locations. Ben and I thought that it would be a good idea to scrape that website, run our CNN through those images, and say something about the distributions of artworks in different neighborhoods.
 
+
+### Things To Keep In Mind
+
+  * check the numeric representation of images (different libraries interpret the channels differently)
 
 
 ## References

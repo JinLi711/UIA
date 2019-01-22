@@ -4,6 +4,8 @@
 
 Train a neural network to classify the medium of a piece of art.
 
+Right now, everything will be built quick and dirty. Once it's built, we want to check the results and see if its worth continuing to pursue. If the group decides that what we done is worth it, I will recreate everything with full documentation and good code.
+
 ## What is a medium?
 
 In art, the medium is the material used to create an artwork. For example, in the [BAM dataset](https://bam-dataset.org/#explore) (which is what I plan to use to train), the mediums are:

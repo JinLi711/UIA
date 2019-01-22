@@ -408,4 +408,5 @@ Reasons why:
   * Trainable params: 3,227,011
   * Non-trainable params: 448
 
-  * 69% validation accuracy, even though we only had about 500 pictures for the train set, and no pretrained model. Seems promising.
+  * 69% validation accuracy, even though we only had about 500 pictures for the train set, and no pretrained model. Seems promising. (I trained on only the oil paintings, and the outputs were positive, negative, and unsure.) 
+  * Baseline (always picking the most frequent class) is 51%.

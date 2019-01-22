@@ -387,13 +387,13 @@ Reasons why:
 
 2. Created the model, trained. Honestly wasn't even that bad (I just reused the model that I created in my CIFAR 100 project): 
 
-Layer (type)                 Output Shape              Param #   
-=================================================================
-input_7 (InputLayer)         (None, 128, 128, 3)       0         
-_________________________________________________________________
-conv2d_7 (Conv2D)            (None, 123, 123, 32)      3488      
-_________________________________________________________________
-max_pooling2d_19 (MaxPooling (None, 62, 62, 32)        0         
+| Layer (type)      |           Output Shape         |     Param #   |
+|----------|---------------|-----
+| input_7 (InputLayer)    |     (None, 128, 128, 3)    |   0         |
+
+| conv2d_7 (Conv2D)        |    (None, 123, 123, 32)    |  3488      |
+
+| max_pooling2d_19  | (MaxPooling (None, 62, 62, 32)     |   0         |
 _________________________________________________________________
 batch_normalization_19 (Batc (None, 62, 62, 32)        128       
 _________________________________________________________________

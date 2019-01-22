@@ -388,24 +388,16 @@ Reasons why:
 2. Created the model, trained. Honestly wasn't even that bad (I just reused the model that I created in my CIFAR 100 project): 
 
 | Layer (type)      |           Output Shape         |     Param #   |
-|----------|---------------|-----
+|------------------- |------------------------------  |-----------------------------------
 | input_7 (InputLayer)    |     (None, 128, 128, 3)    |   0         |
-
 | conv2d_7 (Conv2D)        |    (None, 123, 123, 32)    |  3488      |
-
 | max_pooling2d_19  | (MaxPooling (None, 62, 62, 32)     |   0         |
-_________________________________________________________________
-batch_normalization_19 (Batc (None, 62, 62, 32)        128       
-_________________________________________________________________
-separable_conv2d_13 (Separab (None, 60, 60, 64)        2400      
-_________________________________________________________________
-max_pooling2d_20 (MaxPooling (None, 30, 30, 64)        0         
-_________________________________________________________________
-batch_normalization_20 (Batc (None, 30, 30, 64)        256       
-_________________________________________________________________
-separable_conv2d_14 (Separab (None, 28, 28, 128)       8896      
-_________________________________________________________________
-max_pooling2d_21 (MaxPooling (None, 14, 14, 128)       0         
+| batch_normalization_19 | (Batc (None, 62, 62, 32)     |   128     |  
+| separable_conv2d_13  | (Separab (None, 60, 60, 64)     |    2400    |  
+| max_pooling2d_20  | (MaxPooling (None, 30, 30, 64)  |      0         |
+| batch_normalization_20  | (Batc (None, 30, 30, 64)     |   256       |
+| separable_conv2d_14 | (Separab (None, 28, 28, 128)    |   8896      |
+| max_pooling2d_21 | (MaxPooling (None, 14, 14, 128)    |   0         |
 _________________________________________________________________
 batch_normalization_21 (Batc (None, 14, 14, 128)       512       
 _________________________________________________________________

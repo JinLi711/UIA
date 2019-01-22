@@ -1,4 +1,4 @@
-# Log Version 14
+# Log Version 21
 
 This is a log of all the progress made for the art recognition project.
 
@@ -366,3 +366,57 @@ Reasons why:
 2. Was able to some data wrangling and memory reduction on the SQL file. Was able to create 2 pickle files that contains the labels and the urls (the sql dataset was set up a bit awkwardly, so it took time to merge different parts of the dataset)
 
 3. Created a scraper that is able to download images into the correct files. I had to be very meticulous about where I put the downloaded files.
+
+## January 21, 2019
+
+**Today's Progress** 
+
+1. Did some more research on murals.
+  * Definition of Mural: a painting or work of art that is created on a [wall](https://www.dictionary.com/browse/mural).
+  * Although murals are not paintings, many murals have styles that are similar to the styles of paintings.
+  * Looked through murals on [Pinterest](https://www.pinterest.com/herrsuite/murals-breathtaking-complex/).
+    * Observations:
+      1. Murals are painted on many places other than public walls. People have murals in their own home, on staircases There was even a mural on a car.
+      2. Styles are very unobvious. It's very difficult for me personally to look at the murals and decide on the style of mural. 
+  * Looked at public art in [Chicago](https://www.choosechicago.com/things-to-do/museums-and-arts/public-art/street-art-and-murals/).
+    * Possible future problem: the pictures are not exactly on the image itself (the photos include other items not related to the mural)
+  * [LA](https://www.muralconservancy.org/murals) has an amazing database on murals. I'm wondering if I could find something like this in Chicago.
+  * Checked out the [Pilsen gallery](https://interactive.wttw.com/my-neighborhood/pilsen/murals)
+    * Again, the murals are very diverse and styles are unobvious. 
+  * Skimmed through this article on [Google Art Project](https://www.theguardian.com/artanddesign/2015/mar/27/google-street-art-project-mural-conservancy). Not really that useful.
+
+2. Created the model, trained. Honestly wasn't even that bad (I just reused the model that I created in my CIFAR 100 project): 
+
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_7 (InputLayer)         (None, 128, 128, 3)       0         
+_________________________________________________________________
+conv2d_7 (Conv2D)            (None, 123, 123, 32)      3488      
+_________________________________________________________________
+max_pooling2d_19 (MaxPooling (None, 62, 62, 32)        0         
+_________________________________________________________________
+batch_normalization_19 (Batc (None, 62, 62, 32)        128       
+_________________________________________________________________
+separable_conv2d_13 (Separab (None, 60, 60, 64)        2400      
+_________________________________________________________________
+max_pooling2d_20 (MaxPooling (None, 30, 30, 64)        0         
+_________________________________________________________________
+batch_normalization_20 (Batc (None, 30, 30, 64)        256       
+_________________________________________________________________
+separable_conv2d_14 (Separab (None, 28, 28, 128)       8896      
+_________________________________________________________________
+max_pooling2d_21 (MaxPooling (None, 14, 14, 128)       0         
+_________________________________________________________________
+batch_normalization_21 (Batc (None, 14, 14, 128)       512       
+_________________________________________________________________
+flatten_7 (Flatten)          (None, 25088)             0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 128)               3211392   
+_________________________________________________________________
+Drop-Out (Dropout)           (None, 128)               0         
+_________________________________________________________________
+oil_paint (Dense)            (None, 3)                 387       
+=================================================================
+Total params: 3,227,459
+Trainable params: 3,227,011
+Non-trainable params: 448

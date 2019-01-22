@@ -398,17 +398,14 @@ Reasons why:
 | batch_normalization_20  | (Batc (None, 30, 30, 64)     |   256       |
 | separable_conv2d_14 | (Separab (None, 28, 28, 128)    |   8896      |
 | max_pooling2d_21 | (MaxPooling (None, 14, 14, 128)    |   0         |
-_________________________________________________________________
-batch_normalization_21 (Batc (None, 14, 14, 128)       512       
-_________________________________________________________________
-flatten_7 (Flatten)          (None, 25088)             0         
-_________________________________________________________________
-dense_7 (Dense)              (None, 128)               3211392   
-_________________________________________________________________
-Drop-Out (Dropout)           (None, 128)               0         
-_________________________________________________________________
-oil_paint (Dense)            (None, 3)                 387       
-=================================================================
-Total params: 3,227,459
-Trainable params: 3,227,011
-Non-trainable params: 448
+| batch_normalization_21 | (Batc (None, 14, 14, 128)     |   512       |
+| flatten_7 (Flatten)    |      (None, 25088)      |       0        | 
+| dense_7 (Dense)        |      (None, 128)         |      3211392   |
+| Drop-Out (Dropout)    |       (None, 128)       |        0         |
+| oil_paint (Dense)      |      (None, 3)           |      387    |   
+
+  * Total params: 3,227,459
+  * Trainable params: 3,227,011
+  * Non-trainable params: 448
+
+  * 69% validation accuracy, even though we only had about 500 pictures for the train set, and no pretrained model. Seems promising.

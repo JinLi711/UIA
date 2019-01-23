@@ -94,13 +94,15 @@ def findWordFreq (word_list, names, threshold = 20):
     """
     
     common_words = pd.read_csv ('Word_Lists/commonwords.csv')['WORDS'].values.tolist()
-    keywords = pd.read_csv ('Word_Lists/keywords.csv')['WORDS'].values.tolist()
+    keywords = pd.read_csv ('Word_Lists/traditional_neighborly_local_words.csv')['WORDS'].values.tolist()
     csv_counter = {}
     for i in range (len (word_list)):
         unique_words = Counter (word_list[i].split())
         filter_unique_words = {}
         for key in unique_words:
-            if (not (key in common_words)) and ((key in keywords) or (unique_words[key] > threshold)):
+            # if (not (key in common_words)) and ((key in keywords) or (unique_words[key] > threshold)):
+            #     filter_unique_words[key] = unique_words[key] 
+            if (key in keywords):
                 filter_unique_words[key] = unique_words[key] 
         csv_counter[names[i]] = filter_unique_words
     return csv_counter

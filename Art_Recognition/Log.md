@@ -573,3 +573,20 @@ Reasons why:
 
   * [How to use DeepLab in TensorFlow for object segmentation using Deep Learning](https://medium.freecodecamp.org/how-to-use-deeplab-in-tensorflow-for-object-segmentation-using-deep-learning-a5777290ab6b)
     * Skimmed this article because using this requires preboxed objects, and our data will most likely not have preboxed objects. However, if we do decide to manually prebox objects, then this might be worth reading over.
+    * Here's the [related paper](https://arxiv.org/abs/1706.05587).
+
+  * [Semantic Segmentation with Deep Learning](https://towardsdatascience.com/semantic-segmentation-with-deep-learning-a-guide-and-code-e52fc8958823)
+    * I don't really understand each model because the descriptions are very brief and dense. Also, there;s no real value in remembering the model structures. But here are the models and some quick and useful info on them:
+      * Full-Resolution Residual Networks (FRRN)
+        * Slow but accurate
+        * ![FRNN](https://cdn-images-1.medium.com/max/2400/1*LlYK2Pjemx3kNC61yVV-yA.png)
+      * Pyramid Scene Parsing Network (PSPNet)
+        * ![PSPNet](https://cdn-images-1.medium.com/max/2400/1*REgHs3PeemO3TIuyE46iRg.png)
+      * The One Hundred Layers Tiramisu (FCDenseNet)
+        * ![FCDenseNet](https://cdn-images-1.medium.com/max/2400/1*ioURm5w_miMj64DeLQ9H_g.png)
+      * Rethinking Atrous Convolution (DeepLabV3)
+        * can change the dilation rate to increase or decrease infomation
+        * ![DeepLab](https://cdn-images-1.medium.com/max/2400/1*tn-mWYhEva2S6rEZg4oZGA.png)
+      * Multi-Path Refinement Networks (RefineNet)
+        * ![RefineNet](https://cdn-images-1.medium.com/max/2400/1*V6E6QIyB1BTOdbev4eDAqg.png)
+      * There are also more in this article.

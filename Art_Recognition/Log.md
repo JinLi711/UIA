@@ -560,4 +560,16 @@ Reasons why:
       * ResNet and Inception: acc more important than speed
 
     * Accuracy vs Time
-      * ![Accuracy vs Time](https://cdn-images-1.medium.com/max/2600/1*7dJTcEv7vYAQyHbQ8QAZUA.png)
+      * ![Accuracy vs Time](https://cdn-images-1.medium.com/max/2600/1*7dJTcEv7vYAQyHbQ8QAZUA.png )
+
+    * Faster R-CNN is more accurate while R-FCN and SSD are faster. 
+
+  * [What do we learn from single shot object detectors (SSD, YOLOv3), FPN & Focal loss (RetinaNet)?](https://medium.com/@jonathan_hui/what-do-we-learn-from-single-shot-object-detectors-ssd-yolo-fpn-focal-loss-3888677c5f4d)
+    * Might be interesting to check out, but I don't need it right now because single shots are less accurate, and we are looking for accuracy.
+
+  * [Distinguishing paintings from photographs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.91.9304&rep=rep1&type=pdf)
+    * Quite amazing that this was made in 2005.
+    * Skimmed it, basically distinguishes paintings from photographs. Quite a long read.
+
+  * [How to use DeepLab in TensorFlow for object segmentation using Deep Learning](https://medium.freecodecamp.org/how-to-use-deeplab-in-tensorflow-for-object-segmentation-using-deep-learning-a5777290ab6b)
+    * Skimmed this article because using this requires preboxed objects, and our data will most likely not have preboxed objects. However, if we do decide to manually prebox objects, then this might be worth reading over.

@@ -307,6 +307,26 @@ Reasons why:
     > I feel that these characteristics of the art in each community may translate into the type of patrons of the cafes and the music played in the cafes.  For example using these characteristics in art, I would be curious to observe it in the neighborly communities (specifically black) if their cafe's played more neo-soul, r&b, or contemporary/brass jazz music or if in the corporate if they played more Kenny G (elevator jazz) or pop music or if the Bohemian neighborhoods played more contemporary jazz rap, contemporary neo-soul r&b (like jorga smith). 
 
     > These are just my thoughts. 
+  
+  * Hyesun
+    >Thanks for reaction. Definitely! I think we can sharpen this idea further and build some method to match types of murals and musics with types of cafe.
+
+    > There are cafes in Bronzeville (categorized as neighborly/local/traditional) we can take a look more closely for this type.
+      1. Sip & Savor cafe: 528 E 43rd St, Chicago, 60653
+      2. Ain’t She Sweet cafe: 2920, 526 E 43rd St, Chicago, 60653
+
+    > They actually locate next to each other on 43rd St as business neighbors.  When you look at their phots on Yelp or Google map, they take are proactive in exhibiting local art paintings in their interior space. It’s very similar style that we see on the murals in this neighborhood. Also, they promote them selves as third space. For example, Sip & Savor’s sleeve for coffee directly writes, “Sip & Savor- Where coffee and community meets.” 
+
+    > What’s interesting is there used to be famous “Wall of Respect” mural next to these cafes. It was part of black art movement that thrived in 1960s-70s.
+    > That mural was torn down after accidental fire on building in 1971, so it does not exist anymore as a vacant land now. https://en.wikipedia.org/wiki/Wall_of_Respect  
+
+    > There are lots of churches on the 43rd street, and recently there are community art center and galleries built to revive art movement there. 
+    > Thinking of history and what’s present now, I think cafe in zipcode 60653 can be interesting case study for neighborly type to incorporate street art (or other forms of art) and music. Visiting them and listening what music they play is one option, then we can also ask owner about more info.
+
+    > We can apply same thing for cafe in Bohemian and Corporate type of neighborhood too - in conjunction of street art and music as sensory experience of cafe patrons.
+
+    > These are images of presence of arts around two cafes in zip code 60653 below. You can look up their street view on Google.
+
 
   
   * My Thoughts
@@ -410,3 +430,19 @@ Reasons why:
 
   * 69% validation accuracy, even though we only had about 500 pictures for the train set, and no pretrained model. Seems promising. (I trained on only the oil paintings, and the outputs were positive, negative, and unsure.) 
   * Baseline (always picking the most frequent class) is 51%.
+
+## January 22, 2019
+
+**Today's Progress** 
+
+1. Read Ben's writeup/proposal for neural networks. See [here](https://github.com/JinLi711/UIA/tree/master/Art_Recognition/proposals).
+
+## January 24, 2019
+
+**Today's Progress** 
+
+1. So me and Ben discussed what research we might need to be able to analyze pictures of art. One of the problems is that have to look at mural pictures that are taken that include other things other than the mural. For example, some pictures contains the scenary around the mural.
+   * Ben is going to look at image processing for the pure image (just the mural), and I want to look at image processing for the "full image" (picture containing the scenery.)
+   * My thoughts on how to approach this:
+     * Murals have very distinct style from real life imagery. For example:
+     ![alt Mural](https://static1.squarespace.com/static/57615c85356fb0f59a8d0934/576eda4de4fcb5ab514ed5cd/58293236b3db2b0f3d3c3dbd/1518544651488/Fasika_08.JPG?format=2500w)

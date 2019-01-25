@@ -620,6 +620,10 @@ Problems I can think of:
   * There might not actually be a background (the entire photo is the mural). Is there a possible way to detect if there's no background?
     * I don't have an idea on how to answer this?
 
+Some more resources to check out:
+
+  * [Wikipedia Lol](https://en.wikipedia.org/wiki/Image_segmentation)
+
 
 ## January 25, 2019
 
@@ -650,5 +654,18 @@ Image segmentation is essentially a method to divide the image into subimages, a
     * ROIs come from the feature maps themselves
     * ![New Region Proposal](https://cdn-images-1.medium.com/max/2600/1*0cxB2pAxQ0A7AhTl-YT2JQ.jpeg) 
   * There are many other variations of these algorithms, but knowing them isn't that important. But what we do need to keep in mind when picking an algorithm is the trade off between speed and accuracy. Some algorithms are incredibly fast, but lack accuracy. 
+
+4. What are some resources that we can use for image segmentation?
+  * For this, I mean libraries that have built in algorithms that support image segmentation (so we don't have to build one from scratch unless we really have to).
+  * [Scikit Images](https://scikit-image.org/). Extension of Scikit-Learn.
+    * Here's some links to get started:
+    * [Label image regions](http://scikit-image.org/docs/dev/auto_examples/segmentation/plot_label.html)
+    * [Here's](https://www.scipy-lectures.org/packages/scikit-image/index.html) a more in-depth guide.
+    * [Comparing edge-based and region-based segmentation](http://scikit-image.org/docs/dev/auto_examples/xx_applications/plot_coins_segmentation.html)
+  * [OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_table_of_contents_imgproc/py_table_of_contents_imgproc.html)
+    * [Image Segmentation with Watershed Algorithm](https://docs.opencv.org/3.4/d3/db4/tutorial_py_watershed.html)
+  * Scikit Learn
+    * [Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html#kd-tree)
+    * [Spectral clustering for image segmentation](https://scikit-learn.org/stable/auto_examples/cluster/plot_segmentation_toy.html)
 
 

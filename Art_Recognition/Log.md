@@ -489,6 +489,7 @@ Reasons why:
   * [What do we learn from region based object detectors (Faster R-CNN, R-FCN, FPN)?](https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9)
     * most basic method for image segmentation is the sliding method: 
       * slide windows up, down, left, right. Classify each picture in the window.
+
     * Selective Search (SS)
       * find regions of interest (ROI)
       * start with each individual pixel as its own group
@@ -496,3 +497,29 @@ Reasons why:
       * group smaller groups first to prevent one region from taking in everything
 
     ![Selective Search](https://cdn-images-1.medium.com/max/1600/1*ZQ03Ib84bYioFKoho5HnKg.png)
+
+    * R-CNN
+      * Uses creates 2000 ROI, which are fed into a CNN individually, and then passed through fully connected layers.
+
+      ![R-CNN](https://cdn-images-1.medium.com/max/2600/1*Wmw21tBUez37bj-1ws7XEw.jpeg).
+
+      * Flow chart:
+
+      ![Flow Chart R-CNN](https://cdn-images-1.medium.com/max/2400/1*ciyhZpgEvxDm1YxZd1SJWg.png)
+
+    * Fast R-CNN
+      * instead of extracting features for each image patch from scratch, use a feature extractor to extract features from the start
+      * then create ROIs  to combine with corresponding feature maps to form patches
+      * use ROI pooling to change patches to a fixed size
+      * feed the patches to a fully connected layer for classification and localization (where the image is located)
+
+      ![Fast R-CNN](https://cdn-images-1.medium.com/max/2600/1*Dd3-sugNKInTIv12u8cWkw.jpeg) 
+
+      * Flow Chart:
+      ![FLow Fast R-CNN](https://cdn-images-1.medium.com/max/2600/1*fLMNHfe_QFxW569s4eR7Dg.jpeg)   
+
+    * Faster R-CNN
+      * same network flow, but different region proposal
+      * ROIs come from the feature maps themselves
+
+      ![New Region Proposal](https://cdn-images-1.medium.com/max/2600/1*0cxB2pAxQ0A7AhTl-YT2JQ.jpeg)  

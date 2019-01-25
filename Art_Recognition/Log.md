@@ -576,7 +576,7 @@ Reasons why:
     * Here's the [related paper](https://arxiv.org/abs/1706.05587).
 
   * [Semantic Segmentation with Deep Learning](https://towardsdatascience.com/semantic-segmentation-with-deep-learning-a-guide-and-code-e52fc8958823)
-    * I don't really understand each model because the descriptions are very brief and dense. Also, there;s no real value in remembering the model structures. But here are the models and some quick and useful info on them:
+    * I don't really understand each model because the descriptions are very brief and dense. Also, there's no real value in remembering the model structures. But here are the models and some quick and useful info on them:
       * Full-Resolution Residual Networks (FRRN)
         * Slow but accurate
         * ![FRNN](https://cdn-images-1.medium.com/max/2400/1*LlYK2Pjemx3kNC61yVV-yA.png)
@@ -590,3 +590,33 @@ Reasons why:
       * Multi-Path Refinement Networks (RefineNet)
         * ![RefineNet](https://cdn-images-1.medium.com/max/2400/1*V6E6QIyB1BTOdbev4eDAqg.png)
       * There are also more in this article.
+
+**Thoughts**
+
+That was alot to absorb, but I'll come back to it and reread my notes.
+
+So how can we use image segmentation in our mural? 
+
+The (slight) problem with the models that I read about is that a lot of the models require an image that is presegmented to train on. But what I want is to segment the image first, then extract the segmentation. Also, I want to train on a dataset that does not require segmentation because we only really want to look at style.
+
+Our goal is to:
+1. Train (usual convnet) from datasets. 
+2. Use one of the texture algorithms to group parts of pictures. 
+3. Draw a box around the group.
+4. Run that image in the box through our convet.
+
+Problems I can think of:
+  * How do we ensure that the texture algorithms can pick up a mural? I'm worried that the segmentation algorithms will start boxing things inside the mural or even other objects, which is not what we want. We want to box only the mural. Is there a texture algorithm general enough that it is able to draw a box to distinguish the style of the mural of the picture in real life?
+    * But at the same time, having boxes around items inside the mural can actually help us. It's quite possible that the machine learning algorithm will classify each smaller box with a different style, which can be interesting.
+  * We need to crop the image so the image can be ran through the convet. Not sure if this is a big deal, but cropping decreases information. Though at the same time, people don't seem to worry too much about cropping images.
+  * How do we deal with distortion?
+    * For example, this image is completely flat, which is awesome.
+    * ![ZEBRAA](https://static1.squarespace.com/static/58430e5a59cc68a03bb53543/58430f342994cab7bdab57f6/5b477b9f70a6ad5a7942e7e2/1531411620127/zebra_final_site.jpg?format=1500w)
+    * But this image is slanted:
+    * ![DEARRR](https://static1.squarespace.com/static/5898fb16579fb3651b5f836c/t/5a788771c830259c530cc210/1517852214088/paolo_pedini_berkley_mi_murals?format=750w)
+    * This mural here is not in a rectangular shape.
+    * ![BONEESS](https://rabbiteyemovement.at/rabbit/wp-content/uploads/2018/06/IMG_5213-1-820x1093.jpg)
+    * Though I'm not entirely sure if it matters if the only thing we care about is the style.
+  * There might not actually be a background (the entire photo is the mural). Is there a possible way to detect if there's no background?
+    * I don't have an idea on how to answer this?
+

@@ -620,3 +620,35 @@ Problems I can think of:
   * There might not actually be a background (the entire photo is the mural). Is there a possible way to detect if there's no background?
     * I don't have an idea on how to answer this?
 
+
+## January 25, 2019
+
+**Today's Progress**
+
+### Write Up On Image Segmentation
+
+1. What is image segmentation?
+
+Image segmentation is essentially a method to divide the image into subimages, and analyze those subimages. Of course, this leads to the question, how exactly do we divide such image? I'll answer this later, but first, here's a visual below for what I mean. As we can see, we draw a box around each object that we wish to classify.
+
+![Guy On A Horse](https://cdn-images-1.medium.com/max/1600/1*r9ELExnk1B1zHnRReDW9Ow.png)
+
+2. How do we segment an image?
+  * The brute force method is simply to use a sliding window, where we choose the size of the box, place the box on the image, and classify what's in the box. Then we slide the box up, left, right. For each slide, we repeat and try to classsify each image in the box. However, this is incredibly slow and inefficient.
+  * A much better way to segment an image is to use Selective Search (SS) to find regions of interest (ROI). In selective search, we start with tiny intial regions, and we wish to grow those regions by locating two similar regions (in terms of mathemtically defined texture) and merging them together. We repeat this until no more regions are mergable. Then for each ROI, we place a box around it.
+
+![Region Merging](https://cdn-images-1.medium.com/max/2400/1*_8BNWWwyod1LWUdzcAUr8w.png)
+
+3. What are some neural network algorithms?
+  * R-CNN
+    * finds ROIs, and for each RIO, feed it through a CNN that is attached to fully connected layers that split into two labels (the class and the boundary box)
+    * ![R-CNN](https://cdn-images-1.medium.com/max/2600/1*Wmw21tBUez37bj-1ws7XEw.jpeg)
+  * Fast R-CNN
+    * instead of extracting features for each patch, we extract the features from the initial image.
+    * ![Fast R-CNN](https://cdn-images-1.medium.com/max/2600/1*Dd3-sugNKInTIv12u8cWkw.jpeg) 
+  * Faster R-CNN
+    * ROIs come from the feature maps themselves
+    * ![New Region Proposal](https://cdn-images-1.medium.com/max/2600/1*0cxB2pAxQ0A7AhTl-YT2JQ.jpeg) 
+  * There are many other variations of these algorithms, but knowing them isn't that important. But what we do need to keep in mind when picking an algorithm is the trade off between speed and accuracy. Some algorithms are incredibly fast, but lack accuracy. 
+
+

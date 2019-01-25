@@ -476,6 +476,11 @@ Reasons why:
           * 3x3 Convolution layer + activation function (with batch normalization)
           * 3x3 Convolution layer + activation function (with batch normalization)
 
+    * Questions I have:
+      * what does the expanding path even mean? This article wasn't very helpful because doesn't really describe what's happening or why certain traits are there, but just what's there.
+      * Why do we need a bottle neck? Doesn't the contracting path alreadyt take care of squashing the image features together?
+      * How exactly does the expanding path segment image??
+
     * Full-Resolution Residual Networks (FRRN)
 
   * [Image Segmentation: Kaggle experience (Part 1 of 2)](https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0)
@@ -485,6 +490,12 @@ Reasons why:
     * very important to use pretrained models
       * model from [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) for encoder
       * model from [Automatic Instrument Segmentation in Robot-Assisted Surgery Using Deep Learning](https://arxiv.org/abs/1803.01207) for decoders
+
+    * Questions
+      * Aren't low level features supposed to be very unspecific (like lines and primitive shapes)? Or am I misinterpreting what fine grain is suppose to mean?
+      * How exactly does a decoder merge features? Is it like a max pool?
+      * How does a decoder tell you where the image is suppose to be (how does it keep the location)?
+      * Does it really matter which pretrained model I use?
 
   * [What do we learn from region based object detectors (Faster R-CNN, R-FCN, FPN)?](https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9)
     * most basic method for image segmentation is the sliding method: 
@@ -523,3 +534,30 @@ Reasons why:
       * ROIs come from the feature maps themselves
 
       ![New Region Proposal](https://cdn-images-1.medium.com/max/2600/1*0cxB2pAxQ0A7AhTl-YT2JQ.jpeg)  
+    
+      *  region proposal network (RPN) takes the output feature maps, uses 3 by 3 slide filter over the feature map. 
+      * Objectiveness measures the box contains an object
+
+      ![Region Proposal Network](https://cdn-images-1.medium.com/max/2600/1*z0OHn89t0bOIHwoIOwNDtg.jpeg)
+
+    * Questions
+      * I'm confused about the R-CNNs. Are they trained? I don't think so (the author of the article never explicitly said so), but then how is the R-CNN suppose to evaluate the results of running the R-CNN on the image? How does it measure objectiveness when there's no baseline?
+      * How do you measure texture? What does texture even mean?
+      * I understand that SVMs are great for finding boundaries between easily distinct classes (for example, in the Iris dataset, the classes are predefined: they're just the flowers). But what "classes" are the SVMs dividing? Is it just the box and not the box? But then if so, how does the SVM accurately know where to draw the boundary if the number of features (pixels) are so vast? Wouldn't the SVM perform badly because there's just so much input noise?   
+
+  * [Fast R-CNN and Faster R-CNN](https://jhui.github.io/2017/03/15/Fast-R-CNN-and-Faster-R-CNN/)
+    * Honestly, the pictures here are great. 
+    * Turns out the R-CNNs are trained.
+
+  * [Image segmentation with Mask R-CNN](https://medium.com/@jonathan_hui/image-segmentation-with-mask-r-cnn-ebe6d793272)
+
+  ![Mask R-CNN](https://cdn-images-1.medium.com/max/2600/1*M_ZhHp8OXzWxEsfWu2e5EA.png)
+
+  * [Design choices, lessons learned and trends for object detections?](https://medium.com/@jonathan_hui/design-choices-lessons-learned-and-trends-for-object-detections-4f48b59ec5ff)
+    * Schemes and Loss Functions:
+    * ![Models and Loss Functions](https://cdn-images-1.medium.com/max/2400/1*kWIv_EFsxqbTJoncadcY7A.png)
+    * Feature Extractors:  
+      * ResNet and Inception: acc more important than speed
+
+    * Accuracy vs Time
+      * ![Accuracy vs Time](https://cdn-images-1.medium.com/max/2600/1*7dJTcEv7vYAQyHbQ8QAZUA.png)

@@ -446,3 +446,53 @@ Reasons why:
    * My thoughts on how to approach this:
      * Murals have very distinct style from real life imagery. For example:
      ![alt Mural](https://static1.squarespace.com/static/57615c85356fb0f59a8d0934/576eda4de4fcb5ab514ed5cd/58293236b3db2b0f3d3c3dbd/1518544651488/Fasika_08.JPG?format=2500w)
+
+     * Notice the distinction between the style of the mural on the wall and everything else. We can try to somehow find a contrast to seperate the mural from the image. Probably need to research image segmentation and previous algorithms that have distinguished real photographs from paintings.
+
+  * We need something that will work well to the detail, and speed of feed foward analysis will not matter as much as accuracy. But algorithms like YOLO might be neccesary, and I think I will eventually have to look into it.
+
+2. Research on Semantic Segmentation (articles for now, research papers later):
+
+  * [Semantic Segmentation with Deep Learning](https://towardsdatascience.com/semantic-segmentation-with-deep-learning-a-guide-and-code-e52fc8958823)
+    * The author has an amazing github repository that is worth checking out: [github](https://github.com/GeorgeSeif/Semantic-Segmentation-Suite).
+    * The basic backbone of basically most sementation neural networks is the U-Net Architecture:
+
+    ![U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png).
+
+    * There are 3 parts to a U-Net:
+      1. Contracting path
+        * Comprised of 4 blocks, each block composed of:
+          * 3x3 Convolution Layer + activation function (with batch normalization)
+          * 3x3 Convolution Layer + activation function (with batch normalization)
+          * 2x2 Max Pooling
+        * at each pooling, feature maps double
+      2. Bottleneck
+        * between contracting and expanding paths
+        * just 2 conv layers with batch norm. and dropout
+      3. Expanding Path
+        * 4 blocks, each block consists of:
+          * Deconvolution layer with stride 2
+          * Concatenation with the corresponding cropped feature map from the contracting path
+          * 3x3 Convolution layer + activation function (with batch normalization)
+          * 3x3 Convolution layer + activation function (with batch normalization)
+
+    * Full-Resolution Residual Networks (FRRN)
+
+  * [Image Segmentation: Kaggle experience (Part 1 of 2)](https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0)
+    * U-Net consists of encoder and decoder networks.
+      * encoders are responsible for building a hierachy of features from simpler features (like edges and shapes to cars)
+      * decoder is responsible for merging fine grained low level features with coarse high level features to restore the positional information  
+    * very important to use pretrained models
+      * model from [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507) for encoder
+      * model from [Automatic Instrument Segmentation in Robot-Assisted Surgery Using Deep Learning](https://arxiv.org/abs/1803.01207) for decoders
+
+  * [What do we learn from region based object detectors (Faster R-CNN, R-FCN, FPN)?](https://medium.com/@jonathan_hui/what-do-we-learn-from-region-based-object-detectors-faster-r-cnn-r-fcn-fpn-7e354377a7c9)
+    * most basic method for image segmentation is the sliding method: 
+      * slide windows up, down, left, right. Classify each picture in the window.
+    * Selective Search (SS)
+      * find regions of interest (ROI)
+      * start with each individual pixel as its own group
+      * calculate the texture for each group, combine the two groups that are the closest
+      * group smaller groups first to prevent one region from taking in everything
+
+    ![Selective Search](https://cdn-images-1.medium.com/max/1600/1*ZQ03Ib84bYioFKoho5HnKg.png)

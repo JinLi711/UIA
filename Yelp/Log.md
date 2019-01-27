@@ -160,4 +160,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
         * Can try different similarity metrics.  
     6. Find common hypernyms for the words found.
     7. Create a tree using everything we found.
+      * [Example for getting started](http://intelligentonlinetools.com/blog/2016/09/05/getting-wordnet-information-and-building-and-building-graph-with-python-and-networkx/)
+      * Libraries:
+        * [ETE Toolkit](http://etetoolkit.org/)
+        * [Plotly](https://plot.ly/python/tree-plots/)
+        * [NetworkX](https://github.com/networkx/networkx)
     8. Calculate frequencies of the words.

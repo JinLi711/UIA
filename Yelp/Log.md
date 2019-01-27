@@ -137,3 +137,27 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
       * -1 (no common hypernym)
     * Example of WordNet Hierachy:
       * ![WordNet Tree](http://www.cs.princeton.edu/courses/archive/spring07/cos226/assignments/wordnet-fig1.png)
+
+  * [Word Net Interface With NLTK in Python](http://www.nltk.org/howto/wordnet.html)
+    * Contains python code for each possible function in the module
+
+2. Created a plan for how to use NLTK WordNet to find synonyms.
+  1. Combine all the csv files (which contains words for each neighborhood type) into a set of words.
+  2. Lower case all the words
+  3. Split the words into nouns, adjectives, and verbs.
+  4. For each word:
+    1. Run it through Morphy. This just helps normalizes the word to make sure the word is inside WordNet.   
+      * For example, running denied through Morphy returns deny. 
+      * Keep both input and output.
+    2. Run the resulting word through wn.synset to find all the synsets. 
+      * Keep in mind that some words have multiple definitions, and thus have more than one synset. For example, printer can mean a person who prints or a machine that prints.
+      * Also note that a word may have an empty synset, meaning that word is not in WordNet. In that case, make a note.
+    3. For each synset, find all its hyponyms using .lemmas(). Find all hyponyms of those hyponyms and repeat.
+      * Help from [StackExchange](https://stackoverflow.com/questions/15330725/how-to-get-all-the-hyponyms-of-a-word-synset-in-python-nltk-and-wordnet)
+    4. For each extra word found, find all meronyms (both part and substance)
+    5. Find the depth of each word.
+  5. Create a path similarity matrix where columns are the starting words, and rows are all the words found.
+    * Can try different similarity metrics.  
+  6. Find common hypernyms for the words found.
+  7. Create a tree using everything we found.
+  8. Calculate frequencies of the words.

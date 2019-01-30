@@ -1,11 +1,11 @@
-#=======
-#PURPOSE
-#=======
+"""
+This module is to:
 
-#Preprocess words.
-#Lemmatize the words. 
-#Remove stems.
-#Count frequencies.
+    Preprocess words.
+    Lemmatize the words. 
+    Remove stems.
+    Count frequencies.
+"""
 
 import glob
 

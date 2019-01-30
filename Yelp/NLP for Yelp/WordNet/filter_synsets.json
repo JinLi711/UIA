@@ -1,0 +1,61 @@
+{
+    "VERBS": [
+        "change.v.06", "commute.v.01", "commute.v.04", "permute.v.01",
+        "cling.v.03", "hang.v.01", "hang.v.02", "hang.v.03", "hang.v.04", "hang.v.05", "hang.v.06", "hang.v.08", "hang.v.10", "hang.v.11", "hang.v.13", "hang.v.14", "hang.v.15", "attend.v.05", "hang.v.12",
+        "converge.v.01", "meet.v.04", "meet.v.05", "meet.v.06", "meet.v.10", "meet.v.11", "suffer.v.10", "touch.v.05", "meet.v.07",
+        "analyze.v.01", "study.v.03",
+        "walk.v.02", "walk.v.03", "walk.v.05", "walk.v.06", "walk.v.07", "walk.v.09",
+        "bring.v.03", "cultivate.v.02", "exercise.v.03", "exploit.v.01", "ferment.v.03", "function.v.01", "influence.v.01", "knead.v.01", "make.v.36", "shape.v.02", "sour.v.01", "work.v.03", "work.v.05", "work.v.09", "work.v.10", "work.v.14", "work.v.16", "work.v.17", "work.v.18", "work.v.19", "work.v.21", "work.v.27", "solve.v.01", "work.v.02", "work.v.12"
+    ],
+    "NOUNS": [
+        "art.n.03", 
+        "bus.n.04", "bus_topology.n.01", "busbar.n.01",
+        "child.n.04", "child.n.03",
+        "chocolate.n.03", "coffee.n.02", "coffee_bean.n.01",
+        "community.n.03", "community.n.04", "community.n.06",
+        "cosy.n.01",
+        "decoration.n.02",
+        "andiron.n.01", "cad.n.01", "dog.n.03", "frank.n.02", "frump.n.01", "pawl.n.01",
+        "class.n.01", "family.n.06",
+        "farmer.n.02", "farmer.n.03",
+        "fitness.n.01", "fitness.n.04", "seaworthiness.n.01",
+        "flea.n.01",
+        "food.n.01", "food.n.03",
+        "friend.n.05", "supporter.n.01", "acquaintance.n.03", "ally.n.02",
+        "family.n.04", "syndicate.n.01",
+        "drift.n.07", "gallery.n.01", "gallery.n.04", "gallery.n.05", "gallery.n.06", "veranda.n.01",
+        "history.n.03",
+        "department_of_justice.n.01", "judge.n.01",
+        "kid.n.02", "kid.n.05", "kyd.n.01", 
+        "position.n.06",
+        "landmark.n.03", "landmark.n.04",
+        "local_anesthetic.n.01",
+        "parking_lot.n.01",
+        "confluence.n.01", "merging.n.01",
+        "music.n.05",
+        "vicinity.n.01",
+        "agency.n.01", "function.n.03", "office.n.04", "office.n.06",
+        "exit.n.01", "wall_socket.n.01",
+        "park.n.04", "park.n.06",
+        "quick.n.01", 
+        "school.n.03", "school.n.04", "school.n.05", "school.n.07",
+        "street.n.04",
+        "style.n.05", "style.n.06", "style.n.09", "stylus.n.02",
+        "perusal.n.01",
+        "underpass.n.01",
+        "mesa.n.01", "table.n.01",
+        "tattoo.n.01",
+        "passage.n.05", "theodolite.n.01"
+
+    ],
+    "ADJ": [
+        "cozy.s.03", 
+        "local.a.01",
+        "flying.s.02", "quick.s.06",
+        "unique.s.02",
+        "quick.s.04"
+    ],
+    "ADV": [
+        
+    ]
+}

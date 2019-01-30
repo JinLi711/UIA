@@ -145,15 +145,19 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     1. Combine all the csv files (which contains words for each neighborhood type) into a set of words.
     2. Lower case all the words
     3. Split the words into nouns, adjectives, and verbs.
+      * Note that a word can have different parts of speeches.
     4. For each word:
         1. Run it through Morphy. This just helps normalizes the word to make sure the word is inside WordNet.   
-        * For example, running denied through Morphy returns deny. 
-        * Keep both input and output.
+          * For example, running denied through Morphy returns deny. 
+          * Keep both input and output.
         2. Run the resulting word through wn.synset to find all the synsets. 
-        * Keep in mind that some words have multiple definitions, and thus have more than one synset. For example, printer can mean a person who prints or a machine that prints.
-        * Also note that a word may have an empty synset, meaning that word is not in WordNet. In that case, make a note.
-        3. For each synset, find all its hyponyms using .lemmas(). Find all hyponyms of those hyponyms and repeat.
-        * Help from [StackExchange](https://stackoverflow.com/questions/15330725/how-to-get-all-the-hyponyms-of-a-word-synset-in-python-nltk-and-wordnet)
+          * Keep in mind that some words have multiple definitions, and thus have more than one synset. For example, printer can mean a person who prints or a machine that prints.
+          * I might need to manually filter out words that do not meet the appropriate definitions that I want.
+          * Also note that a word may have an empty synset, meaning that word is not in WordNet. In that case, make a note.
+        3. For each synset, find all its hyponyms using .hyponyms(). Find all hyponyms of those hyponyms and repeat.
+          * Help from [StackExchange](https://stackoverflow.com/questions/15330725/how-to-get-all-the-hyponyms-of-a-word-synset-in-python-nltk-and-wordnet)
+          * Note that if the hyponym is a phrase, remove it.
+
         4. For each extra word found, find all meronyms (both part and substance)
         5. Find the depth of each word.
     5. Create a path similarity matrix where columns are the starting words, and rows are all the words found.
@@ -166,3 +170,8 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
         * [Plotly](https://plot.ly/python/tree-plots/)
         * [NetworkX](https://github.com/networkx/networkx)
     8. Calculate frequencies of the words.
+
+# January 28, 2019
+
+1. Actually was able to implement what I wrote down (see January 27). 
+2. Started to do some manual filtering (since some synsets found have definitions that we do not need)

@@ -851,3 +851,14 @@ Image segmentation is essentially a method to divide the image into subimages, a
       * rather, they used Lp distances.
     * results: better than all previous works
     * this is a great paper to reread and for tracing its citations
+
+  * [Fine-tuning Convolutional Neural Networks for fine art classification](https://www.sciencedirect.com/science/article/pii/S0957417418304421)
+    * classifies artist, genre, style, time period, association with national artistic context
+    * dataset used: 
+      * wikiart: 133000 artworks
+      * Genres in the dataset:
+      * ![Genres Wikiart](https://ars.els-cdn.com/content/image/1-s2.0-S0957417418304421-gr1.jpg)
+      * Web Gallery of Art (WGA): labeled with genre, art historical period, school and timeframe (in 50 years steps) in which the artists were active
+    * contains specifics on how the model was set up and tricks they used to improve accuracy
+      * honestly nothing new or noteworthy
+    * contains a bunch of charts comparing the models

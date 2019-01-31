@@ -810,6 +810,20 @@ Image segmentation is essentially a method to divide the image into subimages, a
     * published in 2014
     * more of a qualatitive analysis on the paper above
 
+  * [Aesthetics and Emotions in Images](https://ieeexplore.ieee.org/abstract/document/5999579)
+    * published in 2011
+    * qualitative description of inferencing emotions from artworks
+    * possibly worth reading, but very long
+
+  * [Recognizing Emotions from Abstract Paintings using Non-Linear Matrix Completion](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Alameda-Pineda_Recognizing_Emotions_From_CVPR_2016_paper.pdf)
+    * apparently matrix completion has been great for mulit-label image classification and were mostly a linear classification model, though I have no idea what matrix completion is.
+    * contains a bunch of matrix multiplication and equation manipulations
+    * performed better than the previous models
+    * contains links to great datasets to check out
+    * maybe its because I don't understand the math but how does matrix completion classify images? Is it combined with another model?
+    * Research from [Wikipedia](https://en.wikipedia.org/wiki/Matrix_completion) on matrix completion
+      * matrix completion refers to filling in missing entries in a matrix
+      * useful for filling in missing pixels in computer vision
 
   * [Multi-level region-based Convolutional Neural Network for image emotion classification](https://www.sciencedirect.com/science/article/pii/S0925231218315145)
     * published in 2018

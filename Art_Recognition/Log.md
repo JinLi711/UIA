@@ -677,6 +677,7 @@ Image segmentation is essentially a method to divide the image into subimages, a
 
 1. Had three skype conversations, twice with Ben and once with both Ben and Professor Clark.
   * Basically discussed my findings on image segmentations and how we can use it. We also discussed more about artistic style for murals, and we feel that it may be too ambitious to try to classify the style of murals, mostly because of how undefined the mural styles are. It may also be tricky to train images on another style and apply it to the mural styles. The three of us decided that it would be a good idea to start smaller, so we switched to emotional classifications, which can be more transferable.
+  * Also texted alot to Ben to discuss our findings and trajectories.
 
 2. [Brief research](https://en.wikipedia.org/wiki/Art_and_emotion) on the relationship between art and emotion.
   * Biological (Evolutionary) Perspective
@@ -717,3 +718,79 @@ Image segmentation is essentially a method to divide the image into subimages, a
       * embarassment
 
 3. Started looking through more papers on emotional analysis.
+  * finding papers on the intersection between artworks, machine learning, and emotions turns out to be pretty difficult. Took some time, but here are some papers that I found that were useful and (hopefully) applicable:
+
+  * [EMOTIONAL VALENCE CATEGORIZATION USING HOLISTIC IMAGE FEATURES](https://www.researchgate.net/publication/221122984_Emotional_valence_categorization_using_holistic_image_features)
+    * Published in 2008
+    * training data comes from International Affective Picture System (IAPS), the standard emotion invoking dataset
+      * about 700 photographs, cateogorized by emotional valence (from negative to positive)
+      * of the 700, 400 are classificed to anger, awe, disgust,fear, sadness, excitement, contentment, and amusement
+      * 60 participants labeled on a scale from 1 to 7 each emotion above.
+    * used Support Vector Machine on extracted features from images
+      * They used Wiccest features and Gabor filters.
+    * results weren't that great. Accuracy for each class ranged from 50% to 60% (50% being the baseline.)
+  
+  * [Affective Image Classification using Features Inspired by Psychology and Art Theory](http://delivery.acm.org/10.1145/1880000/1873965/p83-machajdik.pdf?ip=128.135.98.24&id=1873965&acc=ACTIVE%20SERVICE&key=06A6A3A8AFB87403%2E37E789C11FBE2C91%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1548904715_5aee417e5c7168e4e17b8f6bb4bcc9be)
+    * Emotional Semantic Image Retrieval (ESIR): analysis and retrieval of images at the affective level (emotional and subjective based)
+    * uses both psychological and art theories
+    * modeling emotions:
+      * dimensional approach: represent emotions as coordinates in a vector space
+      * category approach: assign descriptive words to regions of the space
+      * this paper used category approach
+    * Examples:
+      * [K-DIME](http://discovery.ucl.ac.uk/3367/1/3367.pdf): uses neural networks 
+      * Colombo et al.: defined features for hue, saturation, warmth and luminance contrast, and color harmony between distinct image regions
+    * Dataset that they [used](http://www.imageemotion.org/).
+    * did feature extraction, then ran the features through the machine learning models (like SVM, Random Forests)
+      * Some features include:
+        * color
+          * Saturation and Brightness
+          * Hue (shade)
+          * Colorfulness (measured by EMD)
+          * Color Names
+          * Itten contrasts (combinations of color for emotional effects)
+        * texture
+          * Wavelet-based features (measures spatial smoothness in images)
+          * Tamura texture features (coarseness, contrast and directionality)
+          * Gray-Level Co-occurrence Matrix (contrast, correlation, energy, and homogeneity of an image)
+        * Composition 
+          * Level of Detail (how detailed was the images)
+          * Low Depth of Field (blurring of the background)
+          * Dynamics (lines that induce emotions)
+          * Rule of Thirds (main object should be located in the middle)
+        * Content
+          * human faces
+          * skin
+        * the author did not explain the complicated algorithms used to measure these features
+    * Output Labels:
+      * Positive: Amusement, Awe, Contentment, Excitement
+      * Negative: Anger, Disgust, Fear, Sad
+    * Datasets
+      * IAPS
+      * set of 807 artistic photographs
+      * set of 228 peer rated abstract paintings
+      * combined all 3
+
+  * [Exploring Principles-of-Art Features For Image Emotion Recognition](http://delivery.acm.org/10.1145/2660000/2654930/p47-zhao.pdf?ip=128.135.98.24&id=2654930&acc=ACTIVE%20SERVICE&key=06A6A3A8AFB87403%2E37E789C11FBE2C91%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1548904637_ee7f6bf55b2830bf62c3f9c306654a0b)
+    * published in 2014
+    * argues that there are many problems with using low level features 
+      * low level features include color, texture, line, shape
+      * these low level features need to be carefully arranged to have a link towards emotions
+      * are not invariant to different arrangements
+      * not interprebable by human beings
+    * extract  Principles-of-art-based emotion features (PAEF) for classification
+      * balance, emphasis, harmony, variety, gradation, movement, rhythm, and proportion
+      * combinations of these evoke different emotions
+    * also uses (IAPS)
+    * also uses categorical emotion states
+    * PAEF features:
+      * balance (feeling of equilibrium and symmetry)
+      * emphasis (aka contrast) (stressing of differences of certain elements)
+        * uses Itten's color contrast and Sun's RFA (rate of focused attention on the image)
+      * harmony (aka unity) (way of combining low level features)
+        * computed harmony intensity for each pixel
+      * variety (create complicated image by combining different elements)
+      * gradation (way of combining images through a series of gradual changes)
+      * movement
+      * the author included complicated equations for measuring each feature
+    * achieved better results than the previous articles

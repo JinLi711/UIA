@@ -1,4 +1,4 @@
-# Log Version 21
+# Log Version 34
 
 This is a log of all the progress made for the art recognition project.
 
@@ -717,6 +717,8 @@ Image segmentation is essentially a method to divide the image into subimages, a
       * regret
       * embarassment
 
+  * Great and comprensive connection between art and emotion. [Here](https://www.iep.utm.edu/art-emot/)
+
 3. Started looking through more papers on emotional analysis.
   * finding papers on the intersection between artworks, machine learning, and emotions turns out to be pretty difficult. Took some time, but here are some papers that I found that were useful and (hopefully) applicable:
 
@@ -770,6 +772,14 @@ Image segmentation is essentially a method to divide the image into subimages, a
       * set of 807 artistic photographs
       * set of 228 peer rated abstract paintings
       * combined all 3
+  
+  * Checked out the [website](http://www.imageemotion.org/) for the above paper
+    * Powerpoint Presentation on the Website.
+      * Skimmed this.
+      * really good for looking at the images
+    * Getting the data
+      * For [IAPS dataset](https://csea.phhp.ufl.edu/media.html). Pretty annoying that I have to ask a professor to sign a waiver for this data.
+      * but the site does contain data from the other two datasets it used
 
   * [Exploring Principles-of-Art Features For Image Emotion Recognition](http://delivery.acm.org/10.1145/2660000/2654930/p47-zhao.pdf?ip=128.135.98.24&id=2654930&acc=ACTIVE%20SERVICE&key=06A6A3A8AFB87403%2E37E789C11FBE2C91%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1548904637_ee7f6bf55b2830bf62c3f9c306654a0b)
     * published in 2014
@@ -781,7 +791,7 @@ Image segmentation is essentially a method to divide the image into subimages, a
     * extract  Principles-of-art-based emotion features (PAEF) for classification
       * balance, emphasis, harmony, variety, gradation, movement, rhythm, and proportion
       * combinations of these evoke different emotions
-    * also uses (IAPS)
+    * also uses (IAPS) and the same dataset as the above article
     * also uses categorical emotion states
     * PAEF features:
       * balance (feeling of equilibrium and symmetry)
@@ -794,3 +804,36 @@ Image segmentation is essentially a method to divide the image into subimages, a
       * movement
       * the author included complicated equations for measuring each feature
     * achieved better results than the previous articles
+
+  * [Context effects on emotional and aesthetic evaluations of artworks and IAPS pictures](https://www.sciencedirect.com/science/article/pii/S0001691814001541)
+    * Incredibly long paper without pictures
+    * published in 2014
+    * more of a qualatitive analysis on the paper above
+
+
+  * [Multi-level region-based Convolutional Neural Network for image emotion classification](https://www.sciencedirect.com/science/article/pii/S0925231218315145)
+    * published in 2018
+    * used FPN variation of the CNN to classify local emotions in the image as opposed to the traditional methods of classifying the entire image at once
+    * uses a multi-level r-cnn to extract local representations of images
+    * Pipeline:
+      * ![FPN Pipeline](https://ars.els-cdn.com/content/image/1-s2.0-S0925231218315145-gr2.jpg).
+      * used FPN to extract the deep features maps, which would combine high level semantic features with low level deep features
+      * ResNet101 as backbone
+      * ![Backbone](https://ars.els-cdn.com/content/image/1-s2.0-S0925231218315145-gr3.jpg)
+    * used emotion class probability output rather than hard class label since emotions are subjective
+      * also because humans would also probably feel a distribution of emotions rather than one
+    * used categorical emotion states (CES)
+    * one difference from the way the authors used r-cnn is that they want to find regions of interests that contain emotions and not based on just content
+      * this is a lot more challenging not only because emotions are subjective, but both objects and surrounding background contribute to the emotions
+      * to do this, the pipeline has been modified to find the probability of a region evoking emotion
+    * Mikels’ Wheel: used to determine the similarity between two emotions
+    * dataset is a lot more comphrensive than the previous papers
+      * 23,308 labeled from flicker and instagram
+      * 2000 from EmotionRol
+      * IAPSsubset
+      * ArtPhoto : 800
+      * 228 Abstract paintings
+    * loss function was not softmax (like the other papers) since the results are probability distributions.
+      * rather, they used Lp distances.
+    * results: better than all previous works
+    * this is a great paper to reread and for tracing its citations

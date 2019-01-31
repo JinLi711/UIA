@@ -591,6 +591,9 @@ Reasons why:
         * ![RefineNet](https://cdn-images-1.medium.com/max/2400/1*V6E6QIyB1BTOdbev4eDAqg.png)
       * There are also more in this article.
 
+  * Methods For Segmenting Images
+    * [Image Segmentation Algorithms Overview](https://arxiv.org/pdf/1707.02051.pdf)
+
 **Thoughts**
 
 That was alot to absorb, but I'll come back to it and reread my notes.
@@ -623,6 +626,7 @@ Problems I can think of:
 Some more resources to check out:
 
   * [Wikipedia Lol](https://en.wikipedia.org/wiki/Image_segmentation)
+  * [Measuring visual quality of street space and its temporal variation: Methodology and its application in the Hutong area in Beijing](https://www.sciencedirect.com/science/article/pii/S0169204618310119).
 
 
 ## January 25, 2019
@@ -669,3 +673,47 @@ Image segmentation is essentially a method to divide the image into subimages, a
     * [Spectral clustering for image segmentation](https://scikit-learn.org/stable/auto_examples/cluster/plot_segmentation_toy.html)
 
 
+## January 30, 2019
+
+1. Had three skype conversations, twice with Ben and once with both Ben and Professor Clark.
+  * Basically discussed my findings on image segmentations and how we can use it. We also discussed more about artistic style for murals, and we feel that it may be too ambitious to try to classify the style of murals, mostly because of how undefined the mural styles are. It may also be tricky to train images on another style and apply it to the mural styles. The three of us decided that it would be a good idea to start smaller, so we switched to emotional classifications, which can be more transferable.
+
+2. [Brief research](https://en.wikipedia.org/wiki/Art_and_emotion) on the relationship between art and emotion.
+  * Biological (Evolutionary) Perspective
+    * emotion is evoked from a person when the person absorbs meaning from the image stimuli and finds connection between the image and previous experiences.
+    * humans tend to search for patterns and symmetry
+    * brightness and open landscapes connect to calmness and happiness
+    * darkness and obscureness connects to anxiety and fear
+  * Types of Emotions That Images Evoke
+    * still an open debate
+    * anger, confusion, happiness: basic
+    * emotions are subjective
+    * Liking Emotions
+      * does pleasure and displeasure towards the artwork count as emotions?
+      * researchers found that how well a person enjoyed a painting was correlated to how well they understood the painting and connected to it
+      * emotional feeling of beauty or aesthetic experience: is this actually an emotion?
+    * Knowledge Emotions
+      * reactions from thinking and feeling 
+      * interest
+        * positive perception of what is new, complex, and unfamiliar
+      * confusion
+        * opposite of interest
+        * stems from uncertainty
+      * surprise
+        * new and unexpected
+        * expectations were not met
+    * Hostile Emotions
+      * anger
+      * fustration
+      * aggression
+      * disgust
+      * contempt
+    * Self-conscious emotions
+      * from reflection of oneself
+      * pride
+      * guilt
+      * shame
+      * regret
+      * embarassment
+
+3. Started looking through more papers on emotional analysis.

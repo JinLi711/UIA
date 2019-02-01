@@ -862,3 +862,15 @@ Image segmentation is essentially a method to divide the image into subimages, a
     * contains specifics on how the model was set up and tricks they used to improve accuracy
       * honestly nothing new or noteworthy
     * contains a bunch of charts comparing the models
+
+## January 31, 2019
+
+1. Phone call with Alexis.
+  * Talked about possible ways we can use the synonym that I generated. We thought it would be useful to run all the generated words through Yelp and see which synonym pops up the most. Need confirmation from Hyesun before I do this.
+  * Talked about ways we can do more mural analysis.
+    1. emotional response analysis (this can be pretty simple like gloomy, sad, happy, calm)
+    2. classifying murals vs graphitti 
+    3. content analysis (what exactly is in these murals: people, animals, whatnot)
+    4. image of text to text (since Alexis said some murals have text in them, like "Freedom" or "Liberty", etc. It would be incredibly helpful for finding out what kind of atmosphere or vibe these text invoke. Also, it would also be great to be able to find what language the text contains (text in Spanish vs text in English, etc) 
+  * Talked about the role of music in cafes.
+    * hard to do because we would need to ask the cafes for their playlists. Not sure how to go from here.

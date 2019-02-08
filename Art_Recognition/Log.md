@@ -874,3 +874,69 @@ Image segmentation is essentially a method to divide the image into subimages, a
     4. image of text to text (since Alexis said some murals have text in them, like "Freedom" or "Liberty", etc. It would be incredibly helpful for finding out what kind of atmosphere or vibe these text invoke. Also, it would also be great to be able to find what language the text contains (text in Spanish vs text in English, etc) 
   * Talked about the role of music in cafes.
     * hard to do because we would need to ask the cafes for their playlists. Not sure how to go from here.
+
+## February 6, 2019
+
+1. Talk with Ben. My goals:
+  * talk to Clark about the different analysis that we are going to do (emotional, content, mural vs graphitti)
+  * read more in depth on the paper (understand every detail)
+  * look more into the psychological aspects of emotions
+
+2. We need to be able to use this classifier to tie whatever attributes to geographical locations.
+
+  * Mural maps in [LA](https://www.muralmapla.com/).
+
+## February 7, 2019
+
+1. Email to Professor Clark for clarification. 
+
+    >> Dear Professor Clark,
+
+    >> I just want to recap on what I and Ben have done on the art project and how we can connect it with Scenes variables.
+
+    >> So we are currently trying to build a model that can detect the emotions from a mural. 
+    I've personally read a lot of literature combining machine learning and art. 
+
+    >> I've searched on Google Scholar with key terms:
+    >> "convolutional neural network" and art and emotion. The results produced about a dozen papers that were worth reading, and I read most of them (took notes on the log).
+
+    >> But searching on Google Scholar:
+    >> "convolutional neural network" and mural produced no meaningful result, indicating that what we needed to do was build a model that works for general art, and apply it to murals.
+
+    >> After reading many papers on the possible techniques, we decided on one that we want to replicate because it was the newest one and it was built to fix the problems of all the other papers. It is also built on top of huge amounts of psychological literature involving art and emotions. I've also read a lot of papers on the psychology of emotions and how they relate to art (took notes on my log). The emotions that the model can rate are:
+      * anger
+      * awe
+      * disgust
+      * fear
+      * sadness 
+      * excitement
+      * contentment
+      * amusement
+
+    >> Ben sent an email to the authors of the paper asking for their code and dataset. If they provide it to us, it would save a lot of time, and we can apply the code onto murals. If not, we will have to replicate the paper ourselves.
+
+    >> So how we can connect it to scenes variables? Pulling from the meeting on Wednesday, we believe that we can use the model to rate emotional responses from murals in different geographical locations. Once we have these ratings, we can use geographically weighted regression to correlate these emotions with scenes variables and political connotations.
+
+    >> It would be interesting to use this to see the Bohemian cleavages in different areas. 
+    Tying this to the Yelp data, we can look at keywords in Yelp reviews that somehow connect to these emotions.
+
+    >> My theories for each emotion:
+    >> anger, fear, sadness: If a mural has a rating of high anger, fear, or sadness, we have to ask why. Is there a political movement of activism surrounding the mural? Are people dissatisfied with something? This leads to a natural possible test of correlation between anger and variables like income, quality of life (measured by amenities), feeling of injustice (connection to the scene's book of egalitarianism). On the opposite end, the emotion of contentment can also be linked to the same variables.
+
+    >> awe: If a mural has a high rating of awe, it may be possible that the murals may be trying to attract visitors and tourists. This directly tied to amenities since places that try to increase tourism would likely to also have a lot of amenities. We would also expect that the location of the mural to be in a Bohemian environment.
+
+    >> disgust: I doubt there would be any high ratings of disgust in murals, but we may be surprised. 
+
+    >> excitement: More ties to Bohemian culture and self-expressionism.
+
+    >> These connections with scenes variables are preliminary. I've been talking to Andrew, who I feel can provide extremely valuable insight into more of these connections.
+
+    >> Last thing to address: why machine learning and not any other method? 
+    Machine learning is the only realistic way to analyze art in a quantitative fashion. Doing a search on google scholar will show that the top results will be applying machine learning to analyze art.
+    And why quantitative over qualitative?
+    Because quantitative approaches are extremely scalable. If we build this and it works for a city, this model will be an incredible tool to use when trying to analyze murals globally. Furthermore, we feel that qualitative analyze is too fickle, inconsistent, and time-consuming.
+
+    >> I'll send another email later detailing how we can use Yelp data to connect with scenes variables.
+
+    >> Best,
+    >> Jin Li

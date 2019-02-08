@@ -175,3 +175,47 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
 1. Actually was able to implement what I wrote down (see January 27). 
 2. Started to do some manual filtering (since some synsets found have definitions that we do not need)
+
+# January 29, 2019
+
+1. Finished filtering words
+2. Found all synonyms for starting words and placed information into a well formated file
+
+# February 6, 2019
+
+1. Possible keywords to look at:
+  * music
+  * time
+  * night life
+  * senior
+  * organic
+
+# February 7, 2019
+
+1. I listened to the recording that Professor Clark sent. Next steps:
+  * I need to take a step back and think more about how we can connect what I find in Yelp with variables that currently exist in Scenes Scape. Education? Counties? Bohemian? Cleaveages in Bohemian culture (where and why)? Time of day?
+  * Read up on what Ying Cai has been doing on grographically weighted regression. (How can I use similar methodologies?)
+  * Find a larger Yelp data set.
+
+2. Read through Ying Cai's Thesis proprosal.
+  * Events and activities shapes the cultural and moral dimensions of a scene.
+  * I think we can do something very similar with Yelp reviews and frequencies of words.
+
+3. Multilevel Modeling
+   -	[Wiki](https://en.wikipedia.org/wiki/Multilevel_model)
+   -	Multilevel modeling is like linear regressions, but it is extended to different hierarchies.
+   -	Attributes that we are comparing can be nested in other attributes that we are comparing. For example, we can be comparing political engagement under the hierarchy of geographical locations.
+   -	We use this method when we decide that a current model does not contain independent results, we want to compare groupings
+
+4. Geographically Weighted Regression
+   -	[Spatial Analysis](https://en.wikipedia.org/wiki/Spatial_analysis#Spatial_regression)
+   -	[A spatial analysis](https://www.mailman.columbia.edu/research/population-health-methods/geographically-weighted-regression) technique that models local relationships between variables and outcomes
+   -	Is basically ordinary least square regression (OLS) but extended to encompass locality (meaning it creates an OLS for each location
+
+5. Blalock Paper Notes
+    -	Pictoral Models uses arrows and boxes to imply causation
+    -	Variables in boxes and lines were labeled with either (+) or (-)
+    -	I can’t really tell why some lines are dotted while other lines are dark (maybe darker lines imply higher correlation?)
+    -	Arrows can be multi-directional (one box can connect to multiple boxes)
+    -	We can even have loops
+    -	Can label the difference between the main theory and the auxiliary theory

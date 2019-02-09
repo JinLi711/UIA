@@ -423,3 +423,69 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     >> Are you still working on Toronto? Could we try to play with these data if you still have not move to the national scraping?  There are too few cases to try key word searches or regression modeling, but adding NIGHT or more “business hours” for corporate area amenities should be   a good step ahead.
 
     >> We are also liooking for data how to capture music and images nearby like murals. 
+
+  * Possible things to consider after looking at Yelp:
+    * I noticed that sometimes business owners respond back to the reviewers. Is this a sign of professionalism and utilitarianism?
+    * uses of LOL, LMFAO, mellienial acryonyms. Probably linked to Bohemianism.
+    * I think its very interesting how some of the photos aren't even of food. Sometimes its something distinguishable about the place (like a hanging artwork)
+    * cool
+    * why are we looking at only singular words and not words in context?
+
+# February 8, 2019
+
+1. Ideas About How To Interpret Text Language (and what I can do with NLTK)
+    -	Think about how words are grouped together (split sentences into bigrams).
+    -	Look at uncommon words, not just common ones
+    -	Create frequency tables for different hierarchies (frequency under zip codes, businesses, individual reviews)
+    -	Think about different ways to split the string of texts. By sentences? Paragraphs?
+    -	How can I interpret ambiguity in the text? For example, how do I deal with pronouns?
+    -	How can I normalize text? And what are the drawbacks of doing so? Lowercase all the text (but ALL CAPS indicate emotions). Convert all words to the same tense (flew to fly). Remove plurals (cats to cat).
+    -	Tag parts of speech (but not sure how this would help yet)
+    -	Convert words that have the same meaning to the same word (like happy and joyful to happy)
+    -	How to deal with numbers?
+
+2. Research Questions:
+    -	How do cafes create a scene? 
+    -	How can we know what “scene” is in the cafe? 
+    -	What values do certain cafes in an area display (like creativity, cosmopolitanism)?
+    -	How can we use that to relate to politics? 
+    -	How can I add on to or contradict what has been said in the scenes book?
+
+    -	Is there a way to distinguish which cafes/bars are more conservative/ liberal?
+    -	How does time intervals of activity (cafes in afternoon vs bars at night) affect how people voice their opinions?
+    -	How can I know what central themes are in certain businesses? (feminism, egalitarianism, peace, gay rights)
+    -	How can location (proximity) of cafes and bars to cultural places affect political expression?
+    -	How can I find cleavages (age, race, gender, religion, class) inside different bars/cafes based on Yelp data?
+    -	Are there connections between what people decide to eat and their political agendas?
+
+3. Quotes From Scenes Book:
+
+  * These quotes are for ideas I want to address using the Yelp data. Note that page number is according to PDF.
+
+  >> “Ambitious political programs have emerged around the world, with the character of the scene sometimes taking center stage as a topic of political controversy and target of public policy.” (page 177, Scenes)
+
+  >> Major Claim: “Scenes grow more politically salient in general with (1) the rise of culture, (2) the rediscovery of the urbane, and (3) the new political culture.” (177)
+
+  >> “Democratic votes were correlated with more urbane dimensions like transgression and self-expression; Republican votes, with more communitarian dimensions, like neighborliness and tradition.” (178)
+
+  >> “Styles of political leaders and urban governance have in some cities dramatically changed, adding new cultural and aesthetic sensitivity to their past repertoires” (179)
+
+  >> “Scenes accordingly become a topic of political contestation and a source of political authority” (179)
+
+  >> “Scenes provide cues about the character of a place, which some people find welcoming and others find alien and strange, sorting themselves accordingly.” (182)
+
+  >> “New Social Movements Are Typically Located in Dense, Walkable Areas with Self- Expressive Scenes and Many Artists” (195)
+
+  >> “Where do NSMs thrive? They are usually present in high rent, high crime counties, and there are more of them in Democratic counties. Neighborhoods with any (and many) NSMs are usually in dense, lower rent zip codes with strong cultural employment concentrations, nonwhite residents, and college graduates.” (198)
+
+  >> “When walking and self-expression come together, the result is quite likely to be organizations advocating for human rights, social justice, and the environment.” (202)
+
+  >> “self-expressive scene, for instance, likely indicates a broadly culturally liberal environment” (206)
+
+
+  >> Scenes have been rising.
+
+  >> Politicians are supporting more arts and scenes. They want to create buzz.
+
+
+

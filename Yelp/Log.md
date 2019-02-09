@@ -487,5 +487,56 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
   >> Politicians are supporting more arts and scenes. They want to create buzz.
 
+4. What I Want to Measure (For Both Bars and Cafes)
+	* This is going to based on what the quotes say and what I think might help. 
+
+    -	Conservatism vs liberalism
+    -	Democratic vs Republican
+    -	Rural vs Urban
+    -	Political agendas (feminism, egalitarianism, peace, gay rights)
+    -	Social cleavages (age, race, gender, religion, class) 
+    -	The sense of scene (people’s identifications with a particular place, or multiple places)
+    -	“Buzz”
+
+5. How I Am Going to Measure It
+	* Below, I will indicate the data available on Yelp, and possible ways of using them.
+
+  * Explicit Political Comments:
+
+	  * Explicit political comments are very rare, but that does not mean that they do not exist. I would need to find some before I decide how to analyze it. Still thinking about this.
+
+  * The way people write:
+
+	  * It is possible to draw a connection between how reviewers structure their reviews and the type of person they are. And we can look at the connection between the types of people who reviewed and the businesses they review in. For example, maybe a certain cafe have reviewers who sound more educated than the reviewers in other cafes. And we can draw connections between cafes and politics. There are many ways to figure out attributes about people based on what they say. For example, look at how often they refer to themselves in the first person singular (using I), first-person plural (we), or third person. People who use “I” are more self-centered and individualistic. Reviewers who use “we” imply that they are visiting a bar with friends. We can also look at how educated a person sounds. Some people use very technical, possibly pretentious, words to describe their meal, while others use slang. Others are very careful about their punctuation and grammar while others aren’t.
+	  * Or we can directly relate the words that users use to the business itself.  For example, look at punctuation, especially (!). (!) hints at excitement, passion. Other ways reviewers display their feelings about a business is through the use of ALL CAPS.
+
+  * Connection Between Business Information and the Cafe’s culture:
+
+    * Look at the price range, hours opened, days opened, and specific business information. Price range can indicate class demographics. Hours opened can indicate age demographics (businesses that stay open late until at night are geared more for younger people) and culture (night life culture). 
+
+| More Business Information Labels (note that this is not comprehensive)      |           What this Can Indicate   |  
+|---------------------------------------------------------------------------- | ------------------------------  |
+| Takes Reservations
+| Accepts Credit Cards
+| Accepts Apple Pay
+| Parking
+| Bike Parking
+| Good for Groups      | Social gatherings for people to discuss ideas
+| Noise Level
+| Alcohol
+| Outdoor Seating
+| Has TV
+| Take-out
+| Attire                | More formal attire can indicate that a certain place is for those with higher classes
+| Good for Kids
+| Ambience
+| Wi-Fi               | More millenials
+| Good for Working
+
+
+
+
+
+
 
 

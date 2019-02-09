@@ -219,3 +219,207 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     -	Arrows can be multi-directional (one box can connect to multiple boxes)
     -	We can even have loops
     -	Can label the difference between the main theory and the auxiliary theory
+
+6. My words that I can think up of:
+
+  * architecture
+  * entertainment
+  * ambience
+  * plaza
+  * park
+  * shop
+  * laptop
+  * office
+
+7. Skimmed Andrew's Log.
+  * Variables to consider:
+  * income, neighborhood, growth, population, crime, density, cafes, time, buzz
+  * Great ideas, but I don't have time to look over everything
+
+# February 8, 2019
+
+  * Email to Andrew
+    * ME:
+    >> Hi Andrew,
+
+    >> It's Jin from Scenes with professor Terry Clark.
+
+    >> Since we're approaching the same problem but with different backgrounds, I think it would be a great idea for us to talk about how we can use Yelp data for connections to Bohemian culture.
+
+    >> I'm more of a programmer and a statistician than a sociologist, and I know you provide a lot more qualitative insight into these connections. I, on the other hand, can help you with looking at data and finding the techniques to measure these qualitative connections.
+
+    >> If you would be interested in talking, replying would be great.
+
+    * ANDREW:
+
+    >> Hi Jin,
+
+    >> For sure, I think it would be great to synthesize our skills in order to reach new conclusions. I haven't been specifically looking at Yelp's connections to Bohemian culture, but would you be able to give me some more specifics on what you and Ben are doing with regards to Yelp? If I recall correctly, I know you guys came up with a sort of style analysis program to classify types of art and maybe even music? Anyways, if there's any way I could be of use to you, let me know and I will try to think of something. Looking forward to hearing back from you.
+
+    * ME:
+
+    >> In terms of what me and Ben are doing, we're trying to build a model that can take in a mural and analyze some of its features using machine learning (like style and mood). We've put some thought into the style, but we felt that murals didn't really have a very well defined style, so we decided to focus on mood. Some of the moods that we are hoping to capture are anger, awe, disgust, fear, sadness, excitement, contentment, and amusement.
+
+    >> Once we build this model, we hope to run the model through different murals in the city. We would get a score (or rating) that describes how strong each emotion is for each mural. Each mural would have a geographical location tied to it, and we think that it would be useful to tie these emotional scores to the current politics around the location of the murals.
+
+    >> In terms of the music analysis, I'm not working on that; so you might have to ask Ben about it (but I got the impression that he's focusing more of his time on art analysis). 
+
+    >> I would very much appreciate if you could provide us with insight about how to tie emotional ratings to the politics around a certain neighborhood. For example, what geographical variables might we want to correlate emotional ratings with? What are some of the variables that professor Clark has worked on from the scenes book?
+
+    >> I was also curious about your insight into finding useful keywords in Yelp. What are the variables in the scenescape book that would be useful correlate with?
+
+    >> Also, could you keep me up to date on what you've been working on? If you have theories that you want to test, but do not have the coding background, I can provide a lot of help.
+
+    * ANDREW:
+    >> That all sounds interesting; I think mood has a lot to do with the emotional energy mentioned in a few of the documents I've read, can't remember which ones off the top of my head. I think we could definitely connect emotional scores with political data, and maybe even some existing dimensional analysis.
+
+    >> I don't know if Professor Clark has sent my log to you before, but I've attached it here in case you'd like to look at it. My recent work is concentrated in the last ~10 pages of the document so you'll have to scroll quite a bit, but I have mostly been focusing on making propositions based off Habermas and some sheets of variables I have looked at. Earlier log comments also include Scenescapes observations.
+
+    >> Scenescapes is truly multifaceted; there's a lot detailing economic, political, cultural, and social effects. Scenes are measured across 15 dimensions, but these are correlated with many individualized variables, such as the presence of certain amenities (anything from martial arts studios to churches) or walkability in a neighborhood. Geographically, most of the data is broken down into zip codes because the compiled sources (Bizzip/YP) use them for classification. For now, I think the most useful dimensions in Scenescapes that would determine Yelp keywords are self-expression and transgressiveness, since they are the ones most correlated with Bohemian culture and cafes. With these variables, I'm thinking that some words you could use are "creative" or "innovative" for excitement maybe? The other moods, particularly the negative emotions, seem harder to capture in relation to art. Perhaps the Yelp review reactions (Useful/Funny/Cool) could provide insight as well. Hopefully this helped a little bit, I can more thoroughly address some of these concerns in my next log if that works for you. Thanks so much!
+
+  * Email to Professor Clark
+    >> Dear Professor Clark,
+
+    >> I just want to recap on what I and Ben have done on the art project and how we can connect it with Scenes variables.
+
+    >> So we are currently trying to build a model that can detect the emotions from a mural. 
+    I've personally read a lot of literature combining machine learning and art. 
+
+    >> I've searched on Google Scholar with key terms:
+    >> "convolutional neural network" and art and emotion. The results produced about a dozen papers that were worth reading, and I read most of them (took notes on the log).
+
+    >> But searching on Google Scholar:
+    >> "convolutional neural network" and mural produced no meaningful result, indicating that what we needed to do was build a model that works for general art, and apply it to murals.
+
+    >> After reading many papers on the possible techniques, we decided on one that we want to replicate because it was the newest one and it was built to fix the problems of all the other papers. It is also built on top of huge amounts of psychological literature involving art and emotions. I've also read a lot of papers on the psychology of emotions and how they relate to art (took notes on my log). The emotions that the model can rate are:
+      * anger
+      * awe
+      * disgust
+      * fear
+      * sadness 
+      * excitement
+      * contentment
+      * amusement
+
+    >> Ben sent an email to the authors of the paper asking for their code and dataset. If they provide it to us, it would save a lot of time, and we can apply the code onto murals. If not, we will have to replicate the paper ourselves.
+
+    >> So how we can connect it to scenes variables? Pulling from the meeting on Wednesday, we believe that we can use the model to rate emotional responses from murals in different geographical locations. Once we have these ratings, we can use geographically weighted regression to correlate these emotions with scenes variables and political connotations.
+
+    >> It would be interesting to use this to see the Bohemian cleavages in different areas. 
+    Tying this to the Yelp data, we can look at keywords in Yelp reviews that somehow connect to these emotions.
+
+    >> My theories for each emotion:
+    >> anger, fear, sadness: If a mural has a rating of high anger, fear, or sadness, we have to ask why. Is there a political movement of activism surrounding the mural? Are people dissatisfied with something? This leads to a natural possible test of correlation between anger and variables like income, quality of life (measured by amenities), feeling of injustice (connection to the scene's book of egalitarianism). On the opposite end, the emotion of contentment can also be linked to the same variables.
+
+    >> awe: If a mural has a high rating of awe, it may be possible that the murals may be trying to attract visitors and tourists. This directly tied to amenities since places that try to increase tourism would likely to also have a lot of amenities. We would also expect that the location of the mural to be in a Bohemian environment.
+
+    >> disgust: I doubt there would be any high ratings of disgust in murals, but we may be surprised. 
+
+    >> excitement: More ties to Bohemian culture and self-expressionism.
+
+    >> These connections with scenes variables are preliminary. I've been talking to Andrew, who I feel can provide extremely valuable insight into more of these connections.
+
+    >> Last thing to address: why machine learning and not any other method? 
+    Machine learning is the only realistic way to analyze art in a quantitative fashion. Doing a search on google scholar will show that the top results will be applying machine learning to analyze art.
+    And why quantitative over qualitative?
+    Because quantitative approaches are extremely scalable. If we build this and it works for a city, this model will be an incredible tool to use when trying to analyze murals globally. Furthermore, we feel that qualitative analyze is too fickle, inconsistent, and time-consuming.
+
+    >> I'll send another email later detailing how we can use Yelp data to connect with scenes variables.
+
+    >> Best,
+    >> Jin Li
+
+    * TNC
+
+    >> Jin and over us,
+
+    >> Most of all I am delighted to see the clarity and specificity in this email.  You can clearly write out the logic of what you're doing and frame it in more general terms. It is here. This is exactly what we need for others to think about how to connect with what you're doing and to comment and try to mutually help one another.  
+
+    >> Everything is intermediary and all of these ideas are potentially useful. But how to focus a bit more on some and less on others? Just a few big points.
+
+    >> 1. you were using to terms machine learning and convolutional neural networks. But you seem to have searched on the second not the first? Are there other keywords or variations of these it might Bring in more related efforts?  
+
+    >> 2. if for some at least exploratory purposes we want to try more concretely immediately available data we could use some of the types of variables in our existing ZIP Code or point data for amenities, like the  Merge files that Andrew is reviewing.  These have thousands of variables ranging from cafés and Baptist churches to tattoo parlors bars museums and more more. If it would be simpler to connect the titles of some of these or data about them from some more readily available source that is already been used and Encoded by someone else– Such as bars compared to cafés or tattoo parlors–then we could use their results about how they relate to the psychological dimensions which you list here.  
+
+    >> The psychologists dealt with hundreds and thousands of specific personality dimensions such as these emotional reactions and their frequency or intensity reported by different individuals over the entire 20th-century. Near the end of the century they decided to focus most of their work on five key dimensions which subsumed many of these that you list like anger and disgust. We have compared the scenes 15 dimensions to the five psychological dimensions in a few papers one more general representatives like a psychological meeting which is not published in the second one is it chapter draft on the Chicago oral history on the website from that book. I would not bother to try to read these in detail right now but to build on my main conclusion witches the correlations are probably something like.2 2.3 at the highest and sometimes zero. 
+
+    >> 3. Maybe  the biggest point is very elementary statistics: if we're looking at paths or elites to be leads to seeing leads to D what is the impact of this causal set of linkages? The normal way to get a rough estimate assuming nothing else affects the causal path is to simply multiply the strength of each causal link by each of the others. So if the A to B  path is .2  and the B to C path is .2, the path from A to C is .04.  If we join this statistical logic with the philosophical logic how can we join interrelated propositions or two variables of the sort that you discuss, the point is your text often assumes a very strong relationship, which is essential for the logic to hold. But if the empirical relation is in fact week we're wasting our time very likely. 
+
+    >> The main example. When we try to reason this way that is semi fallacious is how strong are variables like income or education or race  or gender? You've heard me say many times including yesterday Wednesday's meeting that These are interrelated in ways explain about 15% of their variance with most things in social sciences study including us, such as voting going to a café buying a car getting married etc. 
+
+    >> I am not suggesting that we stop using these variables but do so only fully recognizing the weakness of the relationships, and build models and analyze data and look for better measures accordingly.
+
+    >> In the case of what we're doing with most of the variables you  discuss below what we need is to spell out as you're doing here what's up linkages are logically between each of the variables and analysis steps that might follow next. This is what we're doing with our café propositions that Andrew's been extending.  Then to think what data we have and what models can be used to test them. This is what we're doing discussing the Data from our existing files as well as the new kinds of possible measures and how far a field we should go and howl loose or week the relationships are between the new work and Core control variables that we are ready know about.  You and I discussed this Wednesday after the staff meeting and recorded it in five minutes or so that I sent you. Your email here is a perfect response, permitting me to articulate some of these points and asking how they might shift any of your possible next steps?
+
+    >> 4. the clear simple answer is that we may have nothing that is ready to join in the ways that we need to do so that will  work in a few weeks of work right now, and  we should quit or consider how to change course.  
+
+    >> 5. but how might we shift what we are trying (as you outline) to incorporate my points? One is for you to work a bit more on actual modeling with the local area data so that you realize more precisely what we have and how it can be modeled and not do things that are unworkable in a few weeks. ’this would be great for Andrew too.  OR expliclity ask what to change, such as changing these key words or not using murals or only trying to do this for a few locations where we have richer data as a quasi case study. 
+
+    >> 6. the biggest point is to try to articulate this in writing as you're doing now not just to dive in and waste time starting things that are not going to work for in a few weeks.  Recall what I just sent from dance over that he should be sending us some scraped yelp data from Toronto soon, so we can consider those data before long but should not try to duplicate the Toronto effort of scraping.
+
+  * Watched this [video](https://www.youtube.com/watch?v=yPaPZDg6JAA) on how to convert spss files into .csv.
+    * Basic commands in R:
+      * library(foreign)
+      * mydata = read.spss("C:\\Find\\Your\\File\\File.sav",to.data.frame=TRUE)
+      * write.table(mydata,"mydataFormR.txt")
+    * But note that conversions aren't that great (reading the converted csv into python is messy- all the rows and columns are messed up)
+
+
+* 1. Reread the last pages of Andrew's log, where he looked into the variables of the merged files.
+    * Building off of Andrew's log. Merged file of: •	SysfileInfo.DDPFrenchCommuneAggregate2BKvars2012_clean.sav.xlsx. I can't seem to find this in one drive.
+    * 480-490: crime. It may be possible that murals with negative emotions are associated with crime in that area.
+    * 526-532: sports. Still thinking about how we can find connections.
+    * 535-539: cinema. Is cinema somehow related to murals? I feel like people who appreciate cinema would appreciate murals.
+    * 568-580: jobs. Is it possible that positive emotions tie to jobs?
+    * 935-939: music. 
+    * 959-989: ethnic groups. Are there areas divided in terms of ethnic groups where mural emotional ressponses link? Maybe some ethnic groups have problems that they want to address, and they show it through murals.
+
+  * Spent some time looking through one drive for data to build on top of.
+    * Nothing here:
+      * [Art scenes conference Neubauer](https://uchicagoedu-my.sharepoint.com/:f:/r/personal/tnclark_uchicago_edu/Documents/Scenes.FAUI.ReferenceFiles%20via%20App%20From%20Silver/Art%20Scenes%20Confernce%20Neubauer.No%20Vidoes?csf=1&e=aTfbLp)
+      * [JElena](https://uchicagoedu-my.sharepoint.com/personal/tnclark_uchicago_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftnclark_uchicago_edu%2FDocuments%2FScenes%2EFAUI%2EReferenceFiles%20via%20App%20From%20Silver%2FArt%20Scenes%2EMaximeJElenaR).
+      * [Art.Misc](https://uchicagoedu-my.sharepoint.com/personal/tnclark_uchicago_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftnclark_uchicago_edu%2FDocuments%2FScenes%2EFAUI%2EReferenceFiles%20via%20App%20From%20Silver%2FArts%2EMisc).
+
+    * [Simplified Data](https://uchicagoedu-my.sharepoint.com/personal/tnclark_uchicago_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftnclark_uchicago_edu%2FDocuments%2FScenes%2EFAUI%2EReferenceFiles%20via%20App%20From%20Silver%2FHIstoric%2EArtsDistricts)
+      * Not sure where these places are and if there's any artwork connected to it.
+
+    * [Zips per art district](https://uchicagoedu-my.sharepoint.com/:x:/r/personal/tnclark_uchicago_edu/_layouts/15/Doc.aspx?sourcedoc=%7B351a8098-003b-4deb-b260-05c8aec4971e%7D&action=default&uid=%7B351A8098-003B-4DEB-B260-05C8AEC4971E%7D&ListItemId=34135&ListId=%7B8296D5AE-E18F-40B0-8987-917D0829EEAC%7D&odsp=1&env=prod).
+      * Notable variables include:
+        * population
+        * analysis area
+        * state 
+
+    * [Juliet Lee LA](https://uchicagoedu-my.sharepoint.com/personal/tnclark_uchicago_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftnclark_uchicago_edu%2FDocuments%2FScenes%2EFAUI%2EReferenceFiles%20via%20App%20From%20Silver%2FLA%20CUT%2FJuliet%20Lee%2ELA).
+      * Took a look into US_Merge_Hyesun.
+      * 800 megabytes.
+      * The [variable](https://uchicagoedu-my.sharepoint.com/:x:/r/personal/tnclark_uchicago_edu/_layouts/15/Doc.aspx?sourcedoc=%7B4E0762BA-0E8E-4E79-B563-8E5BADAAB7CF%7D&file=variablelistforJulietLee.csv&action=default&mobileredirect=true) list tells me almost nothing, so I would actually have to download and look at the data.
+      * The data is very messy and difficult to handle on my computer because its large, and there's no description on the variables.
+
+    * [This](https://uchicagoedu-my.sharepoint.com/personal/tnclark_uchicago_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftnclark_uchicago_edu%2FDocuments%2FScenes%2EFAUI%2EReferenceFiles%20via%20App%20From%20Silver%2FSPSS) may be useful to check out, but not sure which ones to look at.
+
+    * I still can't find the dataset that Clark wanted me to find. It was something about LA and mural pictures.
+
+  * Read the last 10 pages of Ian's Log. My thoughts:
+    * is data from spotify really pheasable? How do we get data corresponding to each cafe?
+    * I thought some of the videos were very interesting, though I'm not entirely sure how I can use these videos in word analysis.
+    * Is it possible that in the Yelp reviews, people would actually state the genre of music? How can I find this?
+    * Music key words that I can think of: pop, jazz, romantic, quiet, soft, acoustic
+    * searching Yelp with terms like "Bohemian cafe" can produce valuable results (since Yelp uses algorithms that link Bohemian to words like hip and whatnot)
+
+  * Dan Silver on Yelp data.
+
+    >> Great idea! Right now, though, we haven’t matched the three levels together, i.e. a) venues, b) user profiles and c) reviews. That should come in the next week or so hopefully, and I’ll send it over to you when it is ready. 
+
+    >> The MA student working on it is also this week supposed to complete a script that would enable global scraping as an automatic process (so that the scrapers respawn as they get blocked, and automatically check that they’ve got complete information for each area before moving on)…we’re going to let it loose on a sample of cities hopefully within the next couple of weeks to see how it goes.
+
+    >> The plan is to do it in a dual way, on one side “snowballing” out from Toronto based on the cities that torontians also review, and then on the other based on sampling large, medium, and smaller cities. The idea is that if we do it this way we’ll get a good sample even if somehow on the way we get blocked in a more permanent way.
+
+    >> Anyway, will definitely keep you updated! 
+
+    >>We had a good discussion today of Night time and scheduling of café bar Club closing hours and asked ourselves have to measure it. first answer; lets try Yelp!
+
+    >> times are included in our sample scraping data for one Chicago zip.
+
+    >> Are you still working on Toronto? Could we try to play with these data if you still have not move to the national scraping?  There are too few cases to try key word searches or regression modeling, but adding NIGHT or more “business hours” for corporate area amenities should be   a good step ahead.
+
+    >> We are also liooking for data how to capture music and images nearby like murals. 

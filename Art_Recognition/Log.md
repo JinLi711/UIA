@@ -940,3 +940,87 @@ Image segmentation is essentially a method to divide the image into subimages, a
 
     >> Best,
     >> Jin Li
+
+2. Got approved for RCC. World just opened up. Also, Ben got access to GPUs in TTIC Uchicago, so that's great.
+
+## February 8, 2019
+
+1. Tracking down the dataset.
+  * http://www.imageemotion.org/.
+    * need to request access to (IAPS) dataset. Here's the [site](http://csea.phhp.ufl.edu/media.html) to access it.
+    * but has others including 807 artistic photographs, 228 peer rated abstract paintings.
+  * The original [paper](https://arxiv.org/abs/1605.02677) that created 23000 images from Amazon Turk. Tried to google for the dataset, but couldn't find it. I was thinking to email the authors for the dataset.
+    * Here's one of the [guys](http://www.cs.rochester.edu/u/qyou/).
+  * EmotionalROI Database [here](http://chenlab.ece.cornell.edu/downloads.html).
+
+## February 9, 2019
+
+1. Talked with Ben. After emails, we both thought it was best to scratch the idea of trying to analyze murals because we started to realize that no one was actually working on murals. We also talked with Christina about our ideas, and there were problems with emotional classification because its hard to generalize emotions from a dataset to what we are looking at because different people have different reactions to the same mural.
+
+2. In a sense, we may have to restart our idea proposal. However, it does not neccesarily mean we are at square one; a lot of what I learned about image segmentation and deep learning modeling can still be applied. The only difference is that how we are applying it would be different.
+  * Our idea was to try to ground image analysis on architecture, because Hyesun did her PhD on it, and it would have the highest likelihood of being approved. We also think that there's no way that machine learning and artificial intelligence can not be relevant to the field of sociology. There's just so much data avaliable that we are not using, and sociology is about the study of people and how they interact and why. And what better way to study this than large scaled machine learning?
+  * My current goal is to search for possible datasets of architecture that we can use, and Ben's goal is to look through the literature first instead of the model first. Taking Clark's criticism, we feel that it may be our first priority to look at the causal links before we look at how to test these links.
+
+3. [Measuring the Unmeasurable: Urban Design Qualities Related to Walkability](http://www.ia.arch.ethz.ch/wp-content/uploads/2011/10/HS11L2_Ewing_Handy-2009.pdf?fbclid=IwAR0wHOEf5aMJZJmALV3fW-daXxJqk4MlcGhORN1leGKeII5z6NC6GBcweEA)
+  * published in 2009
+  * tries to quantatively measure subjective qualities of urban streets
+  * The 5 urban qualities that it tried to measure:
+    * imageability
+      * quality of a physical environment that evokes a strong image in an observer. Landmarks, distinctive buildings.
+      * related to the sense of place, legibility, enclosure, human scale, transparency, linkage, complexity and coherence
+    * enclosure
+      * lines of sight are blocked
+      * visual termination points
+    * human scale
+      * height, width of buildings
+    * transparency
+      * glass windows
+    * complexity
+      * number of noticable differences to the viewer
+  * perception: process of being aware of sensory infomation
+  * physical features, urban design qualities, individual reactions: can influence the way an individual feel the environment
+  * Thoughts:
+    * Are these measurements machine learnable? Is there a dataset that contains these measurements?
+
+4. [A machine learning method for the large-scale evaluation of urban visual environment](https://arxiv.org/pdf/1608.03396.pdf?fbclid=IwAR1sDYgSqeqZPMu9WREUPIiZnRt9xIW_84SMjyztYmCtHWG9jS0_qOzdhOg).
+  * Skimmed this paper
+  * use computer vision to evaluate the urban visual environment
+  * Quality of facade determined by:
+    * Composition
+    * Material
+    * Detail
+    * Color
+    * Maintenance
+  * used Beijing as the case of study
+  * manually labeled building and street images
+    * their data is [here](http://www.urbanvisionstudy.com/). But link doesn't seem to be working.
+  * limitations of their paper:
+    * size of expert label is small
+    * CNN has trouble capturing details
+
+5. [Using Convolutional Networks and Satellite Imagery to Identify Patterns in Urban Environments at a Large Scale](https://arxiv.org/pdf/1704.02965.pdf?fbclid=IwAR2SWAjXztZ100FlZkakmOhnskqVlXtjzsVOcZZ03hAtQ3HoPZOSKgWBkrA)
+  * Skimmed
+  * classified urban environments
+    * Agricultural + Seminatural areas + Wetlands
+    * Airports
+    * Forests 
+    * Green urban areas 
+    * High Density Urban
+    * Fabric
+    * Industrial, commercial, public, military
+    * Low Density Urban
+    * Fabric
+    * Medium Density Urban Fabric
+    * Sports and leisure facilities
+    * Water bodies
+
+6. Possible Datasets:
+  * Searched on Google: google street view dataset
+    * [Google Street View Pittsburgh Research](http://classif.ai/dataset/google-street-view-pittsburgh-research/)
+    * [25 million images Dataset](https://github.com/amir32002/3D_Street_View)
+      * unlabeled
+    * [Using deep learning and Google Street View to estimate the demographic makeup of neighborhoods across the United States](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5740675/)
+      * skimmed
+      * income, race, education, and voting patterns can be inferred from cars
+  * Searched on Google: geographical image dataset
+    * [Free GIS Data](https://freegisdata.rtwilson.com/)

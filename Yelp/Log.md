@@ -277,6 +277,46 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
     >> Scenescapes is truly multifaceted; there's a lot detailing economic, political, cultural, and social effects. Scenes are measured across 15 dimensions, but these are correlated with many individualized variables, such as the presence of certain amenities (anything from martial arts studios to churches) or walkability in a neighborhood. Geographically, most of the data is broken down into zip codes because the compiled sources (Bizzip/YP) use them for classification. For now, I think the most useful dimensions in Scenescapes that would determine Yelp keywords are self-expression and transgressiveness, since they are the ones most correlated with Bohemian culture and cafes. With these variables, I'm thinking that some words you could use are "creative" or "innovative" for excitement maybe? The other moods, particularly the negative emotions, seem harder to capture in relation to art. Perhaps the Yelp review reactions (Useful/Funny/Cool) could provide insight as well. Hopefully this helped a little bit, I can more thoroughly address some of these concerns in my next log if that works for you. Thanks so much!
 
+    * JIN 
+
+    >> Where did you find from your log:
+
+    >>	SysfileInfo.DDPFrenchCommuneAggregate2BKvars2012_clean.sav.xlsx
+
+    >> I can't seem to find it in one drive. 
+
+    >> Thanks for the insight! I really need help in trying to tie murals in cities with scenes dimensions.
+
+    >> Also, do you know of any dataset that would be useful for me to check out?
+
+    * ANDREW
+    >> That file is in the Dropbox under Hyesun's folder, located in DataFiles/France_merge_file as a .sav file. Unfortunately my computer skills aren't advanced enough to do much with opening different file types efficiently, so given what I have to work with, I've only looked at about 5-6 data sets. I would really like to open MergeB-35.sav fully, but it doesn't work for me, even when I try to convert it to open in Excel; thus, I've only been able to get bits and pieces from making it a .txt. I'm guessing that this file should be useful because it's supposed to contain most, if not all, of the American variables? I've attached one on Korea too that I was able to thoroughly analyze in my log, it contains a lot of useful data too. Let me know what you think, thanks!
+
+    * JIN
+    >> 'll try to open it for you today or tomorrow. Is there anything in particular that you are looking for in the data? (I can provide just the headers or just the top few rows since the file is large)
+
+    * ANDREW
+    >>  think any trends or variables related to the social/cultural composition of a neighborhood would be interesting; for example, housing density or any dimensions (neighborliness, glamour, etc.) that stand out. I'm not able to see all of the variable names, let alone the data associated with each, so even just that basic outline would help.
+
+    * JIN 
+
+    >> Just heads up for R Code:
+
+    >> library(foreign)
+    >> library(dplyr)
+
+    >> Read the data from spss
+    >> mydata = read.spss("PATH_TO_FILE", to.data.frame=TRUE)
+
+    >> Get only the column names
+    >> col_names <- colnames(mydata)
+
+    >> Get the head of the data
+    >> head <- head(mydata)
+
+    >> Write the head of the data to a csv file
+    >> write.table(head,"PATH_TO_FILE2")
+
   * Email to Professor Clark
     >> Dear Professor Clark,
 
@@ -357,6 +397,220 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
     >> 6. the biggest point is to try to articulate this in writing as you're doing now not just to dive in and waste time starting things that are not going to work for in a few weeks.  Recall what I just sent from dance over that he should be sending us some scraped yelp data from Toronto soon, so we can consider those data before long but should not try to duplicate the Toronto effort of scraping.
 
+    * Ben Picker
+
+    >> I am going to think out loud here. Please take any points I make with a grain of salt. I'm just thinking creatively. 
+
+    >> The statistical work we plan to do with machine learning tools has a specific purpose. We want to take a images of murals with their addresses and use algorithms to identify what emotions occur within the murals. Once we have these emotion profile for each image, we will join this with the scenes data. 
+
+    >> I am considering what our research focus should be. One basic question is, can the emotions expressed in mural art at specific locations be used to predict properties about their surrounding communities? 
+
+
+    >> A first issue that should be addressed is whether studying emotions at a community level is valuable for understanding scenes. 
+
+
+    >> Why Scenes and Emotions Should Be Related 
+
+    >> Regarding the relationship between scenes and emotions, I need to see the specific papers you’re referencing so if you could give exact titles that would be great so I can see what approach you took. I accept in your studies, no correlation may have been found. 
+
+    >> But the theory in my opinion doesn’t support that viewpoint. From a theoretical point of view, I find the claim that emotions and scenes won’t be correlated in some way, to be highly unlikely. It may be difficult to specify exactly how, but I am sure a relationship exists. 
+
+    >> I am going to explain why I believe this is so. 
+
+    >> On a basic level, emotions are what drive behaviors and, for humans, usually form the basis for artistic expression. But emotions are not unique to humans and if you observe animal communities across mammals, emotional expression from individuals affects collective decision-making significantly. 
+
+    >> For instance, in ape species, infanticide often occurs from alpha males wishing to kill off competing offspring. In response, female apes engage in allocentric mothering, where the mothers all work together as a community to protect their children. Emotions from one female affect emotions from another and, in this more simplistic context, it is quite visible how emotions are intended to impact communities. 
+
+    >> Social neuroscientist John Caccioppo has shown in countless publications that the feeling of “loneliness” is intended to push individuals to be part of a community. When we feel lonely, we are suppose to feel sick and unwell. It is how our bodies and brains tell us “You are in danger. You are alone. You need to find your community.” and this changes our behavior. 
+
+    >> I could cite more evidence, but the point is emotions have strong impacts on how members of communities act and their collective decisions. 
+
+
+    >> Behavioral economics has pioneered our understanding that these emotions have direct implications for decision making. A classic example is Daniel Kahneman and Amos Tversky’s 1979 Prospect Theory: An Analysis of Decision Under Risk. For example, Kahneman and Tversky found that the median coefficient for loss aversion to be 2.25 higher than reward seeking, implying people are more afraid of losing money than gaining a reward. This is a tangible example of how emotions can impact measurable economic variables like gambling behavior. 
+
+
+    >> Thus, not only are certain emotions inherently designed to influence our communities, but psychologists and economists now have shown that you can measure their impact on economic variables. 
+
+
+    >> The examples I presented above is behavioral microeconomics. But presumably there is behavioral macro-economics. 
+
+
+    >> At a community level, we can think of communities as having collective emotions. Here is an excerpt from Collective Emotions in Conflict Situations: Societal Implications
+
+    >> “Of special importance for us is the assumption that just as individuals may be characterized by a dominant emotion, societies, too, may develop a collective emotional orientation (Jarymowicz & Bar-Tal, 2006). This process occurs as a result of particular societal conditions, common experiences, shared norms, and socialization in a society (Kitayama & Markus, 1994). The understanding of the central role of emotions within social and political contexts, with the acknowledgment of their potential to become a societal phenomenon, leads almost naturally to their examination as part of intragroup and intergroup processes. This issue concerns the role of collective emotions in situations of intergroup conflict and peace making.” 
+
+
+    >> https://pdfs.semanticscholar.org/db1b/424e6ffa0a2fd1d5416248c2d3f3e396ec94.pdf
+
+
+    >> I presume there is a deeper literature on this that specify exactly how researchers have approached measuring community emotions. 
+
+
+    >> Behavioral macro-economics is an emerging area of research currently attempting to incorporate principles of emotion into the way economists measure. Here is an example 
+
+    >> We [assume] that agents experience cognitive limitations preventing them from having rational expectations. Instead, these agents use simple forecasting rules (heuristics) and evaluate the forecasting performances of these rules ex post. This evaluation leads them to switch to the rules that perform best. It can be argued that in a world of great complexity that nobody fully understands, such a process of adaptive learning might be the rational way of deal handling this complexity (Simon 1957, Gigerenzer and Selten 2002, Ackerlof and Shiller2009).
+
+    >> This adaptive learning assumption introduced in an otherwise standard New Keynesian macroeconomic model produces endogenous waves of optimism and pessimism (animal spirits) that drive the business cycle in a self-fulfilling way. This also leads to a two-way causality. That is, optimism (pessimism) leads to an increase (decline) in output, and the increase (decline) in output in term intensifies optimism (pessimism) (De Grauwe 2012, De Grauwe and Ji 2017a).
+
+    >> An important feature of this dynamics of animal spirits is that the movements of the output gap are characterised by periods of tranquility alternating in an unpredictable way with periods of intense movements reflecting booms and busts. Technically, this means that the distribution of the output gap and output growth is non-Gaussian and exhibits fat tails.
+
+    >> There is now a significant body of empirical evidence showing that the output gaps (and also the growth of output) in OECD countries do not exhibit a Gaussian distribution, but are characterised by excessive kurtosis and fat tails. Fagiolo et al. (2008) and Fagiolo et al. (2009) carried out important econometric analysis documenting the non-normality of the distribution of output gaps and growth rates of GDP. Thus, our behavioural model predicts that in the real world the output gap does not follow a normal distribution, but is characterised by excess kurtosis and fat tails. This feature of the higher moments of the output gap is generated endogenously in the model. It is not the result of imposing such a feature on the stochastic shocks hitting the economy.
+
+    >> https://voxeu.org/article/behavioural-economics-also-useful-macroeconomics 
+
+
+
+    >> So, not only can emotions drive individual decisions, but collective emotions can perhaps explain larger trends in economic behaviors (e.g. stock crashes). 
+
+
+    >> Given the above, there is no question emotions should be a useful tool in sociological analysis of communities. 
+
+    >> Mural art as a tool for sociological analysis
+
+
+    >> Both Scenescapes as well as Cristina’s chicken and egg paper and other literature support the claim that art influences economics. The presence of art jobs can affect job growth. 
+
+
+    >> But part of why art matters is it inherently is emotional. Art is naturally a means for emotional expression. And therefore, if there is a correlative or causal link between jobs and economic growth, emotions should play a role. 
+
+
+    >> For instance, on page 157, Scenescapes discusses walkability and its relationship to population growth.  The graph on page 158 shows clearly that (1) walkability and population growth are related and (2) local authenticity is an important conditional factor that affects this relationship. 
+
+
+    >> Without question, mural art plays a role in walkability. When I walk by murals downtown, often they can be extremely attention grabbing and cause me to stop dead and admire them. Intuitively based on experience, understanding more about the content of these murals and how it affects walkability would be important then since walkability is related to population growth. 
+
+
+    >> It also presumably is related to the scenes dimensions, even if a correlation hasn’t yet been determined. Scenescapes shows how the scenes dimensions offer a critical tool for sociological analysis, but they are not without limitations. It is possible the low correlations seen between scenes and emotions in the past is due to interpreting the conceptual definition of the scenes in a way that doesn’t match their operational definition (as shown in chapter 8 of Scenescapes). 
+
+
+    >> In short, I think logically understanding the emotions in mural art should help us understand better the relationship between walkability and population growth. 
+
+
+    >> Example: Graffiti  
+
+
+    >> Depending on our definition of art, graffiti that arises as a form of vandalism and property damage could be considered a type of mural art. According to Google a mural is “a painting or other work of art executed directly on a wall.” Even if we don’t consider graffiti to be a type of mural, it’s highly likely graffiti influences how residents feel about mural art. 
+
+
+    >> https://www.jstor.org/stable/pdf/3590167.pdf?casa_token=OkNJBSUQKuYAAAAA:jT_jPA4QkEF3Xk006pjGQ_dSm7sBWtwV40lgjIyw_iMyIVlCLSZJvkTrU7NLQO8Vh_kcr059cCh2XLG31rgqqU842K7WNPyYwQhkcNvewjMKlqlAV9k
+
+
+    >> In this 2004 article, Steve Gibbons argues that domestic property crime such as vandalism or graffiti may motivate fear of crime in the community. The abstract states: 
+
+
+    >> This paper estimates the impact of recorded domestic property crime on property prices in the London area. Crimes in the Criminal Damage category have a significant negative impact on prices. A one-tenth standard deviation decrease in the local density of criminal damage adds 1% to the price of an average Inner London property. Burglaries have no measurable impact on prices, even after allowing for the potential dependence of burglary rates on unobserved property characteristics. One explanation we offer here is that vandalism, graffiti and other forms of criminal damage motivate fear of crime in the community and may be taken as signals  or symptoms of community instability and neighbourhood deterioration in general. 
+
+
+    >> Furthermore he says 
+
+    >> Crime in urban areas has effects over and above the direct costs to victims, the costs of deterrence and the costs of law enforcement. The 'fear of crime', whilst not a uniquely urban phenomenon, seems closely related to densely populated and built environments (Bannister and Fyfe, 2001). Urban crime has, in addition, a powerful influence on perceptions of area deprivation. 
+
+
+    >> One might imagine then that the content of a mural will significantly alter the perception of whether it is merely decorative or a form of “property damage.” And it may also be possibly that residence may start feeling more negatively towards murals if they perceive them to be acts of vandalism. 
+
+
+    >> To understand the social impact of graffiti, consider for instance “Race, affect, and emotion: young people, racism, and graffiti in the postcolonial English suburbs.” Anoop Nayak argues that 
+
+
+    >> https://journals.sagepub.com/doi/pdf/10.1068/a42177?casa_token=m5I-5mlK8zsAAAAA:Kp2o_IiJATofVmloeZHrSt0XKPNK9QK-MsDUsFV_PvyZS6J0uROtqH5Ap19hnEvYJCV6hHVn2NXa
+
+
+
+    >> Racist graffiti makes palpable a silent assumption that white working-class communities are the victims of an encroaching multiculturalism that must result in a fatal `last stand'. These emotions have a critical role to play when it comes to the feelings and resentment that surround access to public housing throughout the West Midlands conurbation. As Ahmed (2004a, page 128) recalls, ``fear does not involve the defence of borders that already exist; rather, fear makes those borders, by establishing objects from which the subject, in fearing, can stand apart''. These affects then are always in emergence, calibrated through the sediments of past histories of race that exist in the folds of contemporary English suburban dwelling. It is an exterior that we can now penetrate with a closer analysis of racist and nationalist graffiti that graphically capture how space is transformed into white territory
+
+
+    >> This is just one example, but there are a bunch of papers on how graffiti influences communities. 
+
+
+    >> And graffiti then would certainly influence walkability. 
+
+
+    >> So, imagine the following two situations
+
+    >> A community has murals containing more positive imagery. Residents find it uplifting and enjoyable, which improves walkability and leads to population growth. 
+
+    >> A community has murals containing negative imagery. Residents find it fear-inducing and feel it is like graffiti, which reduces walkability and decreases population growth. 
+
+
+    >> These are just some crude elementary hypothesis, but with more writing and discussion, we could build up more specific propositions that relate to Scenescapes. 
+
+
+    >> We could also address some of the issues in past papers connecting scenes to emotions and try to understand why they previously failed to find a relationship between scenes and emotions since there is an abundance of evidence and literature as I mentioned earlier that indicates there should be. 
+
+    * Terry Clark
+
+    >> Yes these are all reasonable points. And authors dealing with very small ends will write and think more deterministically. But if we raise the N we have over the years of our research the beta. / Pearson rs declin. My main references you’ve heard me say this hundreds of times in classes is to look at the literature in any of the social science journals
+
+    >> We can communicate more cumulatively if you address more specific points that I make which show how I go beyond the points you’re making here but don’t disagree with them
+
+    * Ben
+
+    >> I will reply later to your previous points in a separate email. I will address the issue of finding papers in this email. 
+
+    >> Searching through the journals isn't turning up anything along the lines of the papers you describe.  I need more specific information to efficiently search properly. Can you give me specific titles of the papers you have in mind or the authors? Even just knowing the authors might be enough. If you're one of the authors, can you provide your co-authors? 
+
+    >> Here are some example searches I tried
+    emotion sociology correlation pearson
+    https://scholar.google.com/scholar?start=10&q=emotion+sociology+correlation+pearson&hl=en&as_sdt=0,14 
+
+    >> emotion "terry" "clark" scenes
+    https://scholar.google.com/scholar?start=10&q=emotion+%22terry%22+%22clark%22+scenes&hl=en&as_sdt=0,14
+
+    >> emotion sociology plutchik macro
+    https://scholar.google.com/scholar?start=10&q=sociology+emotion++plutchik+macro&hl=en&as_sdt=0,14
+
+    >> None of these turn up papers discussing Pearson correlations consistent with what you are saying. I went through like 10-15 for each search. 
+
+    >> By contrast, I fairly quickly found one paper in support of using emotions in the manner I am talking about that does involve Pearson correlations with emotions and abstract categories for measuring culture.  I attached the paper. It discusses a framework that uses some author Hofstede's 4 proposed dimensions for culture classification. They categorize countries according to 4 dimensions: 
+      * Power distance
+      * Uncertainty avoidance
+      * Individualism
+      * Masculinity 
+    >> In this article, they then analyzed the emotions of facial expressions in photographs of individuals from these countries. 
+
+    >> In order to examine the effects of cultures on the perception of emotion, Pearson product-moment correlations and Spearman rank-order coefficients were computed between the two indexes of three of the four cultural dimensions and each of the emotion variables. The masculinity dimension was dropped from the analyses, since an adequate test of the hypotheses concerning this dimension would involve the testing of sex differences for each culture, and examining how the degree of sex difference relates to masculinity as a culture-level concept. All significant correlations reported for the remaining three dimensions were also significant using the rank value for each of the dimensions, and with the rank-order coefficients using the same variables. All significance tests are two-tailed.
+
+    >> I have attached screen shots of the correlation tables. As you can see, several of the correlations are well above 0.5 in magnitude and also tested to 95% confidence. 
+
+    >> From a methods standpoint, this study is actually similar to what we are proposing: 
+    >> rather than analyzing faces, we would be analyzing paintings. Analyzing faces and paintings is remarkably similar from a machine learning perspective and emotional analysis of faces is heavily, extensively studied. Therefore, I am confident if a study like this has succeeded for facial analysis, one for mural analysis would also be plausible.   
+    Rather then doing it by hand, we would use machine learning classifiers. 
+    Rather that tying individuals to countries, we would tie murals to zip codes. 
+    Rather than using Hofstede's dimensions, we would use your scenes dimensions. 
+
+    >> In brief, I think this paper provides an excellent example both that (1) what I am saying is plausible theoretically and (2) that our proposed approach could work operationally since the results shown in this paper are what I am envisioning murals could do for walkability relative to scenescapes. 
+
+    >> Of course, it will take us some time to refine testable hypotheses on paper, but both conceptually and operationally I think what Jin and I have proposed seems solid as a ballpark idea to develop into a proposal. 
+
+    >> If you have evidence to the contrary of what I am saying, I welcome anything specific you can give me so that I can see how we are off base. But I need specific citations. 
+
+    * Terry Clark
+
+    >> Sorry Ben,  but you skipping the 2 main points I am making:
+    >> 1. that with LOW N’s the coefficients rise, and the paper you send has N’s of about 7 to 15 I guess coders? I read thru and it does not seem  to say, referring to
+    another study only for this “detail".
+    >> 2. Second more critical is if we know that no ONE variable — emotion, income, race, SCENES etc — is totally deterministic, alone or combined, we need a multi causal analysis of many variables.  And if we put these in a causal chain, the impact of a more causally distant variable on subsequent variables is the PRODUCT of all the low coefficients.   But theLOGIC you and MANY people including social scientists are following ASSUMES, if you say we have NO DATA on  X but it is related to Z, and  Z is related to W, and W is related to G  then you need the product of all these coefficients to join the LOGIC. 
+
+    >> I say this in most of my classes and many miss the point because it contradicts the media and many deterministic sounding intellectuals. “My theory says Why”. Paul Lazarsfeld did a famous paper on this called The Art of Asking Why? 1930s which still holds here.  And  it is discussed a bit more in ch 2 of the City as an Entertainment machine, p..22-33, esp. the table on p.33 which shows the LOW r’s of income, education, and race, age. Sometimes I pass this table out to all and we discuss for an hour.  Most students disagree but it takes time to get the point and internalize it. Look at the journals with N’s that are of the normal MINIMUM for comparison across variables in muticausal work:  about 1500 which is the standard low N for national citizen surveys.  N’s of 7 don't count. Yes I am unusual in making this point, but reasonable persons can be persuaded if they think and look at the evidence.
+
+    >> I am in no Way opposed to emotion or psych variables. My BA is in Psych and I have done many studies that touch on psych variables, like citizen surveys. But my DATA and findings are NOT outliers; just look at the adjusted R2 in a  multiple regression study with 1500+ cases. The is the “common variance”. Read Hubert Blalock on causal inference in path analysis work for  empirical measures of causal sequences. 
+
+    * Hyesun
+
+    >> Walkability is very complex term that needs to address multitude of definitions. Measuring walkability by what dimensions? Have you read any literatures? Walkscore and other real estate tools simply measure walkability based on density of services, not considering actual pedestrian traffic or civic activities happening on the street. 
+
+    >> Usually downtown /CBD area  is more walkable than other neighoorhoods in the city because there is more concentration of transportation, services and businesses. 
+    Thus, it is hard to simply say walkability has increased due to murals because these places are already more walkable than other neighborhoods in many cities. I attended symposium at UIC last week , and there was a session where mural artists presented and talked about their methodology. One of them, Chris Devins, is actively working in Bronzeville through murals, and he blends urban planning and arts as tool of place making. His work: https://www.chrisdevinscreative.com/bronzeville-legends-initiative/
+    You see those murals in Bronzeville are very expressive of historic figures related to black metropolis, Jazz, and other successful one that preexist. I think these murals that have special connection to history and roots drive more dramatic impact or changes than downtown murals that are usually less implicative but more art itself. The other mural artist, Andy Bellomo, has been working in LGBTQ communities and other underserved areas, and her works advocate social change and human rights. Those artists at the symposium also said that when mural art is commissioned in more marginalized or ethnic neighborhoods, those emotions typically become more sensible representations of communities because people can engage more in those emotions. In contrast, murals in downtown are usually commissioned for the purpose of activating commercial corridor with less political expression. They use lots of geometries, colors, objects, natures, and animals instead of actual “message” that potentially moves emotions. Of course, personally I am also big fan of murals no matter where they are, but just to differentiate their styles, murals in actual communities have distinct appearances. I think there are different types of emotions that need to be translated into different physical activities on the street level, not just one walkability or population growth. 
+    For example, one of propositions could be like, "Do those murals in low income black neighborhood build more “traditional and neighborly” emotions, and attract more visitors to cafe (other existing commercial amenities) near churches?”   This is just one example to stimulate ideas. 
+
+    >> How would you gather mural data? 
+    >> I have found several sources that have list of murals, but are you planning to create a dataset based on several sources? 
+    >> Or do you have one combined set already?
+
+
+
+
   * Watched this [video](https://www.youtube.com/watch?v=yPaPZDg6JAA) on how to convert spss files into .csv.
     * Basic commands in R:
       * library(foreign)
@@ -430,6 +684,8 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     * I think its very interesting how some of the photos aren't even of food. Sometimes its something distinguishable about the place (like a hanging artwork)
     * cool
     * why are we looking at only singular words and not words in context?
+
+  * [The City as an Entertainment Machine](https://www.dropbox.com/s/ostkfi2qjkih7h8/Full%20Book.July%202011.pdf?dl=0).
 
 # February 8, 2019
 
@@ -532,6 +788,46 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 | Ambience
 | Wi-Fi               | More millenials
 | Good for Working
+
+6. Special Features of Yelp:
+  *  There are features that users can use (but are optional). This includes the number of check-ins (number of times that Yelp reviewer says to have visited the business) and the number of people who voted for a specific review (users can vote useful, funny, or cool). Possibly, reviews with more votes should be weighted more because more people agree with that review. We can also think about why a certain person would check in multiple times.
+  * Note that some reviews are [filtered](https://www.youtube.com/watch?time_continue=71&v=PniMEnM89iY) by Yelp. Basically, only ¼ of the reviews are not recommended (this does not mean one can not see the reviews, it is just not in plain sight). The reviews are filtered by Yelp’s algorithms, and their intent is to filter fake reviews, rants, and unknown people without credibility. The reviews that are filtered do not affect review count or the average stars of a business. The algorithm is also constantly running, so a review that has been filtered can be unfiltered, and visa versa.
+  * It is possible to comment on a Yelp review. Many business owners do this to address issues that reviewers have with a business (many times, the business owner apologizes and promises better service). 
+
+7. Who is reviewing:
+  * We can look at information relating to who is reviewing. Many of the people who review in cafes and bars have a lot of friends in Yelp (over 100) and have reviewed other things. For example, look at [Christopher V.](https://www.yelp.com/user_details?userid=hT2Mw5m_SXBDVBuvA3KY-w) , who I found since he reviewed [Plein Air Cafe & Eatery](https://www.yelp.com/biz/plein-air-cafe-and-eatery-chicago-2?osq=cafe), a cafe in zip code 60637. Looking at his profile, he seems to love reviewing bars, cafes, restaurants. These reviewers can be a great asset for deciding how to connect different businesses.
+
+	* Some reviewers take pictures of things other than food (like a painting on the wall). Other reviewers also comment about things other than food (like how a cafe feels like the 80’s.)
+
+8. Cafes vs. Bars
+
+  * Look at the time ranges of reviews. Are there certain time periods where the number of new reviews increases/ decreases? This may correspond to times of major political movements, like an election of a new council or president.
+	* Compare words that are tied to emotions.
+	* Look into other reasons why people say they attend a bar or cafe other than the food. For example, what do people say about their purpose of being in a bar or cafe? What emotions do they feel (relaxed, at ease, “high”, happy)?
+	* What cultures do bars/cafes provide? What do the cafe/bars express in terms of art, music, etc. How does this say anything about politics?
+	* Look at the number of new bars/cafes that appear every year. This may indicate something about the new political atmosphere.
+	* Are there any indications on political issues (like acceptance of Africans, gays, feminists,)
+	* What are cafes and bars surrounded by (what restaurants, other bars, or museums, etc surround this location)?
+	* These rhetorical questions will be answered when I can get a larger dataset.
+
+9. Problems That I’ve Encountered or Expect to Encounter
+
+  * How to normalize everything:
+	  * Dealing with plurals: (cats vs cat)
+	  * Dealing with contractions (I’ve vs I have)
+	  * Spelling errors
+	  * What information am I losing when normalizing? 
+
+  * How to deal with word groups:
+	  * If we only consider words by themselves, “I do not like this place” would be interpreted in the same way as “I like this place.”
+
+  * Embedding
+
+    * Possible Ideas for Analysis
+	    * Compare clusters of words to the standard cluster (the one made by google).
+
+
+
 
 
 

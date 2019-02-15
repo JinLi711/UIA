@@ -1006,7 +1006,52 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
   >> Happy to Skype in next days. Send email to others too please?
 
   * JIN
-  >> I'm confused about how the master proposal would be useful for me. I get that I would probably be applying a similar sort of geographically weighted regression, but I'm not sure how else I can use this proposal since it lacks a lot of details. Am I missing something
+  >> I'm confused about how the master proposal would be useful for me. I get that I would probably be applying a similar sort of geographically weighted regression, but I'm not sure how else I can use this proposal since it lacks a lot of details. Am I missing something?
+
+  * TNC
+  >> By master proposal do you mean the rough draft proposal for an MA by. Yong Cai?  
+
+  >> At this point is there it is a rough draft in the question is how might we potentially overlap help make suggestions or whatever. One of the main themes that we have discussed is what are the types of neighborhoods and characteristics such as are included in the murals the Facebook for your discussions of cafés in bars and other institutions in different neighborhoods. How in one of the pieces fit together? How can we use statistical procedures it will identifyTiny pieces Atoms and put the Atoms together and more meaningful larger sections to build  people and animals to follow the analogy.
+
+  >> These data could provide one more set of variables in addition to the amenities and other things which we have.
+
+  * JIN
+
+  >> I took a look at this dataset, and it is quite interesting.
+  >> This site here contains graphs that showcase the information. 
+
+  >> The most prominent variables for me were:
+
+  >> description (describes what the event is about).
+
+  >> There was so much diversity in the descriptions that it may be hard to extract valuable insights. But we can probably try to search for keywords just like in Yelp. We could even run the same keywords that we created for Yelp. 
+
+  >> duration (how long the meeting last)
+  >> There are probably correlations between how active a scene is and how long a meeting is in that scene.
+
+  >> category name (example: career and business, book clubs, art and culture)
+  >> I thought that these categories were incredibly broad, and not all were related to scenes (like career and business, which was a very prominent category in these meetings).
+
+  >> Since the data is geolocated by longitude and latitude, we create a similar map to what Hyesun created for displaying the increases/decreases in the number of cafes. Ying Cai graphed the categories on a map, which was very interesting. But we can extend this further: we can create a graph for increases/decrease of a particular category over a certain period of time.
+
+  >> I do have some reservations about using this data:
+
+  >> My biggest problem is that these meetings are quite temporary compared to the things that we are studying. Cafes and murals last, and we can argue that what stays create scenes; events that only happen once are too transient to develop a scene.
+
+  >> Also, judging from the data, a lot of the reasons for meetings do not create what we defined as a scene. For example, meeting for jobs and businesses and book clubs.
+
+  >> Just some preliminary thoughts.
+
+4. Email on Trump Paper R Error
+  * JIN:
+    >> You said there was an error in the trump R code?
+
+    >> I presume it's this file or this one.
+
+    >> If there's a problem, could you state the problem so I could try to help?
+
+    >> I'm not incredibly familiar with R, but I can try.
+
 
 
 

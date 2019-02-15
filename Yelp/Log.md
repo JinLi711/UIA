@@ -317,6 +317,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     >> Write the head of the data to a csv file
     >> write.table(head,"PATH_TO_FILE2")
 
+    * ANDREW
+    >> Sure. So what I gather from the instructions and the log is that there are some missing counties for specific variables, most notably "religneg," crime rate, and non-white populations. I'm trying to figure out primarily what causes the missing variables and also what "religneg" means; right now, I think it's a combination of institutions? I'm still trying to follow up on Professor Clark's response from last night and continue working on it.
+
   * Email to Professor Clark
     >> Dear Professor Clark,
 
@@ -920,6 +923,90 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
   >> I question whether most people can even differentiate these types of music. If they can't, I wonder if music could still predict Bohemianism.
 
+# February 14, 2019
+
+1. Email To Hyesun on GIS Graphing
+
+  * HYESUN
+  >> I created maps showing distribution of cafes, and changes of cafe vs. bars. 
+
+  >> I also zoomed in NYC, Chicago, LA, and New England region to see local variations.
+  >> In all these area, cafes are growing and bars are going down. There are more zip codes where cafes increase and bars decrease than zip codes with bars increasing. Although having increase of cafe and decrease of bars is general trend, we can look at more regional differences. 
+
+  >> In State level,
+  >> Cafes 11% increased, Bars 4% decreased in Illinois
+  >> Cafes 27% increased, Bars 4% decreased in New York
+  >> Cafes 19% increased, Bars 5% increased in California
+  >> Cafes 2% decreased, Bars 46% increased in D.C
+  >> Cafes 42% increased, Bars 24% increased in Maine - Other New England states also generally showed increase of both cafes and bars!
+
+  >> These aim to help understanding of national distribution. Any other suggestions to see more variations?I can join with demographics or Scenes dimensions? 
+
+  >> I have geocoded cafe and other businesses for Chicago, Paris, and Seoul which I will link with more street level urban forms as case study.
+
+  * JIN
+
+  >> Would it be interesting (or possible) to look at the number of cafes per certain population? So for each region, divide the number of cafes by total population for normalization. I'm only asking this since the first map doesn't tell me much because there may be more cafes simply because there are more people in the area. I feel that the first map is telling me
+  more about the population distribution than cafes.
+
+  >> divide the number of cafes in a certain area by the total population of that area.
+
+  >> I also think it may be useful to look at gradients (the percent change of cafes) than binary (whether it either increased or decreased).
+
+  >> These are only suggestions.
+
+  * HYESUN
+
+  >> Thanks for calling out those maps.
+  >> I almost forgot about them. 
+  >> Yes. I can do “cafes divided by population” and “percentage change”  That’s very handy in GIS. 
+
+  >> Have you seen this? https://www.bustle.com/articles/155686-which-us-city-has-the-most-coffee-shops-these-are-the-best-places-for-coffee-lovers
+
+  >> A table in this page shows the number of cafes per 10,000 people, If I make a map based on that, I believe Seattle, San Francisco, Portland, and D.C, Pittsburg will pop up more. 
+
+  >> This is a general picture of which regions have more coffee industries, but we should also look at street level context and neighborhood. 
+
+2. Email on Mural Data
+  * https://www.muralmapla.com/
+
+  * BEN
+  >> I am a researcher in Professor Terry Clark's sociology group at the University of Chicago. We are interested in using image processing algorithms to analyze mural art to better understand the relationship between the content of mural art and the communities. 
+
+  >> To do this, we need a data set of murals that also have the specific addresses of the murals attached. The images and addresses used in Mural Map LA would be perfect for this. Do you have this data stored in a way we could download? If so, would you be willing to provide us with it for research purposes? 
+
+  >> Thanks for your time.
+
+  * CHELSEA
+  >> Thank you for reaching out! This is an incredible request and I will work hard to ensure you have the information you need to support your work. 
+
+  >> Can you first let me know the timeline you are working on and which data you'd like to see included alongside each photo? I have well over 1500 photos in my collection but not all are publicly available yet. 
+
+  >> Happy to jump on the phone sometime this week to discuss more.
+
+  * BEN
+  >> As I mentioned, I have been looking for data sets for mural art that have been geocoded. 
+
+  >> I reached out to the person running the LA database, Mural Maps LA, that Professor Clark mentioned in our last meeting. Here’s her reply. See below
+
+  >> We should discuss this at the meeting tomorrow. 1500 is a decently sized data set as far as images go so I think this is a worthwhile opportunity to at least get data. 
+
+3. Ying Cai's Thesis Proposal
+
+  * YING CAI
+    >> My name is Ying Cai, a master student. Thanks for your letting me participate in the scene research meeting last time. After last scene research meeting, I have shifted my research object from restaurant to meetups that happen at a rather fixed place, like book club, business forum, drawing session and so on but still based on the scene theory. The attached are my new proposal and a sample of the events data (since the whole dataset is too large). If you might be interested in this research theme, may I have a further discussion with you?
+
+  * TNC
+  >> This looks terrific! 
+
+  >> Tell us a little more about the source and how /why choose these specific organizations?  What is in and what is out and why? Is it consistent across locations?
+
+  >> How build a model for other variables? Rough draft available?
+
+  >> Happy to Skype in next days. Send email to others too please?
+
+  * JIN
+  >> I'm confused about how the master proposal would be useful for me. I get that I would probably be applying a similar sort of geographically weighted regression, but I'm not sure how else I can use this proposal since it lacks a lot of details. Am I missing something
 
 
 

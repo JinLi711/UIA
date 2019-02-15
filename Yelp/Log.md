@@ -826,6 +826,100 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     * Possible Ideas for Analysis
 	    * Compare clusters of words to the standard cluster (the one made by google).
 
+# February 11, 2019
+
+1. [Gallery of Pilsen Murals](https://interactive.wttw.com/my-neighborhood/pilsen/murals). Here for reference.
+
+2. Email to Clark and Hyesun:
+
+  >> Just to add on to the conversation:
+
+  >> 1. I realized that the synonym generator program that I created can be very useful in gathering more information from Yelp. For example, if we decide one keyword to look for in Yelp is music, it makes sense to look for all words that are a subset of "music". For example, we want to also pick up words like hip-hop, jazz, blues, pop, etc. But if we count the frequencies of only the word "music", we're missing out on words that basically mean the same thing. I think this synonym generator program that I wrote may increase the accuracy of the frequencies of what we are trying to capture.
+
+  >> 2. I'm not sure if anyone has pointed out, but there's a "more business info" section on the right. For example, check out the Wormhole.  This section can help us differentiate Bohemian from corporate. There are descriptions like: 
+
+  >> Ambience: Hipster, Casual, Trendy
+  >> Attire: Casual.
+
+  >> These are the two that I picked out because they're the most likely to say something about Bohemian or corporate culture, but there are much more descriptions that we can use. My only concern is the business information is modifiable by anyone. It may also be difficult to compare different businesses because not every business has the same business label categories. For example, the category ambiance appears in the above Wormhole site, but not in L’Ours Bakery Cafe. 
+
+  >> I think someone mentioned the time of day as a possible indicator of corporatism. I'm personally skeptical about this because I can't seem to find any literature on this on Google Scholar. I also wonder whether which is the cause and which is the effect. Does the cafe choose to be Bohemian then pick the hours opened to attract a certain group of people? Or does the cafe pick a certain time to be opened, thereby attracting Bohemian type people who come in those hours?
+  However, it can definitely be a good idea to toy with, and it probably wouldn't be that hard to run correlation tests to see if these variables are even related.
+
+  >> 3. Responding to Hyesun's points:
+
+  This is based on my personal experiences, but many cafes and restaurants have chalkboards outside their business, which really appeal to millennials. I notice that cafes or bars with these quirky yet humorous signs are very appealing to the younger generations (since many of these signs employ humor that only young people would appreciate). 
+
+  >> For more of these kinds of chalkboards, see here. I think these signs really contribute to the vitality of the street, but I can't find any academic literature on this, but I think this idea may be interesting to consider.
+
+  >> I have some other ideas, but they're pretty obvious and since Hyesun's expert in walkability and architecture, I don't think I have anything more insightful to really say about Hyesun's point.
+
+  >> 4. Some more ideas possibly to consider.
+
+  >> Since I lived in New York City and have eaten with friends in what I considered to "hip places", one of the things that I noticed was that in many of these place, they would give a very unique name to the food that they serve. For example, in one of the bubble tea places that I visited, they named a kiwi bubble tea drink "The Hulk", and a passionfruit drink "The Boyfriend". It seems to me that places that are Bohemian try very hard to be creative in everything that they do, even for something simple like naming their food. On the other hand, I see that more corporate cafes, like Starbucks, do not really bother to name their drinks with something special. See here for their coffee menu. Of course, proving this connection to Bohemian culture would probably be very difficult unless we can somehow get access to the menu of food in the Yelp data. We would also need a way to measure "creativity", which would take years of research.
+
+  >> 5. Key Words to look for:
+
+  >> My biggest worry about keyword searching is counting frequencies of words that are used in ways that we don't want to consider. For example, the word "hip" can also mean the body part of a human being, which is not what we want to capture. Of course, in this example, it's very unlikely that hip is used this way in Yelp reviews, but it is definitely something to keep in mind. I know machine learning can be used to differentiate the different definitions of the same word, and then pick out when the word is used in a certain way. 
+
+  * Hyesun
+
+    >> 1. Can you send me some output of synonym generator? Did you run it?  What sample size and where?  Send me if you have any results. 
+
+    >> 2. I agree if we can get the information of those attires and ambience. But I found that only some cafes do have these information. Check out this: https://www.yelp.com/biz/la-colombe-coffee-chicago-2?page_src=related_bizes
+
+    >> Some cafes do, but other cafes do not have information. This will lose many sample size if we just want to look at Chicago. 
+
+
+    >> 3. Yes- visual signage and chalkboard can help pedestrian interactions on the street. So do Awnings and outdoor seating. Typical ways to capture those features are photograph, videos, or diagram, which are qualitative method. If you are interested, you can check out books of William Whyte, Jan Gehl, Allan Jacobs, and New Urbanists.
+
+
+    >> 4. Like machine learning to analyze painting, you need some criteria to differentiate creative vs. cliche (or conventional) in the name of cafes. In what degree of words should we consider as conventional name?
+
+
+    >> 5. That is a big downside of automatic search of words, which also happens in Google too. When I type “plaza” in Google map, it shows me a bunch of results with apartments and hotels that have “plaza” in their name. I agree there needs some human handed filtering process at the end. 
+
+    >> Which tasks are you working on now?
+    >> Are you also interested in applying machine learning in architectural features?
+    >> Ben just told me he wants to do that, and want to check if you are in it as well.
+
+    * JIN:
+    >> 1. Not entirely sure about what you mean by sample size, but here's what I meant by synonym generator. Linked word is the starting word. Under each linked word are the associated synonyms. Problems so far: Not all of the synonyms have the same intended meaning. For example, if the linked word is meeting, one synonym is "intersect". But intersect may not have the same nuance that we are looking for.
+
+    >> 2. When I have analyzed data in the past with missing values, I usually either drop the values or set the missing value to the most frequent observation. Of course, these actions have their own limitations (dropping decreases a lot of information). We could also create a new category called NONE.
+
+
+    >> 4. I thought about this, but the more I think about it the more problematic it is. The biggest issue is that creativity is different for different people and there's no real empirical way to quantify creativity. Maybe I'll come back to this idea in 20 years.
+
+    >> I think Ben will be talking to you about using machine learning for architecture later this week. I will be supporting him in his projects. 
+
+
+3. Response to Ian's Log
+  >> After reading the last 10 pages of the log, I think it would be a good idea for me to be a contrarian and challenge some of these ideas.
+
+  >> Something else potentially interesting is that there are numerous Youtube channels with “café music.” They stream different “types” of café music- so you can have chill jazz, rainy jazz, books and café, winter café, happy café, etc etc. Some of the channels are “live” meaning that they aren’t on any set repeat and continuously play new stuff. Mostly easy listening type of stuff not top 40 hits or anything. Not sure what to do with this right now but it is something I wanted to put out there. 
+
+  >> This inspired me to actually look into the music playlists. After listening to some of the music, I'm actually starting to wonder whether the type of music played in cafes would be a differentiator of Bohemianism. In my view, a Bohemian cafe would somehow need to be unconventional, but I feel that most cafes would have on relaxing music whether it is Bohemian or corporate. And I think relaxing music is probably the only type of music that cafes would play. But a good counterargument to this is that Bohemian cafes prefer different types of relaxing music.
+
+
+
+  >> Alexis and I were talking about music's role in cafes, and we discussed how it may be incredibly difficult to gather data about the music that the cafes play. It is definitely a daunting task to go around every cafe and ask for their music list.
+
+  >> Some other thoughts:
+
+  >> I think it may be interesting to think about how music played in cafe changes (or not) throughout the day. Maybe certain cafes attract "corporate" types of people at a certain time a day and "Bohemian" types of people at other times. If there is a pattern, maybe businesses change their music type to fit the type of people who at that certain time. Maybe during the data collection process, we can ask the business owner why they picked a certain music genre over another.
+
+  >> I skimmed the paper: The_geography_of_music_preferences that was mentioned in Ian's log
+
+  >> sophisticated and contemporary—are associated with more afﬂuent, more educated, more knowledge-based places that are also denser, more diverse, and politically liberal. Two other musical types—unpretentious and intense—are associated with less advantaged, less educated, more working-class places that are more politically conservative and have larger white populations.
+
+  >> Sounds like sophisticated and contemporary can possibly be a good indicator of Bohemianism.
+
+  >> The genre types connected to them are: 
+  >> Folk, bluegrass, blues, jazz, opera, classical, world, Rap, soul, funk, reggae.
+
+  >> I question whether most people can even differentiate these types of music. If they can't, I wonder if music could still predict Bohemianism.
+
 
 
 

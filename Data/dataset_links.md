@@ -36,7 +36,32 @@
 
 
 
-# Architecture
+# Geography
+
+## Street View
+
+  * Stanford 3D Street View
+    * [LINK](https://github.com/amir32002/3D_Street_View)
+    * Notes:
+      * 25 million images and 118 million matching image pairs
+
+  * Google Street View
+    * [LINK](http://crcv.ucf.edu/data/GMCP_Geolocalization/#Dataset)
+    * Notes:
+      * 62,058 images
+      * Pittsburgh, PA; Orlando, FL and partially Manhattan, NY
+
+  * Google Maps Street View Static API
+    * [LINK](https://developers.google.com/maps/documentation/streetview/intro)
+    * Notes:
+      * data not that easy to download
+
+## Satellite
+
+  * GIS Data
+    * [LINK](https://freegisdata.rtwilson.com/)
+    * Notes:
+      * this is just a link to more links
 
 # Music
 
@@ -50,22 +75,31 @@
       * 106,574 tracks from 16,341 artists and 14,854 albums
       * 161 genres
 
-    * Million Song Dataset
-      * [LINK](https://labrosa.ee.columbia.edu/millionsong/) 
-      * Notes:
+  * Million Song Dataset
+    * [LINK](https://labrosa.ee.columbia.edu/millionsong/) 
+    * Notes:
         * 1 million contemporary songs
         * 280GiB, but contains smaller versions
         * [Link](https://labrosa.ee.columbia.edu/millionsong/pages/example-track-description) to description of metadata
         * [Link](https://www.kaggle.com/c/msdchallenge/discussion) to how others have used this dataset.
-      * [Link to lyrics](https://labrosa.ee.columbia.edu/millionsong/musixmatch)
+    * [Link to lyrics](https://labrosa.ee.columbia.edu/millionsong/musixmatch)
         * lyrics connected to each song.
 
-    * AcousticBrainz
-      * [LINK](http://acousticbrainz.org/)
-      * Notes:
+  * AcousticBrainz
+    * [LINK](http://acousticbrainz.org/)
+    * Notes:
         * anyone can submit songs to the dataset
         * 11 million 
         * [sample data](http://acousticbrainz.org/data#sample-data) here.
+
+  * Spotify Million Playlist Dataset 
+    * [LINK](https://labs.spotify.com/2018/05/30/introducing-the-million-playlist-dataset-and-recsys-challenge-2018/)
+    * [LINK - Github](https://github.com/vaslnk/Spotify-Song-Recommendation-ML)
+    * Notes:
+      * 1 million playlists
+      * 2 million unique tracks
+      * 300,000 artists
+      * 33GiB
 
 ## Music Analysis (Lyrics)
 

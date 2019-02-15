@@ -20,6 +20,13 @@
       * [Link to lyrics](https://labrosa.ee.columbia.edu/millionsong/musixmatch)
         * lyrics connected to each song.
 
+    * AcousticBrainz
+      * [LINK](http://acousticbrainz.org/)
+      * Notes:
+        * anyone can submit songs to the dataset
+        * 11 million 
+        * [sample data](http://acousticbrainz.org/data#sample-data) here.
+
 # Music Analysis (Lyrics)
 
   * MetroLyrics Dataset
@@ -28,3 +35,18 @@
       * Categories are: song, year, artist, genre, lyrics.
       * 380000 lyrics.
       * 99 MiB.
+    * Musixmatch
+      * [LINK](https://developer.musixmatch.com/)
+      * Notes:
+        * 14 million lyrics
+        * need to pay for full access
+
+# Music Analysis (Links to links)
+
+  * Audio Content Analysis
+    * [LINK](https://www.audiocontentanalysis.org/data-sets/)
+
+# Musics Analysis (Other)
+
+  * Optical Music Recognition
+    * [LINK](https://apacha.github.io/OMR-Datasets/)

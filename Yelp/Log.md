@@ -1052,6 +1052,40 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
     >> I'm not incredibly familiar with R, but I can try.
 
+  * HYESUN
+    >> Are you joining Liang Cai on Trump project now on?
+    >> The problem came from more complexity of reasons, not just R code. It’s combination of problem of data file itself and missing counties coming from merging process. If you are on this project, I think you should read Liang Cai’s log as well as my log on Trump. Check both Trump 2 and 3 folder. These summarize the problems, and Liang is trying to resolve the issue. Liang is the person who has the most up-to-date version of log on Trump data analysis. Have you communicated with him? I am cc-ing him here so you guys can share thoughts.
+
+5. Dataset Collection.
+  * See [here](https://github.com/JinLi711/UIA/blob/master/Data/dataset_links.md) for what I compiled
+
+# February 17, 2019
+
+1. Had to deal with the gitignore file.
+
+2. I think it would be a good idea to leverage Google Cloud's Natural Language API.
+  * [GCP Natural Language](https://cloud.google.com/natural-language/)
+  * [GCP Natural Language Basics](https://cloud.google.com/natural-language/docs/basics)
+  * [GCP Natural Language Docs](https://cloud.google.com/natural-language/docs/)
+  * it essentially performs machine learning text analysis using Google's algorithms.
+  * the problems I see with this:
+    * black box model. No clue why the model churned out this certain output.
+  * But anyways, here's some research on what GCP NLP can do.
+    * sentimental analysis: predict whether a text is positive, negative, or neutral.
+      * Not incredibly useful for us because we aren't focused so much on what the person is feeling as we are with the culture of the person. However, I imagine that in a review, the attributes that define bohemianism may correlate with the sentiment, since I noticed that when a person is satisfied with the cafe that they ate in, they tend to describe other attributes that contribute to their positive review (like the vibe of the atmosphere). Also, the number of stars that a person rates already display a sentiment.
+    * Entity analysis
+      * finds the proper and common nouns (like public figures, landmarks) from a text and returns information about them
+      * can also return how the writer feels about the entity.
+      * This is probably the most useful because it can directly link to things that we would want to analyze. For example, if a person in Yelp review mentions a music artist name, we could actually find out information about that artist and more importantly detect that the music artist is actually there. The same can be said for other pronouns like murals or street names. For example, if the person mentions Back Street Boys, using our old text analysis methods, we would have never picked up that the person is talking about a music artist.
+      * This solves indirect references.
+    * Content Classification
+      * analyzes text content and returns content category. I don't feel that this can be incredibly useful because I feel that the content returned will almost always be related to food, which is not what we are searching for in Yelp.
+  * [Here's](https://cloud.google.com/natural-language/pricing) the pricing if we were to be interested in using this.
+  * [Google Cloud AutoML Natural Language](https://cloud.google.com/natural-language/automl/docs/). This is used to train your own model. Requires the labels. If we ever use this, we would probably have the categories Bohemian, corporate, and neighborly as labels. However, I am strongly against using this because I highly doubt that this would provide meaningful results, especially when the lines between the categories are quite subjective.
+
+
+
+
 
 
 

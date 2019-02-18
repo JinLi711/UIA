@@ -1,4 +1,4 @@
 Art_Recognition/medium_classification/data
 Art_Recognition/trial_run/art_images
 Scenes_Data
-*.DS_Store
+.DS_Store

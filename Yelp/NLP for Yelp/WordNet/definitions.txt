@@ -190,10 +190,6 @@ Part of Speech is: NOUNS
 	Name: fitness
 		Synset: fitness.n.02
 		Definition: good physical condition; being in shape or in condition
-	Name: food
-		Synset: food.n.02
-		Definition: any solid substance (as opposed to liquid) that is used as a source of nourishment
-		Example: food and drink
 	Name: friend
 		Synset: friend.n.01
 		Definition: a person you know well and regard with affection and trust

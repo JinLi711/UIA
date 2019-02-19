@@ -75,7 +75,7 @@ def createWordList (reviews, names, remove_punct=True):
     return word_list
 
 
-def findWordFreq (word_list, names, threshold = 20):
+def findWordFreq (word_list, names, threshold = 20, directory=None):
     """
     Count the word frequency in each element of the list.
     Filter out the common words that do not provide any valuable information.
@@ -87,6 +87,8 @@ def findWordFreq (word_list, names, threshold = 20):
     :type  names:
     :param threshold: Minimum number of word appearances
     :type  threshold: int
+    :param directory: Directory of keywords file
+    :type  directory: str
     :returns: A dictionary of dictionaries. 
               Each key is a business name, and each value is a dictionary.
               In that dictionary, the keys are words and frequencies are the values.
@@ -94,7 +96,7 @@ def findWordFreq (word_list, names, threshold = 20):
     """
     
     common_words = pd.read_csv ('Word_Lists/commonwords.csv')['WORDS'].values.tolist()
-    keywords = pd.read_csv ('Word_Lists/traditional_neighborly_local_words.csv')['WORDS'].values.tolist()
+    keywords = pd.read_csv (directory)['WORDS'].values.tolist()
     csv_counter = {}
     for i in range (len (word_list)):
         unique_words = Counter (word_list[i].split())
@@ -108,7 +110,7 @@ def findWordFreq (word_list, names, threshold = 20):
     return csv_counter
 
 
-def createplot (csv_counter):
+def createplot (csv_counter, threshold=0):
     """
     Creates plots for each business based on word frequencies.
     Saves plots to folder "Plots".
@@ -117,6 +119,9 @@ def createplot (csv_counter):
               Each key is a business name, and each value is a dictionary.
               In that dictionary, the keys are words and frequencies are the values.
     :type  csv_counter: dict
+    :param threshold: cut off of frequency for word count.
+                      If cutoff is not met, do not include the word in the plot.
+    :type  threshold: int
     """
     # Create the bar graphs of top words for each business
     # Output the bar graphs to the folder "plots"
@@ -124,6 +129,7 @@ def createplot (csv_counter):
     for column in df_occurences:
         name = column#.strip('scraped/').strip('.csv')
         plot = df_occurences[column].dropna()
+        plot = plot[df_occurences[column] > threshold]
         plot.plot(kind="bar")
         plt.title(name)
         fig = plt.gcf()

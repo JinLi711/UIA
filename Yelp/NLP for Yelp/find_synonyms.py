@@ -330,3 +330,21 @@ def write_out_hyponyms(list_synsets, file_name):
         print_write("\tHyponyms:\n")
         print_write('\t' + out_hyponyms)
         print_write('\n')
+
+
+def write_resulting_words(list_synsets, file_name):
+    """
+    Create a file that only contains the hyponyms.
+    
+    :param list_synsets: list of Keyword_synsets instances
+    :type  list_synsets: list
+    :param file_name: file name to write to
+    :type  file_name: str
+    """
+    
+    file = open(file_name, 'w')
+
+    file.write('WORDS\n')
+    for synset in list_synsets:
+        out_hyponyms = '\n'.join(synset.hyponyms)
+        file.write(out_hyponyms)

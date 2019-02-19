@@ -1083,6 +1083,57 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
   * [Here's](https://cloud.google.com/natural-language/pricing) the pricing if we were to be interested in using this.
   * [Google Cloud AutoML Natural Language](https://cloud.google.com/natural-language/automl/docs/). This is used to train your own model. Requires the labels. If we ever use this, we would probably have the categories Bohemian, corporate, and neighborly as labels. However, I am strongly against using this because I highly doubt that this would provide meaningful results, especially when the lines between the categories are quite subjective.
 
+3. Email To Hyesun
+
+  * JIN:
+    >> I am currently working on normalizing text in Yelp. I think I will create a report on it soon just describing the process of normalizing text. 
+
+    >> What I mean by normalizing text is changing the words so we can analyze it will higher accuracy. For example, if I were to look for frequencies of the word "apple", I wouldn't want to miss "apples". There are a variety of normalizing steps that I will describe.
+
+    >> I've been looking at Google Cloud Platform Natural Language. One of the amazing things that it could do is analyze text and find proper nouns. For example, if a reviewer mentions "Back Street Boys", Google Cloud can detect it. This could be very useful for music analysis, especially when reviewers mention more specific music that we want to capture. In addition, Google Cloud can perform sentiment analysis on these extracted pronouns (finds out how the reviewer feels about "Back Street Boys".
+
+    >> The only qualm I really have with Google Cloud text analysis is that its a black box: it would be very hard to tell why we received a certain output.
+
+    >> Thoughts on Google Cloud usage?
+
+  * HYESUN
+    >> 1. Keywords on Yelp
+
+    >> So does it update what you did on finding synonyms?
+    Normalizing & Google Clouds sound fine. You showed me example of synonyms last time, but I don’t think I have seen any output yet. The early output of keywords correlation did not show any significant difference between cultural types because most of reviews are centered on Food, not other things like music.
+
+    >> Have you actually applied using synonyms in trying extracting words in cafes for the same sample size? I think that should be the first output to share with me and others, then you can continue exploring other options like normalizing, Google Clouds, etc. But as I mentioned there is a fundamental constraint of Yelp in itself as a platform for review on food mostly, unlike other social media allowing hashtag or more various user expressions. 
+
+    >> 2. Machine Learning 
+
+    >> One thing I also want to suggest is that you and Ben can possibly apply machine learning in analyzing those photos on Yelp or other social media. Painting or murals might be more complicated to do with machine learning because there is usually certain way of intention that artists want to express their thought. So, in that sense, there is already category of what elements are categorized as Baroque, Rococo, Modern, etc as they are displayed in the museum. What seems more interesting from social science perspective is how people actually respond to those paintings, such as people would go to places, like cafes and bars near murals more frequently, or people participate in group activities in that neighborhood more, etc as a measure of buzz.  
+
+    >> I think that’s why applying machine learning in those reviewers’s photographs might be more feasible and easier, because photographs are more neutral than paintings in terms of style. We can perhaps use machine learning for differentiating those photos centered on food / activities / atmosphere which might be easier than analyzing paintings. Using machine learning in analyzing architectural form is same logic. There are many things that define architectural form, such as height, material, color, transparency, setback, etc. Since we can’t analyze every aspect through machine, you should start with simple thing in a hierarchy as a first step. 
+
+    >> These should be based on understanding of basic/simple method from past literature. Have you figured out how to do so yet? Just trying to help and think about ways for something simpler. 
+
+    >> What do you think?
+
+  * JIN
+
+    >> 1. Here are the frequencies of keyword synonyms (not including the keyword themselves). I made the plot so that it would not plot frequencies of words that are less than 10. 
+
+    >> The graph names correspond to the category of cafe, and the businesses were from Alexis's list a while back.
+ 
+    >> The graph doesn't say anything meaningful yet because most of the words that show up are loosely synonymous to the starting keywords.
+
+    >> 2. I think it is a very good idea to try to analyze Yelp /Instagram photos. I just want to build off of the email the other day, where you said the arrangement of chairs can impact the quality of scenes.
+
+    >> So Google Cloud has this service (costs money) where they can label the content (and location) of items in a photo. For example, if we have this picture:
+
+    >> Google cloud is able to draw a box around each chair/ table. If we have a picture of a plate of food, Google Cloud is able to draw a box around each item of food. This can help differentiate between food /activities/atmosphere of images.
+
+    >> However, Google Cloud can only detect the content of the images; it cannot detect something less concrete like a style of the architecture. 
+
+    >> Me and Ben are still discussing the machine learning project.
+
+    >> 3. I will continue to think through the normalization step, which is going to be hard because the English language is incredibly complicated.
+
 
 
 

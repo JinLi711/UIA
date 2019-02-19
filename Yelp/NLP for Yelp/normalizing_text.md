@@ -1,13 +1,16 @@
-# Normalizing Text
+# Word Search
 
 The English language is increbily complicated, making it very important to normalize (or standardize words) for more efficient analysis.
 
+I will also describe how I will search through the words.
 
-## Preliminary Normalization
+
+# Preliminary Normalization
+
+## Input Text Normalization
 
 This is the normalization step that would be (most likely) common to all of our preprocessing methods.
 
-**NOTE:** ["XXX", "YYY", "ZZZ"] indicates a list, "XYZ" indicates a string. 
 
 Lets start with the sentence:
 
@@ -25,16 +28,26 @@ Lets start with the sentence:
     * “this food is amazing why did it only cost me [NUM] dollars it s greatl”
     * Note that this step deals with contractions with words that we are searching for.
 
-4. Fix the grammar of words
+4. Remove Diacritics.
+    * Here's the [definition](https://en.wikipedia.org/wiki/Diacritic) of a diacritic.
+    * example: naïve, entrée, pâté
+    * Change the diacritic to whatever letter is the closest.
+
+5. Fix the grammar of words
     * “this food is amazing why did it only cost me [NUM] dollars it s great”
     * This can be done with existing python libraries. However, I would have to look deeply into how exactly this grammar fixing.
 
-5. Lemmatize the words
+6. Lemmatize the words
     * “this food is amazing why did it only cost me [NUM] dollar it s great”
     * this turns plurals into singulars, changes the verbs to normal present tense. Removes prefixes and suffixes basically.
     * Note that this may shift the meaning of the word. For example, the word "unhappy" would be converted to "unhappy".
 
- 
+## Key word normalization
+
+This normalization is just in case the keywords are able to be found in the text. 
+
+1. Lowercase the words.
+2. Lemmatize the words.
 
 **Things I Still Have Trouble With**
 
@@ -44,4 +57,23 @@ Lets start with the sentence:
 * Referential Pronouns
     * “This art is amazing. It is very inspiring.”
     * If we count the frequency of the word "art", we would only be able to pick up 1. However, the word "it" is referring to the word "art", so we should really be counting the frequency of "art" as 2.
+* Unintended word usage meaning.
+    * Words like "hip" can have drastically different means when used in different contexts. 
+
+# Word Search
+
+Ways to search for the number of appearances.
+
+* Regular search after normalizing everything. This will output a dictionary that maps each searched term to a number that describes
+
+**Things To Keep In Mind**
+
+* I want to be able to search for terms and not just singular words.
+* Searching may take forever in Python. I might have to write this code in C.
+    * If I write the code in C, here would be the steps: 
+        1. Open up the file as a string.
+        2. Search for number of appearances in the string.
+        3. Write to a json file a dictionary mapping a searched term to its frequency.
+        4. Open the json file into Python.
+
 

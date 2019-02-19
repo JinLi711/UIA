@@ -30,7 +30,7 @@ Lets start with the sentence:
 
 4. Remove Diacritics.
     * Here's the [definition](https://en.wikipedia.org/wiki/Diacritic) of a diacritic.
-    * example: naïve, entrée, pâté
+    * example: naïve, entrée, pâté. Convert to naive, entree, pate.
     * Change the diacritic to whatever letter is the closest.
 
 5. Fix the grammar of words
@@ -60,10 +60,17 @@ This normalization is just in case the keywords are able to be found in the text
 * Unintended word usage meaning.
     * Words like "hip" can have drastically different means when used in different contexts. 
 
+**Things To Keep In Mind**
+
+* Should decode the text to UTF-8.
+
 # Word Search
 
 Ways to search for the number of appearances.
 
+1. Delete all stop words.
+    * Since we are going to be iterating over the same string, things would go faster if we delete words that we know are not going to be searched.
+    * Stopwords simply refer to common English words like "I", "me", "he", "she".
 * Regular search after normalizing everything. This will output a dictionary that maps each searched term to a number that describes
 
 **Things To Keep In Mind**
@@ -75,5 +82,7 @@ Ways to search for the number of appearances.
         2. Search for number of appearances in the string.
         3. Write to a json file a dictionary mapping a searched term to its frequency.
         4. Open the json file into Python.
+* To make sure things go as fast as possible, take a small sample of the text of words, run my function, time how long it takes for the function to run. Try to rewrite the function, and time how long it takes. It is important for me to do this because the dataset will be incredibly large.
+* To make searching and normalization go even faster or if we cannot load all the text into memory at once, we can split the text files into chunks, and run the program for each chunk. Then aggregate all the findings.
 
 

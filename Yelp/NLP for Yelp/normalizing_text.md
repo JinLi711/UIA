@@ -98,3 +98,18 @@ Ways to search for the number of appearances.
 
 # Data Structures
 
+Not as familar with C as I am with Python, but given how large the data is going to be, it would be much faster to implement the code in C. I'm only going to use C for searching algorithms. I will just write out the results of the search into a file, then read the file with Python (and do data analysis with Python).
+
+## Layout of Data
+
+Haven't seen the data, but I have a vague impression of how it is going to be formated. I'll describe it ground up.
+
+1. The lowest level would probably just be the individual businesses. 
+2. The next level would be businesses in each zip code.
+3. Next level would be the state.
+4. Top level would the country.
+
+
+
+
+

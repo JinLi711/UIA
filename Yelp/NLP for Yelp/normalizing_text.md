@@ -50,7 +50,7 @@ This normalization is just in case the keywords are able to be found in the text
 
 2. Lemmatize the words.
 
-**Things I Still Have Trouble With**
+## Things I Still Have Trouble With
 
 * Abbreviations/ Acronyms. 
     * Very hard to do because it is incredibly difficult for computers to interpret what the abbreviations refer to. This is even made harder by the fact that different terms refer to the same abbreviation.
@@ -59,11 +59,11 @@ This normalization is just in case the keywords are able to be found in the text
 * Referential Pronouns
     * “This art is amazing. It is very inspiring.”
     * If we count the frequency of the word "art", we would only be able to pick up 1. However, the word "it" is referring to the word "art", so we should really be counting the frequency of "art" as 2.
-    
+
 * Unintended word usage meaning.
     * Words like "hip" can have drastically different means when used in different contexts. 
 
-**Things To Keep In Mind**
+## Things To Keep In Mind
 
 * Should decode the text to UTF-8.
 
@@ -75,9 +75,13 @@ Ways to search for the number of appearances.
     * Since we are going to be iterating over the same string, things would go faster if we delete words that we know are not going to be searched.
     * Stopwords simply refer to common English words like "I", "me", "he", "she".
 
-* Regular search after normalizing everything. This will output a dictionary that maps each searched term to a number that describes
+2. Regular search for key words after normalizing everything. This will output a dictionary that maps each searched term to a number that describes the frequency of the appearance of the word.
 
-**Things To Keep In Mind**
+3. Search for all frequencies of linking hyponyms. Note that to do this, we need to manually filter out hyponyms that are loosely related.
+
+4. Run the raw text through Google Cloud Natural Language for entity analysis. See [here](https://cloud.google.com/natural-language/). This will mainly be used to categorize proper nouns.
+
+## Things To Keep In Mind
 
 * I want to be able to search for terms and not just singular words.
 

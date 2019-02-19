@@ -1134,7 +1134,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
     >> 3. I will continue to think through the normalization step, which is going to be hard because the English language is incredibly complicated.
 
+# February 18, 2019
 
+1. Read up on [this Stanford lecture notes](https://web.stanford.edu/~jurafsky/slp3/2.pdf) for help on text normalization. Also spent a lot of time searching for google results on ideas for text normalization. Nothing valuable showed up.
 
 
 

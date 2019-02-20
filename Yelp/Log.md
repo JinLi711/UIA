@@ -1143,6 +1143,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 3. Also spent a lot of time searching for google results on ideas for text normalization. Nothing else valuable showed up.
     * Google Search Term: text normalization
 
+4. Converting markdown to documents.
+  * pandoc -o Log.docx -f markdown -t docx Log.md
+
 
 
 

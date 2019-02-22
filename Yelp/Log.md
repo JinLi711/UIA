@@ -1158,6 +1158,40 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 
 2. Goal: Open up the spss merge file and think about how I can correlate the existing data with the Yelp data. Look at the differences on a map, and understand why there are these differences. Ask the library to help me download SPSS.
 
+# February 21, 2019
+
+1. Downloaded US_merge_hyesun_final.sav from OneDrive. Planning to use this file to do correlation analysis. But first, I have to understand this file first.
+  * Looked into the columns using R. Columns are very uninformative, need to find a file in OneDrive to find description of column names. Couldn't find it, so I asked Hyesun if she knew where it is.
+  * EDIT* Turns out the descriptions are already included in the merge file.
+  * Note that all the columns are opened up as strings, meaning I have to convert strings into numbers when neccesary.
+  * Would it be valuable to look into every single variable and predict whether the variable has any indication of appearances of words?
+    * OH NAH.
+    * BUT I will skim the variables to see what sticks out to me through intuition. Also, it's incredibly hard to do copy and paste in R, so I'm just going to put keywords here to search. Also, there are some variable descriptions that I do not understand, so I will just ignore those.
+
+    | Variable      | Description |
+    | ------------- |-------------|
+    | zipcode       |             |
+    | NAICS         | 15 scenes variables. Note that there are different variations of this. |
+    | STUSAB        | state |
+    |               | population |
+
+2. Some merging variable ideas:
+  * Each keyword can be a variable, and values would be its appearance in each zipcode.
+
+3. Did some more research on Geographical weighted regression.
+  * [Overview](https://www.mailman.columbia.edu/research/population-health-methods/geographically-weighted-regression)
+  * Like OLS, but allows independent and dependent variables to vary by locality.
+  * construct a OLS for each location in the dataset.
+  * Should I even bother learning about implementing this in R? I can't do this in python since opening SPSS files in Python is just awful. I tried downloading SPSS to csv and opening in Python, results were all messed up. I'm not too good with R, so the learning curve may not be worth it. It would probably just be a lot easier for me to merge results, then give the results to Hyesun (or anyone else) to run in ARCGIS.
+
+4. So in terms of correlations:
+  * here's a great [link](https://www.dummies.com/programming/r/how-to-deal-with-missing-data-values-in-r/) about correlations in R with missing values.
+    * Basically, will return NaN if any values are NaN.
+    * But we can switch its functionality so it just will not consider NaN values.
+
+5. So since I'm doing computations in Python / C, I need to find a way to take the outputs of these calculations, and open it in R. Then I need to find a way place whatever is neccesary into a SPSS file.
+
+
 
 
 

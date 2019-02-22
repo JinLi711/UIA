@@ -1146,6 +1146,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 4. Converting markdown to documents.
   * pandoc -o Log.docx -f markdown -t docx Log.md
 
+5. Here's my write up for text normalization.
+  * [Github Link](https://github.com/JinLi711/UIA/blob/master/Yelp/NLP%20for%20Yelp/normalizing_text.md)
+
 # February 20, 2019
 
 1. Google Maps API:

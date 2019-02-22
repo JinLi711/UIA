@@ -1202,6 +1202,9 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     * But we can switch its functionality so it just will not consider NaN values.
 
 5. So since I'm doing computations in Python / C, I need to find a way to take the outputs of these calculations, and open it in R. Then I need to find a way place whatever is neccesary into a SPSS file.
+  * Added more to my plan page [here](https://github.com/JinLi711/UIA/blob/master/Yelp/NLP%20for%20Yelp/analysis_plan.md)
+  * Read this [article](https://www.searchtechnologies.com/blog/natural-language-processing-techniques) to help me add to the plan.
+  * Google Search: text mining. Here's a [wiki](https://en.wikipedia.org/wiki/Text_mining) for getting started.
 
 
 

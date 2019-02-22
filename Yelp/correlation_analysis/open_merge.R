@@ -30,3 +30,8 @@ View(row_names)
 # find the attributes of the dataframe
 # will mainly use this to look at column name descriptions
 View(attributes(head))
+
+# http://astrostatistics.psu.edu/datasets/R/html/base/html/unique.html
+# returns a vector with duplicates removed
+# great for visualizing distribution of data
+unique(mydata["CNTYSC"])

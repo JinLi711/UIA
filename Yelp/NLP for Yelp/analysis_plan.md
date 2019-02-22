@@ -61,6 +61,7 @@ Lets start with the sentence:
     * “this food is amazing why did it only cost me [NUM] dollar it s great”
     * this turns plurals into singulars, changes the verbs to normal present tense. Removes prefixes and suffixes basically.
     * Note that this may shift the meaning of the word. For example, the word "unhappy" would be converted to "unhappy".
+    * Also note that I'm not sure if this is able to deal with compound words (or if we even want to deal with compound words). Example of a compound word: moonlight.
 
 7. Replace all delimiters with spaces. 
     * For example, '\n', '\t'.
@@ -132,6 +133,11 @@ Ways to search for the number of appearances.
 
 * I also have to make a new data field that considers the total word count (since results will be skewed if appearances are higher simply because there are more reviews or more words)
     * I should think of other ways to extract information from text. For example, find the variance of the words.
+    * For word count, should I count before normalization or after?
+
+* I need to document my code very well and create test cases. Acknowledge to Professor Clark that it would take longer than my usual speed because of testing. Say its better carefully done than quickly.
+
+* Need to make the code as general as possible.
 
 
 
@@ -139,6 +145,8 @@ Ways to search for the number of appearances.
 # Data Structures
 
 Not as familar with C as I am with Python, but given how large the data is going to be, it would be much faster to implement the code in C. I'm only going to use C for searching algorithms. I will just write out the results of the search into a file, then read the file with Python (and do data analysis with Python).
+
+But note that if I implement the code in C, I'm worried that I will be unable to do more complex analysis on words to extract more meaning. 
 
 ## Layout of Data
 

@@ -1146,6 +1146,15 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
 4. Converting markdown to documents.
   * pandoc -o Log.docx -f markdown -t docx Log.md
 
+# February 20, 2019
+
+1. Google Maps API:
+  * [Routes:](https://cloud.google.com/maps-platform/routes/) data on roads and real time traffic
+  * [Places:](https://cloud.google.com/maps-platform/places/) gives information on the businesses
+  * [Maps:](https://cloud.google.com/maps-platform/maps/) gives information on the maps
+
+2. Goal: Open up the spss merge file and think about how I can correlate the existing data with the Yelp data. Look at the differences on a map, and understand why there are these differences. Ask the library to help me download SPSS.
+
 
 
 

@@ -1166,7 +1166,10 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
   * Note that all the columns are opened up as strings, meaning I have to convert strings into numbers when neccesary.
   * Would it be valuable to look into every single variable and predict whether the variable has any indication of appearances of words?
     * OH NAH.
-    * BUT I will skim the variables to see what sticks out to me through intuition. Also, it's incredibly hard to do copy and paste in R, so I'm just going to put keywords here to search. Also, there are some variable descriptions that I do not understand, so I will just ignore those.
+    * BUT I will skim the variables to see what sticks out to me through intuition. Also, it's incredibly hard to do copy and paste in R, so I'm just going to put keywords here to search. 
+    * Also, there are some variable descriptions that I do not understand, so I will just ignore those.
+    * Why are there duplicate column names? Or are they really duplicates? I can check, but this is distracting. Will do this later.
+
 
     | Variable      | Description |
     | ------------- |-------------|
@@ -1174,6 +1177,15 @@ So how can I analyze Yelp to provide meaningful insight to the types of neighbor
     | NAICS         | 15 scenes variables. Note that there are different variations of this. |
     | STUSAB        | state |
     |               | population |
+    |               | latitude  |
+    |               | longitude |
+    |Age            | Age groups. Search 'years'|
+    |               | Races. Note that this will be hard to search. Might have to just scroll through until I see this. |
+    |               | DDB. Can also search 'performance' |
+    |               | bizzip  |
+    |               | patents  |
+    |               | income  |
+
 
 2. Some merging variable ideas:
   * Each keyword can be a variable, and values would be its appearance in each zipcode.

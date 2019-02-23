@@ -130,7 +130,7 @@ I know that these may sound irrelevant, but in the context of analyzing (possibl
 
 # Word Search
 
-Note that I will do searching for one business at a time. We can analyze data afterwards.
+Note that I will do searching for one business at a time (the plan below applies for one business at a time). We can analyze data aggregations afterwards.
 
 1. Aggregate all the reviews of a cafe together (place all reviews in one long string).
     * For example, if there are two reviews:
@@ -142,36 +142,70 @@ Note that I will do searching for one business at a time. We can analyze data af
 2. Delete all stop words.
     * Since we are going to be iterating over the same string, search algorithms would go faster if we delete words that we know are not going to be searched.
     * Stopwords simply refer to common English words like "I", "me", "he", "she", etc. 
-    * Delete all mentions of [NUM].
 
 3. Regular search for key words after normalizing everything. This will output a dictionary that maps each searched term to a number that describes the frequency of the appearance of the word.
+    * Example: "I really really love apple." We want to search for words "really" and "apple".
+    * Output:
+        {
+            "really": 2,
+            "apple": 1
+        }
 
-4. Search for all frequencies of linking hyponyms. Note that to do this, we need to manually filter out hyponyms that are loosely related.
+4. Write another algorithm that outputs word counts for all possible words. Note that I do not do this before the regular search because this will not allow me to search for phrases that are seperated by spaces.
+    * Example: "I really really love apple."
+    * Output:
+        {
+            "i": 1,
+            "really": 2,
+            "love": 1,
+            "apple": 1
+        }
 
-5. Run the raw text through Google Cloud Natural Language for entity analysis. See [here](https://cloud.google.com/natural-language/). This will mainly be used to categorize proper nouns.
+5. Find all linking hyponyms.
+    * Note that to do this, we need to manually filter out hyponyms that are loosely related.
+    * I already built the algorithm that generates hyponyms. It's file output is exactly the same as the format of the keywords.
+    * I have also built an algorithm to help make filtering words a whole lot easier.
+    * I also made the output of that algorithm words and not phrases. This means that "cotton candy" will never appear, because it is seperated by a space. 
+
+6. Go through the json file created to find appearances of these hyponyms.
+
+7. Run the raw text through Google Cloud Natural Language for entity analysis. See [here](https://cloud.google.com/natural-language/). 
+    * This will mainly be used to categorize proper nouns.
+    * Note sure if this step is neccesary because the categories of GCP NL are way too general too be useful for us. However, this can still be an option if I have time.
+    * Note that it would be best to run the raw text, and not the normalized text.
+
+8. Aggregate all the businesses into two json file, the first being the frequencies of key word search of all the businesses, the second being frequencies of all words of all businesses.
+
+Example:
+
+{
+    
+}
 
 ## Things To Keep In Mind
 
 * I want to be able to search for terms and not just singular words.
 
-* Searching may take forever in Python. I might have to write this code in C.
+* Need to make the code as general as possible.
+
+* To make sure things go as fast as possible, take a small sample of the text of words, run my function, time how long it takes for the function to run. Try to rewrite the function, and time how long it takes. It is important for me to do this because the dataset will be incredibly large.
+
+* To make searching and normalization go even faster or if we cannot load all the text into memory at once, we can split the text file(s) into chunks, and run the program for each chunk. Then aggregate all the findings. 
+    * Don't know the specific steps for this because not sure how the file format would look like yet.
+
+* I also have to make a new data field that considers the total word count (since results will be skewed if appearances are higher simply because there are more reviews or more words)
+    * I should think of other ways to extract information from text. For example, find the variance of the words.
+    * For word count, should I count before normalization or after? I think I should have the word count be after normalization.
+
+* I need to document my code very well and create test cases. Acknowledge to Professor Clark that it would take longer than my usual speed because of testing. Say its better carefully done than quickly.
+
+
+* Searching may take forever in Python. I will write this code in C, but analyze the results in Python.
     * If I write the code in C, here would be the steps: 
         1. Open up the file as a string.
         2. Search for number of appearances in the string.
         3. Write to a json file a dictionary mapping a searched term to its frequency.
-        4. Open the json file into Python.
-
-* To make sure things go as fast as possible, take a small sample of the text of words, run my function, time how long it takes for the function to run. Try to rewrite the function, and time how long it takes. It is important for me to do this because the dataset will be incredibly large.
-
-* To make searching and normalization go even faster or if we cannot load all the text into memory at once, we can split the text files into chunks, and run the program for each chunk. Then aggregate all the findings.
-
-* I also have to make a new data field that considers the total word count (since results will be skewed if appearances are higher simply because there are more reviews or more words)
-    * I should think of other ways to extract information from text. For example, find the variance of the words.
-    * For word count, should I count before normalization or after?
-
-* I need to document my code very well and create test cases. Acknowledge to Professor Clark that it would take longer than my usual speed because of testing. Say its better carefully done than quickly.
-
-* Need to make the code as general as possible.
+        4. Open the json file into Python for analysis.
 
 
 

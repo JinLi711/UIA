@@ -233,6 +233,7 @@ Example of first file:
 
 This will be done in Python:
 
+Need to think about this after I get the file.
 
 ## Word Search
 
@@ -258,22 +259,22 @@ business_info * all_businesses[];
 
 
 
-
-# Inserting Data
-
-So by the end, we will have a file (probably a json file) that maps each business to its information. 
-
-We can do another level of aggregation to combine businesses together to the zip code level.
-
-
-
-
 # Find Correlations
 
 ## Geographical Weighted Regression
 
 For each variable of interest from the merge file, correlate it with the data from the json file.
 
+
+
+
+
+
+# Inserting Data
+
+So by the end, we will have a file (probably a json file) that maps each business to its information. 
+
+We can do another level of aggregation to combine businesses together to the zip code level.
 
 
 

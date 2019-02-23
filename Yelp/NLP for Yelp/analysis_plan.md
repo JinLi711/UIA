@@ -146,20 +146,24 @@ Note that I will do searching for one business at a time (the plan below applies
 3. Regular search for key words after normalizing everything. This will output a dictionary that maps each searched term to a number that describes the frequency of the appearance of the word.
     * Example: "I really really love apple." We want to search for words "really" and "apple".
     * Output:
+    ```
         {
             "really": 2,
             "apple": 1
         }
+    ```
 
 4. Write another algorithm that outputs word counts for all possible words. Note that I do not do this before the regular search because this will not allow me to search for phrases that are seperated by spaces.
     * Example: "I really really love apple."
     * Output:
+    ```
         {
             "i": 1,
             "really": 2,
             "love": 1,
             "apple": 1
         }
+    ```
 
 5. Find all linking hyponyms.
     * Note that to do this, we need to manually filter out hyponyms that are loosely related.
@@ -179,6 +183,7 @@ Note that I will do searching for one business at a time (the plan below applies
 
 Example of first file:
 
+```
 {
     "BUSINESS1": 
                 {
@@ -191,6 +196,7 @@ Example of first file:
             "apple": 4
                 },
 }
+```
 
 ## Things To Keep In Mind
 

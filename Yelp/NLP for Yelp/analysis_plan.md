@@ -175,11 +175,21 @@ Note that I will do searching for one business at a time (the plan below applies
     * Note that it would be best to run the raw text, and not the normalized text.
 
 8. Aggregate all the businesses into two json file, the first being the frequencies of key word search of all the businesses, the second being frequencies of all words of all businesses.
+    * I might also split json files by zipcode, but also maybe not.
 
-Example:
+Example of first file:
 
 {
-    
+    "BUSINESS1": 
+                {
+            "really": 2,
+            "apple": 1
+                }, 
+    "BUSINESS2": 
+                {
+            "really": 5,
+            "apple": 4
+                },
 }
 
 ## Things To Keep In Mind
@@ -199,6 +209,7 @@ Example:
 
 * I need to document my code very well and create test cases. Acknowledge to Professor Clark that it would take longer than my usual speed because of testing. Say its better carefully done than quickly.
 
+* I need to write something that allows others to be able to visualize what's inside these files.
 
 * Searching may take forever in Python. I will write this code in C, but analyze the results in Python.
     * If I write the code in C, here would be the steps: 
@@ -212,20 +223,30 @@ Example:
 
 # Data Structures
 
-Not as familar with C as I am with Python, but given how large the data is going to be, it would be much faster to implement the code in C. I'm only going to use C for searching algorithms. I will just write out the results of the search into a file, then read the file with Python (and do data analysis with Python).
+## Text normalization
 
-But note that if I implement the code in C, I'm worried that I will be unable to do more complex analysis on words to extract more meaning. 
-
-## Layout of Data
-
-Haven't seen the data, but I have a vague impression of how it is going to be formated. I'll describe it ground up.
-
-1. The lowest level would probably just be the individual businesses. 
-2. The next level would be businesses in each zip code.
-3. Next level would be the state.
-4. Top level would the country.
+This will be done in Python:
 
 
+## Word Search
+
+This will be done in C:
+
+For a single business, it's going to be a basic struc, with all the neccessary fields.
+
+```
+typedef struct _business_info{
+    char * all_reviews;
+    unsigned int zipcode;
+    etc...
+} business_info
+```
+
+For all the businesses together, it is going to be an array
+
+```
+business_info * all_businesses[];
+```
 
 
 

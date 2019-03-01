@@ -1502,6 +1502,60 @@ We can do another level of aggregation to combine businesses together to the zip
 
 
 
+# March 1, 2019
+
+1. So one of my current goals for this week is to search for possible keywords that may be interesting to consider and search for in Yelp. 
+
+This is given to me by Hyesun:
+
+Supposedly Bohemian words:
+
+*Food words:* espresso, coffee, latte, pastry, bakery, 
+
+*Event words:* entertainment, festival
+
+*Imagery words:* decoration, style, street, graffiti, painting, art, mural, gallery, tattoo
+
+*Feeling words:* music, vibe, hip, unique, comic, 
+
+*Social problem words:* LGBT, social, justice, sustainability
+
+*People words:* barista, friend, artist, writer, entrepreneur
+studio, walk, bicycle, walk, bicycle
+
+
+
+Corporate / utilitarian:
+
+*Food words:* espresso, coffee, latte, pastry, bakery, 
+
+*Moving words:* workout, commute, walk, subway, transit, bus, fitness, quick
+
+*Working words:* work, studying, co-working, meeting, office, laptop, WiFi, colleague
+
+*Place words:* museum, apartment, CBD, downtown, tourist
+
+*Others?* take-out outlets
+
+
+Traditional, neightborly, local:
+
+*Food words:* espresso, coffee, latte, pastry, bakery, 
+
+*People words* kids, children, friend, family, neighborhood, community, hang
+
+*Places* landmark, school, church, flea market, townhouse, farmer market, park
+
+*Adjectives* local, family-owned, housemade, traditional, famous, cozy
+
+*Others?* history, grocery, sofa, dog, walk
+
+Some of these words are questionable, and I wonder why I was sent some of these words. For example, what does coffee have anything to do with the scenes variables? But anyways, here are the starting words, and I have to search for more words that can possibly correlate the scenes variables.
+
+So I'm just going to go down through the 15 scenes variables and do some word association to see if I can come up with any words.
+
+
+
 
 
 

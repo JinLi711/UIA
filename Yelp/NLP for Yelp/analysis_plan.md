@@ -130,7 +130,7 @@ I know that these may sound irrelevant, but in the context of analyzing (possibl
 
 # Word Search
 
-Note that I will do searching for one business at a time (the plan below applies for one business at a time). We can analyze data aggregations afterwards.
+Note that I will do searching for one review at a time (the plan below applies for one review at a time). We can analyze data aggregations afterwards.
 
 1. Aggregate all the reviews of a cafe together (place all reviews in one long string).
     * For example, if there are two reviews:
@@ -224,7 +224,9 @@ Example of first file:
         3. Write to a json file a dictionary mapping a searched term to its frequency.
         4. Open the json file into Python for analysis.
 
+* Actually, I will just write everything in Python, but using the SpaCy library, which is C optimized.
 
+* Should I even combine all the reviews together? I probably shouldn't because there's information in each reviews that are different. For example, the ratings and time of the rating.
 
 
 # Data Structures
@@ -237,7 +239,7 @@ Need to think about this after I get the file.
 
 ## Word Search
 
-This will be done in C:
+If this will be done in C:
 
 For a single business, it's going to be a basic struc, with all the neccessary fields.
 

@@ -1508,7 +1508,7 @@ We can do another level of aggregation to combine businesses together to the zip
 
 This is given to me by Hyesun:
 
-Supposedly Bohemian words:
+**Supposedly Bohemian words:**
 
 *Food words:* espresso, coffee, latte, pastry, bakery, 
 
@@ -1525,7 +1525,7 @@ studio, walk, bicycle, walk, bicycle
 
 
 
-Corporate / utilitarian:
+**Corporate / utilitarian:**
 
 *Food words:* espresso, coffee, latte, pastry, bakery, 
 
@@ -1538,7 +1538,7 @@ Corporate / utilitarian:
 *Others?* take-out outlets
 
 
-Traditional, neightborly, local:
+**Traditional, neightborly, local:**
 
 *Food words:* espresso, coffee, latte, pastry, bakery, 
 
@@ -1552,7 +1552,47 @@ Traditional, neightborly, local:
 
 Some of these words are questionable, and I wonder why I was sent some of these words. For example, what does coffee have anything to do with the scenes variables? But anyways, here are the starting words, and I have to search for more words that can possibly correlate the scenes variables.
 
-So I'm just going to go down through the 15 scenes variables and do some word association to see if I can come up with any words.
+So I'm just going to go down through the 15 scenes variables and do some word association to see if I can come up with any words. I also skimmed through some Yelp reviews to help me with coming up some words.
+
+So the variables are split into three variables, and this is what we have:
+
+1. Theatricality
+  * Glamour:
+    * thrill, beauty, lighting, atmosphere
+  * Neighborliness
+    * warm (in the sense of hearthly. However, we do need to make sure warm is refering to the place, and not to coffee.), girlfriend, boyfriend, mate, buddy, companion, bro, homie, classmate, hospitable, fun, sociable, pleasant, warmhearted, good-natured, close, dating, 
+  * Transgression:
+    * celebration, rave, party, 
+  * Formality:
+    * business, corporate, internet, casual, busy, collaborate,
+  * Exhibitionism: 
+    * flashy, impression, elegance, grace, minimalist, classic, cute, unique, social media, instagram, relaxing, vintage, charm, acoustic, natural
+
+2. Authenticity
+  * Locality
+    * similar words to neighborly
+  * Ethnicity
+    * doubt that there are cafes that are specific to only one race, so not coming up with words on this
+  * State
+  * Corporateness
+  * Rationality
+    * probably no real association
+
+3. Legitimacy
+  * Tradition
+    * old school, old, historic
+  * Charisma
+    * None
+  * Utilitarianism
+    * cheap, worth, price, money, efficient
+  * Egalitarianism
+    * not sure if cafes have any say in social problems lol
+  * Self-Expression
+    * quirky, dope, smiley faces like :), modern, funky, life style,
+
+Some extra thoughts: should we also consider antonyms to the words that we consider? For example: if we consider the word like beauty to associated with glamour, should we also take into consideration ugly? Also, most of these words usually come from positive reviews, and I wonder if looking at negative reviews would make a difference for searching words.
+
+I also noticed some variational words, like ultra-hipster, hipstery, but this is easily fixable.
 
 
 

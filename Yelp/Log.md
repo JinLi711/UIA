@@ -1597,6 +1597,8 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
 
 2. Took a look into [SpaCy](https://spacy.io/usage/spacy-101), which is a great library for me to use to analyze text.
 
+3. Wrote a significant portion of software that allows me to count frequencies in different levels (on the individual level and on the business level). I can include an extra function in the business class that allows me to skip the individual level analysis.
+
 
 
 

@@ -1595,6 +1595,9 @@ Some extra thoughts: should we also consider antonyms to the words that we consi
 I also noticed some variational words, like ultra-hipster, hipstery, but this is easily fixable.
 
 
+2. Took a look into [SpaCy](https://spacy.io/usage/spacy-101), which is a great library for me to use to analyze text.
+
+
 
 
 

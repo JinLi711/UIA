@@ -1,0 +1,996 @@
+Linked Word: commute
+	Part of Speech: VERBS
+	Synset: commute.v.02
+	Definition: travel back and forth regularly, as between one's place of work and home
+	Hyponyms:
+	
+Linked Word: meeting
+	Part of Speech: VERBS
+	Synset: meet.v.01
+	Definition: come together
+	Hyponyms:
+	cross, cross, decussate, intersect
+Linked Word: meeting
+	Part of Speech: VERBS
+	Synset: meet.v.02
+	Definition: get together socially or for a specific purpose
+	Hyponyms:
+	call, carouse, celebrate, fete, jollify, jubilate, party, racket, rave, receive, rendezvous, reunite, revel, riot, roister, see, see, visit, wassail
+Linked Word: meeting
+	Part of Speech: VERBS
+	Synset: meet.v.08
+	Definition: get to know; get acquainted with
+	Hyponyms:
+	
+Linked Word: meeting
+	Part of Speech: VERBS
+	Synset: meet.v.09
+	Definition: meet by design; be present at the arrival of
+	Hyponyms:
+	
+Linked Word: paint
+	Part of Speech: VERBS
+	Synset: paint.v.01
+	Definition: make a painting
+	Hyponyms:
+	bodypaint, charge, crosshatch, distemper, finger-paint, fresco, shade, stipple, stipple, watercolor, watercolour
+Linked Word: paint
+	Part of Speech: VERBS
+	Synset: paint.v.02
+	Definition: apply paint to; coat with paint
+	Hyponyms:
+	airbrush, grain, ground, prime, repaint, undercoat
+Linked Word: paint
+	Part of Speech: VERBS
+	Synset: paint.v.03
+	Definition: make a painting of
+	Hyponyms:
+	repaint
+Linked Word: paint
+	Part of Speech: VERBS
+	Synset: paint.v.04
+	Definition: apply a liquid to; e.g., paint the gutters with linseed oil
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: VERBS
+	Synset: learn.v.04
+	Definition: be a student of a certain subject
+	Hyponyms:
+	apprentice, audit, drill, drill, exercise, practice, practise, prepare, retrain, train
+Linked Word: study
+	Part of Speech: VERBS
+	Synset: study.v.02
+	Definition: be a student; follow a course of study; be enrolled at an institute of learning
+	Hyponyms:
+	major
+Linked Word: study
+	Part of Speech: VERBS
+	Synset: study.v.05
+	Definition: learn by reading books; I must hit the books now"
+	Hyponyms:
+	alternate, bone, con, cram, drum, learn, memorise, memorize, swot, understudy
+Linked Word: study
+	Part of Speech: VERBS
+	Synset: study.v.06
+	Definition: think intently and at length, as for spiritual purposes
+	Hyponyms:
+	
+Linked Word: tattoo
+	Part of Speech: VERBS
+	Synset: tattoo.v.01
+	Definition: stain (skin) with indelible color
+	Hyponyms:
+	
+Linked Word: walk
+	Part of Speech: VERBS
+	Synset: walk.v.01
+	Definition: use one's feet to advance; advance by steps
+	Hyponyms:
+	amble, ambulate, backpack, bumble, careen, clomp, clump, cock, coggle, countermarch, creep, debouch, dodder, drag, falter, file, flounce, flounder, foot, footslog, gimp, hike, hitch, hobble, hoof, keel, limp, lollop, lumber, lurch, march, march, mince, mosey, mouse, pace, pack, pad, paddle, parade, perambulate, plod, pound, prance, process, promenade, promenade, prowl, puddle, pussyfoot, reel, ruffle, sashay, saunter, scuff, scuffle, shamble, shlep, shuffle, skulk, sleepwalk, slink, slog, slop, slosh, slouch, sneak, somnambulate, spacewalk, splash, splosh, squelch, squish, stagger, stagger, stalk, stamp, step, stomp, stride, stroll, strut, stumble, stump, swag, swagger, tap, tip, tippytoe, tiptoe, tittup, toddle, toe, totter, traipse, tramp, tramp, trample, trample, tread, treadle, troop, troop, trudge, waddle, wade
+Linked Word: walk
+	Part of Speech: VERBS
+	Synset: walk.v.04
+	Definition: traverse or cover by walking
+	Hyponyms:
+	
+Linked Word: walk
+	Part of Speech: VERBS
+	Synset: walk.v.08
+	Definition: walk at a pace
+	Hyponyms:
+	
+Linked Word: walk
+	Part of Speech: VERBS
+	Synset: walk.v.10
+	Definition: take a walk; go for a walk; walk for pleasure
+	Hyponyms:
+	constitutionalize
+Linked Word: work
+	Part of Speech: VERBS
+	Synset: work.v.01
+	Definition: exert oneself by doing mental or physical work for a purpose or out of necessity
+	Hyponyms:
+	abet, assist, beaver, belabor, belabour, boondoggle, busy, carpenter, clerk, collaborate, collaborate, cooperate, dabble, electioneer, intern, minister, monkey, occupy, page, potter, potter, protect, puddle, putter, putter, scant, serve, skimp, skipper, slog, smatter, specialise, specialize, tinker, volunteer, wait, waitress, whore, work
+Linked Word: work
+	Part of Speech: VERBS
+	Synset: work.v.08
+	Definition: operate in a certain place, area, or specialty
+	Hyponyms:
+	
+Linked Word: apartment
+	Part of Speech: NOUNS
+	Synset: apartment.n.01
+	Definition: a suite of rooms usually on one floor of an apartment house
+	Hyponyms:
+	bedsit, bedsitter, duplex, flatlet, maisonette, maisonnette, penthouse, rooms, studio, suite, walk-up
+Linked Word: art
+	Part of Speech: NOUNS
+	Synset: art.n.01
+	Definition: the products of human creativity; works of art collectively
+	Hyponyms:
+	abstraction, abstractionism, anaglyph, aquatint, bronze, bust, cameo, canvas, canvass, carving, chinoiserie, choreography, cinquefoil, cityscape, copperplate, cyberart, dance, daub, decoupage, diaglyph, diptych, distemper, embossment, engraving, etching, extension, finger-painting, fresco, gem, genre, glyph, glyptics, glyptography, gouache, graphics, gravure, grotesque, half-relief, halftone, heliogravure, herm, icon, ikon, illumination, intaglio, kitsch, landscape, landscape, linecut, linocut, lithoglyptics, lithograph, marble, mezzo-relievo, mezzo-rilievo, mezzotint, miniature, mobile, modeling, modernism, mold, molding, monochrome, mosaic, mould, moulding, mural, nude, nude, overprint, painting, pastiche, pentimento, photogravure, photolithograph, picture, piece, pointillism, postmodernism, primitivism, print, relief, relievo, rilievo, scene, scrimshaw, sculpture, seascape, semi-abstraction, serigraph, silkscreen, sphinx, stabile, statue, surprint, synthetism, tanka, term, terminus, treasure, triptych, vermiculation, view, virtu, warhorse, wash, water-color, water-colour, watercolor, watercolour, waterscape, woodcarving, woodcut
+Linked Word: art
+	Part of Speech: NOUNS
+	Synset: art.n.02
+	Definition: the creation of beautiful or significant things
+	Hyponyms:
+	aquatint, bookbinding, carving, ceramics, crocheting, decalcomania, decoupage, distemper, drafting, draftsmanship, drawing, engraving, etching, fresco, gastronomy, glyptography, handicraft, impasto, knitting, lithography, modeling, modelling, molding, moulding, needlecraft, needlework, netting, origami, painting, perfumery, printmaking, pyrography, sculpture, serigraphy, sewing, spinning, stitching, suturing, tatting, topiary, tracing, water-color, water-colour, watercolor, watercolour, weaving
+Linked Word: art
+	Part of Speech: NOUNS
+	Synset: artwork.n.01
+	Definition: photographs or other visual representations in a printed publication
+	Hyponyms:
+	drawing, fig, figure, frame, illustration, picture
+Linked Word: artist
+	Part of Speech: NOUNS
+	Synset: artist.n.01
+	Definition: a person whose creative work shows sensitivity and imagination
+	Hyponyms:
+	Fauve, Indiana, Post-impressionist, Postimpressionist, Pre-Raphaelite, abstractionist, adapter, arranger, bandleader, bandmaster, cameraman, cantor, cartoonist, carver, choirmaster, cinematographer, classic, classicist, colorist, composer, conductor, constructivist, contrapuntist, cubist, dauber, decorator, director, distortionist, draftsman, drawer, engraver, etcher, expressionist, fauvist, illustrator, impressionist, landscapist, lensman, limner, lithographer, maestro, majorette, master, miniaturist, minimalist, modernist, muralist, musician, orchestrator, ornamentalist, painter, paparazzo, photographer, pointillist, portraitist, portrayer, precentor, printmaker, psalmist, pyrographer, realist, romantic, romanticist, sculptor, sculptress, sculpturer, sketcher, songster, songwriter, stylist, suprematist, surrealist, symbolist, symphonist, transcriber, virtuoso, watercolorist, watercolourist
+Linked Word: bakery
+	Part of Speech: NOUNS
+	Synset: bakery.n.01
+	Definition: a workplace where baked goods (breads and cakes and pastries) are produced or sold
+	Hyponyms:
+	patisserie
+Linked Word: bicycle
+	Part of Speech: NOUNS
+	Synset: bicycle.n.01
+	Definition: a wheeled vehicle that has two wheels and is moved by foot pedals
+	Hyponyms:
+	bicycle-built-for-two, off-roader, ordinary, push-bike, tandem, velocipede
+Linked Word: bus
+	Part of Speech: NOUNS
+	Synset: bus.n.01
+	Definition: a vehicle carrying many passengers; used for public transport
+	Hyponyms:
+	minibus, trolleybus
+Linked Word: child
+	Part of Speech: NOUNS
+	Synset: child.n.01
+	Definition: a young person of either sex
+	Hyponyms:
+	bairn, bambino, brat, buster, changeling, foster-child, foster-daughter, foster-son, fosterling, gamin, gamine, guttersnipe, imp, kiddy, kindergartener, kindergartner, monkey, orphan, peanut, picaninny, piccaninny, pickaninny, preschooler, ragamuffin, rapscallion, rascal, scalawag, scallywag, scamp, silly, sprog, tatterdemalion, terror, throwaway, toddler, tot, urchin, waif, yearling
+Linked Word: child
+	Part of Speech: NOUNS
+	Synset: child.n.02
+	Definition: a human offspring (son or daughter) of any age
+	Hyponyms:
+	Jnr, Jr, Junior, babe, baby, boy, cherub, daughter, foundling, girl, godchild, goddaughter, godson, infant, man-child, neonate, newborn, nurseling, nursling, papoose, pappoose, preemie, premie, son, stepchild, stepdaughter, stepson, suckling
+Linked Word: church
+	Part of Speech: NOUNS
+	Synset: church.n.01
+	Definition: one of the groups of Christians who have their own beliefs and forms of worship
+	Hyponyms:
+	Protestant
+Linked Word: church
+	Part of Speech: NOUNS
+	Synset: church.n.02
+	Definition: a place for public (especially Christian) worship
+	Hyponyms:
+	abbey, basilica, cathedral, cathedral, duomo, kirk, minster
+Linked Word: church
+	Part of Speech: NOUNS
+	Synset: church.n.04
+	Definition: the body of people who attend or belong to a particular local church
+	Hyponyms:
+	
+Linked Word: church
+	Part of Speech: NOUNS
+	Synset: church_service.n.01
+	Definition: a service conducted in a house of worship
+	Hyponyms:
+	
+Linked Word: coffee
+	Part of Speech: NOUNS
+	Synset: coffee.n.01
+	Definition: a beverage consisting of an infusion of ground coffee beans
+	Hyponyms:
+	Postum, cappuccino, chicory, decaf, demitasse, espresso, latte, mocha
+Linked Word: colleague
+	Part of Speech: NOUNS
+	Synset: colleague.n.01
+	Definition: an associate that one works with
+	Hyponyms:
+	
+Linked Word: colleague
+	Part of Speech: NOUNS
+	Synset: colleague.n.02
+	Definition: a person who is member of one's class or profession
+	Hyponyms:
+	
+Linked Word: comic
+	Part of Speech: NOUNS
+	Synset: comedian.n.01
+	Definition: a professional performer who tells jokes and performs comical acts
+	Hyponyms:
+	buffoon, clown, comedienne, fool, gagman, goof, goofball, harlequin, jester, joker, jokester, whiteface, zany
+Linked Word: community
+	Part of Speech: NOUNS
+	Synset: community.n.01
+	Definition: a group of people living in a particular local area
+	Hyponyms:
+	Aleut, Circassian, Umma, Ummah, convent, crossroads, hamlet, hood, horde, house, moshav, neighborhood, neighbourhood, parish, settlement, street, village
+Linked Word: community
+	Part of Speech: NOUNS
+	Synset: community.n.02
+	Definition: common ownership
+	Hyponyms:
+	
+Linked Word: community
+	Part of Speech: NOUNS
+	Synset: residential_district.n.01
+	Definition: a district where people live; occupied primarily by private residences
+	Hyponyms:
+	addition, exurbia, faubourg, suburb, suburbia, uptown, warren
+Linked Word: decoration
+	Part of Speech: NOUNS
+	Synset: decoration.n.01
+	Definition: something used to beautify
+	Hyponyms:
+	Cross, Hakenkreuz, Kakemono, adornment, aglet, aiglet, aigret, aigrette, aiguilette, anklet, annulet, annulet, annulet, antefix, arabesque, architrave, argyle, argyll, armilla, arms, arras, astragal, band, band, band, bandelet, bandelette, banding, banding, bandlet, bangle, bangle, banner, banner, bar, baseboard, bauble, bead, bead, beading, beading, beadwork, beadwork, bearing, bend, bijou, blackjack, blaze, blazon, blazonry, bling, boule, boulle, bouquet, boutonniere, bow, bracelet, braid, braiding, brass, breastpin, broach, brooch, bugle, buhl, bulla, cachet, cavetto, centerpiece, centrepiece, chain, chain, chaplet, charge, check, chevron, choker, circlet, clip, cockade, collar, collar, colophon, colors, colors, colours, colours, conge, congee, cordon, cornice, coronal, corsage, crest, crisscross, crocket, cross, crosshatch, crown, crucifix, cufflink, cuspidation, cyma, cymatium, damascene, dapple, decal, decalcomania, decor, design, device, device, diamante, diamond, dogtooth, dossal, dossel, eardrop, earring, echinus, egg-and-anchor, egg-and-dart, egg-and-tongue, embellishment, emblem, emerald, encrustation, ensign, ensign, epaulet, epaulette, epergne, eyespot, facula, facula, falderol, fallal, fanion, fess, fesse, festoon, festoon, festoonery, figure, filagree, filigree, fillagree, fin, finial, flag, fleck, fleur-de-lis, fleur-de-lys, flounce, flourish, fob, folderal, foliage, foliation, freckle, fret, fret, frieze, frill, frill, frog, frontal, frontlet, frosting, furbelow, gargoyle, garland, garnish, garnish, gaud, gauffer, gem, gewgaw, gimcrack, gimcrackery, glaze, goffer, gorgerin, graffiti, graffito, guilloche, hachure, handstamp, hanging, hatband, hatch, hatching, heraldry, herringbone, ice, ice, icing, incrustation, inlay, jabot, jack, jewel, jewellery, jewelry, knob, lambrequin, laurel, lavalier, lavaliere, lavalliere, lei, lentigo, linocut, lunula, macula, macula, maculation, macule, mandala, mark, marking, marqueterie, marquetry, meringue, mihrab, miniver, molding, mopboard, motif, motive, moulding, nailhead, nebula, neckband, neckband, necking, necklace, necklet, nonsense, nosegay, novelty, ocellus, ogee, ordinary, oriflamme, overlay, ovolo, panache, paraph, parhelion, parqueterie, parquetry, passementerie, patch, pattern, pearl, pectoral, pendant, pendent, pennant, pennon, pennoncel, pennoncelle, penoncel, peplum, pin, pinpoint, pinstripe, plaque, plume, pom-pom, pommel, pompon, posy, pyrograph, quartering, rib, rickrack, ricrac, ring, ringlet, rivet, rood, rood-tree, rosemaling, rosette, roundel, ruby, ruffle, saltire, sapphire, scarfpin, seal, sequin, sgraffito, shading, signet, solitaire, soutache, spangle, sparkler, speck, speckle, spiral, splash, spot, spray, sprig, stamp, standard, stickpin, strand, streak, streamer, streamer, streusel, stria, striation, string, stripe, stripe, stud, subbase, sunburst, sunburst, sundog, sunspot, surbase, swastika, tailfin, tapestry, tassel, tattoo, tetraskele, tetraskelion, thumb, tiepin, tinsel, topping, tore, torus, totem, tracery, trefoil, tricolor, tricolour, trim, trimming, trinket, triskele, triskelion, trumpery, twill, union, vermiculation, volute, waft, weave, wreath
+Linked Word: decoration
+	Part of Speech: NOUNS
+	Synset: decoration.n.03
+	Definition: the act of decorating something (in the hope of making it more attractive)
+	Hyponyms:
+	adornment, embellishment, figuration, lineation, marking, mottling, ornamentation, striping, tattoo, tessellation, titivation, tittivation, trimming
+Linked Word: dog
+	Part of Speech: NOUNS
+	Synset: dog.n.01
+	Definition: a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds
+	Hyponyms:
+	Afghan, Airedale, Appenzeller, Cardigan, Chihuahua, Doberman, EntleBucher, Leonberg, Lhasa, Maltese, Newfoundland, Peke, Pekinese, Pekingese, Pembroke, Pomeranian, Rottweiler, Saluki, Samoyed, Samoyede, Scottie, Sealyham, Sennenhunde, Shetland, Shih-Tzu, Weimaraner, affenpinscher, alsatian, barker, basenji, basset, beagle, bloodhound, bluetick, boarhound, bobtail, borzoi, bow-wow, boxer, briard, bulldog, bullterrier, cairn, chow, clumber, cocker, collie, coondog, coonhound, corgi, courser, cur, dachshund, dachsie, dalmatian, deerhound, doggie, doggy, elkhound, feist, fice, foxhound, greyhound, griffon, griffon, groenendael, harrier, hound, housedog, husky, keeshond, kelpie, komondor, kuvasz, lapdog, malamute, malemute, malinois, mastiff, mongrel, mutt, otterhound, papillon, pie-dog, pinscher, pointer, pooch, poodle, pug, pug-dog, puppy, pye-dog, ratter, redbone, retriever, schipperke, schnauzer, setter, sheepdog, sleuthhound, spaniel, spitz, springer, staghound, terrier, toy, vizsla, watchdog, whippet, wirehair, wolfhound
+Linked Word: downtown
+	Part of Speech: NOUNS
+	Synset: business_district.n.01
+	Definition: the central area or commercial center of a town or city
+	Hyponyms:
+	
+Linked Word: entertainment
+	Part of Speech: NOUNS
+	Synset: entertainment.n.01
+	Definition: an activity that is diverting and that holds the attention
+	Hyponyms:
+	beguilement, bill, bowing, cabaret, cantillation, carnival, caroling, chanting, circus, coloratura, conjuration, counterdemonstration, crooning, crooning, debunking, deception, demonstration, demonstration, display, distraction, edutainment, encore, entr'acte, exhibit, exhibition, exposure, extemporisation, extemporization, extravaganza, fair, floorshow, funfair, harmonisation, harmonization, horseshow, humming, hymnody, illusion, improvisation, interlude, intermezzo, interpretation, intonation, intonation, juggle, juggling, karaoke, legerdemain, magic, militainment, nightlife, parade, part-singing, performance, piping, playing, presentation, presentment, prestidigitation, production, program, programme, psalmody, raree-show, reinterpretation, rendering, rendition, repudiation, rodeo, scat, show, showing, sideshow, singalong, singing, singsong, solfege, solfege, solfeggio, solfeggio, solmization, spiccato, spin, stopping, thaumaturgy, transposition, trick, vocalizing, yodeling
+Linked Word: entrepreneur
+	Part of Speech: NOUNS
+	Synset: entrepreneur.n.01
+	Definition: someone who organizes a business venture and assumes the risk for it
+	Hyponyms:
+	
+Linked Word: espresso
+	Part of Speech: NOUNS
+	Synset: espresso.n.01
+	Definition: strong black coffee brewed by forcing hot water under pressure through finely ground coffee beans
+	Hyponyms:
+	latte
+Linked Word: family
+	Part of Speech: NOUNS
+	Synset: family.n.01
+	Definition: a social unit living together
+	Hyponyms:
+	
+Linked Word: family
+	Part of Speech: NOUNS
+	Synset: family.n.02
+	Definition: primary social group; parents and children
+	Hyponyms:
+	DINK, couple, marriage, match, mates
+Linked Word: family
+	Part of Speech: NOUNS
+	Synset: family.n.08
+	Definition: an association of people who share common beliefs or activities
+	Hyponyms:
+	koinonia
+Linked Word: family
+	Part of Speech: NOUNS
+	Synset: kin.n.01
+	Definition: a person having kinship with another or others
+	Hyponyms:
+	affine
+Linked Word: festival
+	Part of Speech: NOUNS
+	Synset: festival.n.01
+	Definition: a day or period of time set aside for feasting and celebration
+	Hyponyms:
+	Succos, Succoth, Sukkoth, Tabernacles, octave
+Linked Word: festival
+	Part of Speech: NOUNS
+	Synset: festival.n.02
+	Definition: an organized series of acts and performances (usually in one place)
+	Hyponyms:
+	Bacchanalia, Dionysia, Kwanza, Kwanzaa, Oktoberfest, Saturnalia, carnival, eisteddfod, sheepshearing
+Linked Word: fitness
+	Part of Speech: NOUNS
+	Synset: fitness.n.02
+	Definition: good physical condition; being in shape or in condition
+	Hyponyms:
+	fettle
+Linked Word: friend
+	Part of Speech: NOUNS
+	Synset: friend.n.01
+	Definition: a person you know well and regard with affection and trust
+	Hyponyms:
+	amigo, associate, brother, brother, buddy, chum, cobber, companion, comrade, comrade, confidant, confidante, crony, date, escort, familiar, fellow, flatmate, girlfriend, intimate, light, mate, pal, playfellow, playmate, repository, roomie, roommate, roomy, schoolfriend, secretary, sidekick, tovarich, tovarisch
+Linked Word: gallery
+	Part of Speech: NOUNS
+	Synset: gallery.n.03
+	Definition: a room or series of rooms where works of art are exhibited
+	Hyponyms:
+	salon
+Linked Word: graffiti
+	Part of Speech: NOUNS
+	Synset: graffito.n.01
+	Definition: a rude decoration inscribed on rocks or walls
+	Hyponyms:
+	
+Linked Word: graffiti
+	Part of Speech: NOUNS
+	Synset: graffito.n.01
+	Definition: a rude decoration inscribed on rocks or walls
+	Hyponyms:
+	
+Linked Word: grocery
+	Part of Speech: NOUNS
+	Synset: grocery.n.02
+	Definition: (usually plural) consumer goods sold by a grocer
+	Hyponyms:
+	greengrocery
+Linked Word: grocery
+	Part of Speech: NOUNS
+	Synset: grocery_store.n.01
+	Definition: a marketplace where groceries are sold
+	Hyponyms:
+	greengrocery, hypermarket, supermarket
+Linked Word: history
+	Part of Speech: NOUNS
+	Synset: history.n.01
+	Definition: the aggregate of past events
+	Hyponyms:
+	
+Linked Word: history
+	Part of Speech: NOUNS
+	Synset: history.n.02
+	Definition: a record or narrative description of past events
+	Hyponyms:
+	anamnesis, annals, autobiography, biography, etymology, hagiography, life, memoir, profile, recital
+Linked Word: history
+	Part of Speech: NOUNS
+	Synset: history.n.04
+	Definition: the continuum of events occurring in succession leading from the past to the present and even into the future
+	Hyponyms:
+	
+Linked Word: history
+	Part of Speech: NOUNS
+	Synset: history.n.05
+	Definition: all that is remembered of the past as preserved in writing; a body of knowledge
+	Hyponyms:
+	
+Linked Word: justice
+	Part of Speech: NOUNS
+	Synset: justice.n.01
+	Definition: the quality of being just or fair
+	Hyponyms:
+	equity, fairness, non-discrimination, right, rightfulness, sportsmanship
+Linked Word: justice
+	Part of Speech: NOUNS
+	Synset: justice.n.02
+	Definition: judgment involved in the determination of rights and the assignment of rewards and punishments
+	Hyponyms:
+	administration, judicature
+Linked Word: kid
+	Part of Speech: NOUNS
+	Synset: child.n.01
+	Definition: a young person of either sex
+	Hyponyms:
+	bairn, bambino, brat, buster, changeling, foster-child, foster-daughter, foster-son, fosterling, gamin, gamine, guttersnipe, imp, kiddy, kindergartener, kindergartner, monkey, orphan, peanut, picaninny, piccaninny, pickaninny, preschooler, ragamuffin, rapscallion, rascal, scalawag, scallywag, scamp, silly, sprog, tatterdemalion, terror, throwaway, toddler, tot, urchin, waif, yearling
+Linked Word: kid
+	Part of Speech: NOUNS
+	Synset: child.n.02
+	Definition: a human offspring (son or daughter) of any age
+	Hyponyms:
+	Jnr, Jr, Junior, babe, baby, boy, cherub, daughter, foundling, girl, godchild, goddaughter, godson, infant, man-child, neonate, newborn, nurseling, nursling, papoose, pappoose, preemie, premie, son, stepchild, stepdaughter, stepson, suckling
+Linked Word: landmark
+	Part of Speech: NOUNS
+	Synset: landmark.n.01
+	Definition: the position of a prominent or well-known object in a particular landscape
+	Hyponyms:
+	
+Linked Word: landmark
+	Part of Speech: NOUNS
+	Synset: landmark.n.02
+	Definition: an event marking a unique or important historical change of course or one on which important developments depend
+	Hyponyms:
+	
+Linked Word: laptop
+	Part of Speech: NOUNS
+	Synset: laptop.n.01
+	Definition: a portable computer small enough to use in your lap
+	Hyponyms:
+	
+Linked Word: latte
+	Part of Speech: NOUNS
+	Synset: caffe_latte.n.01
+	Definition: strong espresso coffee with a topping of frothed steamed milk
+	Hyponyms:
+	
+Linked Word: local
+	Part of Speech: NOUNS
+	Synset: local.n.01
+	Definition: public transport consisting of a bus or train that stops at all stations or stops
+	Hyponyms:
+	
+Linked Word: meeting
+	Part of Speech: NOUNS
+	Synset: meeting.n.01
+	Definition: a formally arranged gathering
+	Hyponyms:
+	Jirga, caucus, colloquium, conclave, conference, congress, convention, council, forum, indaba, plenum, powwow, seminar, summit, symposium, synod
+Linked Word: meeting
+	Part of Speech: NOUNS
+	Synset: meeting.n.02
+	Definition: a small informal social gathering
+	Hyponyms:
+	appointment, conventicle, date, engagement, rendezvous, seance, session, sitting, tryst, visit
+Linked Word: meeting
+	Part of Speech: NOUNS
+	Synset: meeting.n.03
+	Definition: a casual or unexpected convergence
+	Hyponyms:
+	alignment, conjunction
+Linked Word: meeting
+	Part of Speech: NOUNS
+	Synset: meeting.n.04
+	Definition: the social act of assembling for some common purpose
+	Hyponyms:
+	assignation, call, call, recitation, rendezvous, round, session, socialisation, socialising, socialization, socializing, tryst, visit, visit, visit, visitation, visiting
+Linked Word: mural
+	Part of Speech: NOUNS
+	Synset: mural.n.01
+	Definition: a painting that is applied to a wall surface
+	Hyponyms:
+	fresco
+Linked Word: museum
+	Part of Speech: NOUNS
+	Synset: museum.n.01
+	Definition: a depository for collecting and displaying objects having scientific or historical or artistic value
+	Hyponyms:
+	
+Linked Word: music
+	Part of Speech: NOUNS
+	Synset: music.n.01
+	Definition: an artistic form of auditory communication incorporating instrumental or vocal tones in a structured and continuous manner
+	Hyponyms:
+	Bach, Beethoven, Brahms, Chopin, Epistle, Handel, Haydn, Mass, Mozart, Requiem, Stravinsky, Ta'ziyeh, Wagner, above, accompaniment, adagio, air, allegretto, allegro, analecta, analects, andante, anthem, anthem, anticlimax, antiphon, antiphonal, antiphonary, antiphony, antiphony, aria, arietta, arioso, arrangement, article, augmentation, backup, bagatelle, ballad, ballet, barcarole, barcarolle, bass, bathos, bebop, beguine, belling, berceuse, bluegrass, blues, bolero, boogie, boogie-woogie, book, bop, bouffe, cadence, cadenza, callathump, callithump, canon, cantata, canticle, canto, canto, capriccio, carioca, carol, chant, chantey, chanty, chapter, charivari, chivaree, choral, chorale, chorus, chrestomathy, citation, classical, clause, clipping, close, closing, coda, composition, concerto, conclusion, conga, continuo, coronach, counterpoint, cradlesong, cut, cut, cutting, deductible, descant, development, diminution, dirge, discant, disco, dissolve, dithyramb, ditty, divertimento, doo-wop, doxology, duet, duette, duo, end, ending, epigraph, epilog, epilog, epilogue, epilogue, episode, escalator, etude, excerpt, excerption, exordium, exposition, extract, fado, fanfare, fantasia, finale, flamenco, flash-forward, flashback, flourish, folk, folksong, foreword, fugue, funk, gavotte, genre, gigue, glissando, gospel, gradual, habanera, harmonisation, harmonization, harmony, hip-hop, homophony, hornpipe, hymeneal, hymn, idea, idyl, idyll, impromptu, insert, instrumentation, intermezzo, intermezzo, intro, introduction, introit, inversion, jazz, jazz, jig, jive, joker, jump, keen, kwela, lament, landler, larghetto, largo, lay, lead, lead-in, lede, leitmotif, leitmotiv, lied, ligature, line, love-song, lullaby, macumba, madrigal, march, mazurka, medley, melody, mezuza, mezuzah, mimesis, minstrelsy, minuet, misquotation, misquote, modulation, monody, monophony, morceau, motet, motif, motive, movement, narration, nocturne, notturno, obbligato, obbligato, obligato, obligato, octet, octette, oldie, opening, opera, operetta, opus, oratorio, orchestration, ostinato, overture, paean, part, partita, partita, partsong, passage, passage, pastiche, pastoral, pastorale, pavan, pavane, pean, peroration, phrase, pibroch, piece, pizzicato, place, plainchant, plainsong, polka, polyphony, polytonalism, polytonality, pop, popularism, postlude, potpourri, preamble, preface, prelude, preparation, primo, processional, prolegomenon, prologue, prolusion, prosodion, prothalamion, prothalamium, punk, quadrille, quartet, quartette, quickstep, quintet, quintette, quotation, quote, rag, ragtime, rap, realisation, realization, recapitulation, recessional, recitative, reel, refrain, reggae, reharmonisation, reharmonization, requiem, resolution, rhumba, rider, riff, rock, rock'n'roll, rock-and-roll, rockabilly, rondeau, rondo, roulade, round, roundelay, rumba, salutation, samba, saraband, scat, scherzo, schottische, scolion, score, secondo, section, selection, septet, septette, serenade, serenade, serialism, sestet, sextet, sextette, shanty, shivaree, signature, skiffle, slide, solo, sonata, sonatina, song, soul, spiritual, spot, spot, statement, strain, study, subdivision, suite, support, sura, swing, swoop, symphony, syncopation, tango, tarantella, teaser, techno, text, theme, threnody, toccata, tra-la, tra-la-la, track, trad, transition, transition, trio, troll, tucket, tune, vamp, variation, vocal, vocal, voice, voluntary, waltz, zydeco
+Linked Word: music
+	Part of Speech: NOUNS
+	Synset: music.n.02
+	Definition: any agreeable (pleasing and harmonious) sounds
+	Hyponyms:
+	
+Linked Word: music
+	Part of Speech: NOUNS
+	Synset: music.n.03
+	Definition: musical activity (singing or whistling etc.)
+	Hyponyms:
+	cantillation, carillon, carol, caroling, chanting, coloratura, cradlesong, crooning, crooning, drumming, harmonisation, harmonization, humming, hymnody, intonation, intonation, intonation, karaoke, lullaby, part-singing, percussion, psalmody, scat, singalong, singing, singsong, solfege, solfege, solfeggio, solfeggio, solmization, song, strain, vocalizing, whistling, yodeling
+Linked Word: music
+	Part of Speech: NOUNS
+	Synset: music.n.04
+	Definition: (music) the sounds produced by singers or musical instruments (or reproductions of such sounds)
+	Hyponyms:
+	
+Linked Word: neighborhood
+	Part of Speech: NOUNS
+	Synset: neighborhood.n.02
+	Definition: people living near one another
+	Hyponyms:
+	hood, street
+Linked Word: neighborhood
+	Part of Speech: NOUNS
+	Synset: neighborhood.n.04
+	Definition: an area within a city or town that has some distinctive features (especially one forming a community)
+	Hyponyms:
+	
+Linked Word: neighborhood
+	Part of Speech: NOUNS
+	Synset: region.n.04
+	Definition: the approximate amount of something (usually used prepositionally as in `in the region of')
+	Hyponyms:
+	
+Linked Word: office
+	Part of Speech: NOUNS
+	Synset: office.n.01
+	Definition: place of business where professional or clerical duties are performed
+	Hyponyms:
+	countinghouse, headquarters, jobcentre, mukataa, newsroom
+Linked Word: office
+	Part of Speech: NOUNS
+	Synset: office.n.05
+	Definition: professional or clerical workers in an office
+	Hyponyms:
+	
+Linked Word: outlet
+	Part of Speech: NOUNS
+	Synset: mercantile_establishment.n.01
+	Definition: a place of business for retailing goods
+	Hyponyms:
+	PX, agora, agora, bakehouse, bakery, bakeshop, barbershop, bazaar, bazaar, bazar, bazar, bodega, bookshop, bookstall, bookstore, booth, boutique, canteen, center, charcuterie, chemist's, cleaners, commissary, confectionary, confectionery, deli, delicatessen, discounter, drugstore, emporium, florist, garage, greengrocery, greenmarket, grocery, haberdashery, hypermarket, ironmonger, mall, market, market, marketplace, mart, millinery, newsstand, off-licence, outfitter, patisserie, pawnshop, perfumery, pharmacy, pizzeria, plaza, salon, shoe-shop, shop, slopshop, souk, stall, stand, store, supermarket, thriftshop, tobacconist, toyshop
+Linked Word: outlet
+	Part of Speech: NOUNS
+	Synset: release.n.09
+	Definition: activity that frees or expresses creative energy or emotion
+	Hyponyms:
+	
+Linked Word: paint
+	Part of Speech: NOUNS
+	Synset: key.n.09
+	Definition: (basketball) a space (including the foul line) in front of the basket at each end of a basketball court; usually painted a different color from the rest of the court
+	Hyponyms:
+	
+Linked Word: paint
+	Part of Speech: NOUNS
+	Synset: paint.n.01
+	Definition: a substance used as a coating to protect or decorate a surface (especially a mixture of pigment suspended in a liquid); dries to form a hard coating
+	Hyponyms:
+	acrylic, blackwash, calcimine, casein, couch, distemper, enamel, encaustic, fingerpaint, gouache, ground, housepaint, latex, oil, primer, priming, semigloss, tempera, undercoat, wash, water-color, water-colour, watercolor, watercolour, whitewash
+Linked Word: paint
+	Part of Speech: NOUNS
+	Synset: rouge.n.01
+	Definition: makeup consisting of a pink or red powder applied to the cheeks
+	Hyponyms:
+	
+Linked Word: park
+	Part of Speech: NOUNS
+	Synset: ballpark.n.01
+	Definition: a facility in which ball games are played (especially baseball games)
+	Hyponyms:
+	
+Linked Word: park
+	Part of Speech: NOUNS
+	Synset: park.n.01
+	Definition: a large area of land preserved in its natural state as public property
+	Hyponyms:
+	
+Linked Word: park
+	Part of Speech: NOUNS
+	Synset: park.n.02
+	Definition: a piece of open land for recreational use in an urban area
+	Hyponyms:
+	funfair
+Linked Word: pastry
+	Part of Speech: NOUNS
+	Synset: pastry.n.01
+	Definition: a dough of flour and water and shortening
+	Hyponyms:
+	phyllo
+Linked Word: pastry
+	Part of Speech: NOUNS
+	Synset: pastry.n.02
+	Definition: any of various baked foods made of dough or batter
+	Hyponyms:
+	baklava, bouchee, chou, cobbler, dowdy, eclair, frangipane, napoleon, pandowdy, pasty, patty, pie, profiterole, puff, quiche, rugelach, ruggelach, rugulah, streusel, strudel, tart, tart, tartlet, timbale, toad-in-the-hole, tourtiere, vol-au-vent
+Linked Word: school
+	Part of Speech: NOUNS
+	Synset: school.n.01
+	Definition: an educational institution
+	Hyponyms:
+	Gymnasium, academy, academy, conservatory, crammer, high, highschool, lycee, lyceum, madrasa, madrasah, pesantran, pesantren, polytechnic, seminary, seminary, tech, yeshiva, yeshivah
+Linked Word: school
+	Part of Speech: NOUNS
+	Synset: school.n.02
+	Definition: a building where young people receive education
+	Hyponyms:
+	conservatoire, conservatory
+Linked Word: school
+	Part of Speech: NOUNS
+	Synset: school.n.06
+	Definition: an educational institution's faculty and students
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: NOUNS
+	Synset: sociable.n.01
+	Definition: a party of people assembled to promote sociability and communal activity
+	Hyponyms:
+	
+Linked Word: sofa
+	Part of Speech: NOUNS
+	Synset: sofa.n.01
+	Definition: an upholstered seat for more than one person
+	Hyponyms:
+	chesterfield, convertible, davenport, daybed, divan, loveseat, settee, squab, tete-a-tete, vis-a-vis
+Linked Word: street
+	Part of Speech: NOUNS
+	Synset: street.n.01
+	Definition: a thoroughfare (usually including sidewalks) that is lined with buildings
+	Hyponyms:
+	alley, alleyway, avenue, boulevard, mews, rue
+Linked Word: street
+	Part of Speech: NOUNS
+	Synset: street.n.02
+	Definition: the part of a thoroughfare between the sidewalks; the part of the thoroughfare on which vehicles travel
+	Hyponyms:
+	
+Linked Word: street
+	Part of Speech: NOUNS
+	Synset: street.n.03
+	Definition: the streets of a city viewed as a depressed environment in which there is poverty and crime and prostitution and dereliction
+	Hyponyms:
+	
+Linked Word: street
+	Part of Speech: NOUNS
+	Synset: street.n.05
+	Definition: people living or working on the same street
+	Hyponyms:
+	
+Linked Word: studio
+	Part of Speech: NOUNS
+	Synset: studio.n.01
+	Definition: workplace for the teaching or practice of an art
+	Hyponyms:
+	atelier
+Linked Word: studio
+	Part of Speech: NOUNS
+	Synset: studio.n.03
+	Definition: workplace consisting of a room or building where movies or television shows or radio programs are produced and recorded
+	Hyponyms:
+	
+Linked Word: studio
+	Part of Speech: NOUNS
+	Synset: studio_apartment.n.01
+	Definition: an apartment with a living space and a bathroom and a small kitchen
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: cogitation.n.02
+	Definition: attentive consideration and meditation
+	Hyponyms:
+	lucubration
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: discipline.n.01
+	Definition: a branch of knowledge
+	Hyponyms:
+	AI, Assyriology, Charleston, EE, Egyptology, English, IP, IT, MT, NLP, OB, Occidentalism, Orientalism, QCD, QED, Romanticism, Sinology, Sumerology, accidence, acoustics, acting, adagio, aerodynamics, aerology, aeromechanics, aeromedicine, aeronautics, aesthetics, aetiology, agrobiology, agrology, agronomy, algebra, algology, algorism, alienism, allergology, allometry, analysis, anatomy, anesthesiology, angelology, angiology, animatronics, anthropology, apery, apologetics, archaeology, archeology, architectonics, architecture, arithmetic, arts, astrobiology, astrodynamics, astrometry, astronautics, astronomy, astrophysics, audiology, audiometry, avionics, axiology, bacteriology, baddie, ballet, ballistics, beguine, behaviorism, behaviourism, bibliotics, biochemistry, bioclimatology, bioengineering, bioethics, biogeography, biology, biomedicine, biomedicine, biometrics, biometry, bionics, bionomics, biophysics, bioremediation, bioscience, biostatistics, biosystematics, biosystematy, biotech, biotechnology, biotechnology, bolero, botany, bowing, buck-and-wing, bugology, business, byplay, cacogenics, cakewalk, calculus, cancan, cantillation, cardiology, carioca, caroling, carving, casuistry, catoptrics, cha-cha, cha-cha-cha, chanting, character, characterization, chemistry, chemoimmunology, chiropody, choreography, chronology, civics, cladistics, classicalism, classicism, classics, climatology, clog, coloratura, communications, computing, conchology, conga, contradance, contredanse, correlation, cosmogeny, cosmogony, cosmography, cosmology, cosmology, cotilion, cotillion, country-dance, courante, craniology, craniometry, criminology, crooning, crooning, cryobiology, cryogenics, cryogeny, cryonics, cryptanalysis, cryptanalytics, cryptography, cryptology, crystallography, cybernetics, cytogenetics, cytology, dance, dancing, decomposition, deixis, demography, dentistry, dermatoglyphics, dermatology, diachrony, diagnostics, dialectic, dialectology, dietetics, distemper, divinity, do-si-do, duet, dynamics, dysgenics, ecclesiology, ecology, econometrics, economics, eightsome, electrochemistry, electromagnetics, electromagnetism, electronics, electrostatics, embryology, enactment, endaemonism, endocrinology, endodontia, endodontics, engineering, entomology, enzymology, epidemiology, epigraphy, epistemology, ergonomics, escapology, eschatology, esthetics, ethics, ethnography, ethnology, ethology, etiology, etymology, eudemonism, eugenics, euthenics, exobiology, exodontia, exodontics, fandango, farandole, femtochemistry, fetology, finance, flamenco, foetology, forestry, fossilology, fox-trot, foxtrot, fresco, frontier, futuristics, futurology, garbology, gastroenterology, gavotte, gene-splicing, genealogy, genetics, genomics, geochemistry, geodesy, geographics, geography, geology, geometry, geomorphology, geophysics, geopolitics, geostrategy, geriatrics, gerontology, glottochronology, government, grammar, graphology, gynaecology, gynecology, habanera, haematology, hamming, harmonics, harmonisation, harmonization, heavy, hedonism, hematology, hemodynamics, hermeneutics, hero, heroics, heroine, herpetology, histology, history, holography, homiletics, hoofing, hornpipe, hula, hula-hula, humanities, humming, hydraulics, hydrodynamics, hydrography, hydrokinetics, hydrology, hydrostatics, hygiene, hygienics, hymnody, hypsography, ichthyology, iconology, immunochemistry, immunology, immunopathology, impasto, impersonation, impression, informatics, ingenue, intonation, intonation, jig, jitterbug, jurisprudence, karaoke, kinematics, kinesiology, kinetics, lancers, landler, law, lepidopterology, lepidoptery, lexicology, lexicostatistics, limnology, lindy, linguistics, linguistics, lit, literature, lithology, liturgics, liturgiology, logic, longways, macrobiotics, macroeconomics, magnetics, magnetism, magnetohydrodynamics, major, malacology, mambo, mammalogy, math, mathematics, maths, mazurka, mechanics, medicine, memory, metallurgy, metamathematics, metaphysics, meteorology, method, methodology, metrics, metrology, microbiology, microeconomics, microelectronics, micropaleontology, midwifery, mime, mimicry, mineralogy, minuet, mockery, modeling, modelling, molding, morphology, morphology, morphology, morphophonemics, morphophysiology, moulding, musicology, mycology, myology, mythology, nanotechnology, nauch, nautch, neoclassicism, neonatology, nephology, nephrology, neuroanatomy, neurobiology, neuroethics, neurolinguistics, neurology, neurology, neurophysiology, neuropsychiatry, neuropsychology, neuroscience, nosology, nucleonics, numerology, nutrition, object, obstetrics, occultism, oceanography, oceanology, odontology, ology, oncology, one-step, onomastics, ontology, oology, ophthalmology, optics, ornithology, orography, orology, orthodontia, orthodontics, orthodonture, orthoepy, orthopaedics, orthopedics, osteology, otolaryngology, otology, otorhinolaryngology, overacting, paediatrics, painting, palaeoanthropology, palaeobiology, palaeobotany, palaeoclimatology, palaeodendrology, palaeoecology, palaeoethnography, palaeogeography, palaeogeology, palaeology, palaeontology, palaeopathology, palaeornithology, palaeozoology, palaetiology, paleoanthropology, paleobiology, paleobotany, paleoclimatology, paleodendrology, paleoecology, paleoethnography, paleogeography, paleogeology, paleography, paleology, paleomammalogy, paleontology, paleopathology, paleornithology, paleozoology, paletiology, panto, pantomime, parody, part, part-singing, pathology, pavan, pavane, pediatrics, pedology, penology, performing, perinatology, periodontia, periodontics, persona, personation, personation, petrology, pharmaceutics, pharmacogenetics, pharmacokinetics, pharmacology, pharmacy, philology, philosophy, phonemics, phonetics, phonology, photochemistry, phrase, phrenology, phycology, physics, physics, physiography, physiology, phytochemistry, phytology, piping, playacting, playing, playing, pneumatics, podiatry, poenology, poetics, politics, polka, pomology, portrayal, posology, pragmatics, primatology, probabilism, proctology, promenade, prosody, prosthetics, prosthodontia, prosthodontics, proteomics, protoanthropology, protoarchaeology, protoarcheology, protohistory, protology, protozoology, proxemics, psalmody, psephology, psychiatry, psychodynamics, psycholinguistics, psychology, psychometrics, psychometrika, psychometry, psychonomics, psychopathology, psychopathology, psychopharmacology, psychophysics, psychophysiology, psychotherapeutics, psychotherapy, pteridology, pyrrhic, quadratics, quadrille, quadrivium, quickstep, radiobiology, radiochemistry, radiology, realpolitik, reel, reel, reenactment, reflexology, rheology, rhetoric, rheumatology, rhinolaryngology, rhumba, rhumba, ritualism, robotics, rocketry, role, roleplaying, rumba, rumba, saltation, samba, saraband, sashay, scat, schottische, schtick, schtik, science, sculpture, seismology, selenology, semantics, semasiology, serology, shag, shimmy, shtick, shtik, silviculture, singalong, singing, singsong, skank, skit, sociobiology, sociolinguistics, sociology, sociometry, soft-shoe, solfege, solfege, solfeggio, solfeggio, solmization, soubrette, spelaeology, speleology, spiccato, statics, statistics, stemmatics, stemmatology, stomp, stopping, strategics, strategy, stratigraphy, strip, striptease, structuralism, surgery, swing, symbology, syntax, systematics, tactics, takeoff, tango, tarantella, tarantelle, taxonomy, technology, tectonics, tectonics, telecommunication, telerobotics, teratology, terpsichore, thanatology, theodicy, theogony, theology, therapeutics, thermionics, thermochemistry, thermodynamics, thermostatics, tocology, topography, topology, topology, topology, toponomy, toponymy, toxicology, transcendentalism, transposition, traumatology, triangulation, tribology, trig, trigonometry, trivium, twist, two-step, undercut, uranology, urology, valse, variation, villain, virology, vocalizing, volcanology, vulcanology, waltz, water-color, water-colour, watercolor, watercolour, yodeling, zoology, zymology, zymurgy
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: report.n.01
+	Definition: a written document describing the findings of some individual or group
+	Hyponyms:
+	assay
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: sketch.n.01
+	Definition: preliminary drawing for later elaboration
+	Hyponyms:
+	design, draft, vignette
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: study.n.02
+	Definition: applying the mind to learning and understanding a subject (especially by reading)
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: study.n.04
+	Definition: a state of deep mental absorption
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: study.n.05
+	Definition: a room used for reading and writing and studying
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: study.n.09
+	Definition: someone who memorizes quickly and easily (as the lines for a part in a play)
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: study.n.10
+	Definition: a composition intended to develop one aspect of the performer's technique
+	Hyponyms:
+	
+Linked Word: study
+	Part of Speech: NOUNS
+	Synset: survey.n.01
+	Definition: a detailed critical inspection
+	Hyponyms:
+	resurvey
+Linked Word: style
+	Part of Speech: NOUNS
+	Synset: dash.n.01
+	Definition: distinctive and stylish elegance
+	Hyponyms:
+	
+Linked Word: style
+	Part of Speech: NOUNS
+	Synset: expressive_style.n.01
+	Definition: a way of expressing something (in language or art or music etc.) that is characteristic of a particular person or group of people or period
+	Hyponyms:
+	Americanism, Anglicism, Briticism, Britishism, Eurobabble, Gongorism, Mass, Requiem, accent, accentuation, address, allegory, alliteration, ambage, amphibrach, anacoluthia, anacoluthon, anadiplosis, analysis, anapaest, anapest, anaphora, anaphora, anastrophe, anthem, antinomasia, antiphon, antiphonal, antiphonary, antiphony, antiphrasis, antithesis, apophasis, aposiopesis, apostrophe, archaicism, archaism, article, assonance, asyndeton, bathos, beat, bebop, blah, bluegrass, blues, boilerplate, bombast, boogie, boogie-woogie, bop, bouffe, brevity, cadence, caesura, cantata, canticle, carol, catachresis, catalexis, catch, chant, chiasmus, choral, chorale, circumlocution, claptrap, classical, climax, coarseness, colloquialism, column, comedy, conceit, conceit, conceit, concerto, conciseness, concision, consonance, conversion, crispness, dactyl, delivery, device, dibrach, diction, disco, dithyramb, doctorspeak, doo-wop, doxology, drama, drone, droning, ecobabble, ecphonesis, editorial, elocution, eloquence, emphasis, emphasis, enallage, enjambement, enjambment, epanalepsis, epanaphora, epanodos, epanorthosis, epiphora, epiplexis, epistrophe, epos, euphuism, euphuism, exaggeration, exclamation, expression, fado, farce, feature, figure, flatness, flatulence, flourish, fluency, folk, folksong, foot, form, formulation, fugue, funk, fustian, gemination, genre, genre, glop, gobbledygook, gospel, gradual, grandiloquence, grandiosity, headlinese, hendiadys, hip-hop, honorific, hymeneal, hymn, hypallage, hyperbaton, hyperbole, hypozeugma, hypozeuxis, iamb, iambus, idiom, image, inflection, inflection, intonation, inversion, irony, jargon, jazz, jive, journalese, kenning, laconicism, laconism, lead, legalese, litotes, long-windedness, luridness, macumba, magniloquence, march, measure, meiosis, melodrama, metalepsis, metaphor, meter, metonymy, metre, modulation, modulation, monotone, mush, nonfiction, note, officialese, offprint, onomatopoeia, opera, operetta, oratorio, ornateness, oxymoron, paean, paper, paraleipsis, paralepsis, paralipsis, paregmenon, parlance, pathos, pean, periphrasis, personal, personification, phraseology, phrasing, pibroch, pithiness, plainchant, plainsong, pleonasm, ploce, poesy, poetry, poetry, polyptoton, polysyndeton, pop, preterition, processional, prolepsis, prolixity, prolixness, prose, prose, prosodion, prosody, prosody, prosopopoeia, psychobabble, punk, pyrrhic, quickstep, rant, rap, recessional, redundancy, reduplication, reggae, repetition, repetitiousness, repetitiveness, reprint, rhetoric, rhetoric, rhyme, rhythm, rime, rock, rock'n'roll, rock-and-roll, rockabilly, rondeau, rondo, rotundity, roundness, saltiness, scansion, scat, schottische, self-expression, sensationalism, sentimentalism, separate, seriocomedy, sesquipedality, shibboleth, sidebar, simile, singsong, sitcom, skiffle, slapstick, slop, smoothness, sonata, sonatina, soul, speech, spiritual, spondee, stress, succinctness, swing, syllepsis, symphony, symploce, synecdoche, tautology, technobabble, terseness, tone, tongue, topicalization, trad, tragedy, tragicomedy, tragicomedy, travesty, treacle, trochee, trope, turgidity, turgidness, undertone, vein, verbalisation, verbalism, verbalization, verbiage, verbiage, verboseness, verbosity, verse, versification, wellerism, windiness, wordiness, wording, zeugma, zydeco
+Linked Word: style
+	Part of Speech: NOUNS
+	Synset: manner.n.01
+	Definition: how something is done or how it happens
+	Hyponyms:
+	Romanticism, baroque, baroqueness, classicalism, classicism, drape, fit, form, hang, idiom, life-style, lifestyle, neoclassicism, order, response, rococo, setup, signature, touch, treatment, wise
+Linked Word: style
+	Part of Speech: NOUNS
+	Synset: style.n.03
+	Definition: a particular kind (as to appearance)
+	Hyponyms:
+	
+Linked Word: style
+	Part of Speech: NOUNS
+	Synset: vogue.n.01
+	Definition: the popular taste at a given time
+	Hyponyms:
+	bandwagon, craze, cult, cut, fad, fashion, furor, furore, rage, retro
+Linked Word: subway
+	Part of Speech: NOUNS
+	Synset: metro.n.01
+	Definition: an electric railway operating below the surface of the ground (usually in a city)
+	Hyponyms:
+	
+Linked Word: sustainability
+	Part of Speech: NOUNS
+	Synset: sustainability.n.01
+	Definition: the property of being sustainable
+	Hyponyms:
+	
+Linked Word: table
+	Part of Speech: NOUNS
+	Synset: board.n.04
+	Definition: food or meals in general
+	Hyponyms:
+	
+Linked Word: table
+	Part of Speech: NOUNS
+	Synset: table.n.02
+	Definition: a piece of furniture having a smooth flat top that is usually supported by one or more vertical legs
+	Hyponyms:
+	altar, bar, bench, booth, buffet, checkout, commissary, console, counter, davenport, desk, dresser, escritoire, gueridon, lectern, platen, secretaire, secretary, stand, vanity, workbench, worktable
+Linked Word: table
+	Part of Speech: NOUNS
+	Synset: table.n.03
+	Definition: a piece of furniture with tableware for a meal laid out on it
+	Hyponyms:
+	board, triclinium
+Linked Word: table
+	Part of Speech: NOUNS
+	Synset: table.n.05
+	Definition: a company of people assembled at a table for a meal or game
+	Hyponyms:
+	
+Linked Word: tattoo
+	Part of Speech: NOUNS
+	Synset: tattoo.n.02
+	Definition: a design on the skin made by tattooing
+	Hyponyms:
+	
+Linked Word: tattoo
+	Part of Speech: NOUNS
+	Synset: tattoo.n.03
+	Definition: the practice of making a design on the skin by pricking and staining
+	Hyponyms:
+	
+Linked Word: tourist
+	Part of Speech: NOUNS
+	Synset: tourist.n.01
+	Definition: someone who travels for pleasure
+	Hyponyms:
+	excursionist, rubberneck, sightseer, tripper
+Linked Word: transit
+	Part of Speech: NOUNS
+	Synset: transportation_system.n.01
+	Definition: a facility consisting of the means and equipment necessary for the movement of passengers or goods
+	Hyponyms:
+	hub-and-spoke, telferage, telpherage
+Linked Word: vibe
+	Part of Speech: NOUNS
+	Synset: vibration.n.04
+	Definition: a distinctive emotional aura experienced instinctively
+	Hyponyms:
+	
+Linked Word: wifi
+	Part of Speech: NOUNS
+	Synset: wireless_local_area_network.n.01
+	Definition: a local area network that uses high frequency radio signals to transmit and receive data over distances of a few hundred feet; uses ethernet protocol
+	Hyponyms:
+	
+Linked Word: workout
+	Part of Speech: NOUNS
+	Synset: exercise.n.01
+	Definition: the activity of exerting your muscles in various ways to keep fit
+	Hyponyms:
+	aerobics, bodybuilding, calisthenics, callisthenics, chin-up, clean, conditioner, crucifix, dip, handstand, hang, isometrics, jerk, jogging, kip, musclebuilding, pandiculation, press, press-up, pull-up, pushup, scissors, set, sit-up, snatch, squat, squatting, straddle, stretch, stretching, upstart, weightlift, weightlifting, yoga
+Linked Word: writer
+	Part of Speech: NOUNS
+	Synset: writer.n.01
+	Definition: writes (books or stories or articles or the like) professionally (for pay)
+	Hyponyms:
+	abstracter, abstractor, alliterator, authoress, autobiographer, bard, biographer, coauthor, columnist, commentator, compiler, contributor, correspondent, cyberpunk, drafter, dramatist, editorialist, elegist, encyclopaedist, encyclopedist, essayist, etymologist, framer, gagman, gagster, gagwriter, gazetteer, ghost, ghostwriter, hack, hagiographer, hagiographist, hagiologist, journalist, lexicographer, lexicologist, librettist, litterateur, lyricist, lyrist, neologist, newspaperman, newspaperwoman, newswriter, novelist, odist, pamphleteer, paragrapher, penman, photojournalist, playwright, poet, poetess, poetiser, poetizer, polemic, polemicist, polemist, pressman, reviewer, rhymer, rhymester, scenarist, screenwriter, scribbler, scribe, scriptwriter, sonneteer, speechwriter, sportswriter, synonymist, tragedian, versifier, word-painter, wordmonger, wordsmith
+Linked Word: writer
+	Part of Speech: NOUNS
+	Synset: writer.n.02
+	Definition: a person who is able to write and has written something
+	Hyponyms:
+	diarist, journalist, scrawler, scribbler, speller, transcriber, transcriber
+Linked Word: comic
+	Part of Speech: ADJ
+	Synset: amusing.s.02
+	Definition: arousing or provoking laughter
+	Hyponyms:
+	
+Linked Word: comic
+	Part of Speech: ADJ
+	Synset: comic.a.02
+	Definition: of or relating to or characteristic of comedy
+	Hyponyms:
+	
+Linked Word: cozy
+	Part of Speech: ADJ
+	Synset: cozy.s.01
+	Definition: enjoying or affording comforting warmth and shelter especially in a small space
+	Hyponyms:
+	
+Linked Word: cozy
+	Part of Speech: ADJ
+	Synset: cozy.s.02
+	Definition: having or fostering a warm or friendly and informal atmosphere
+	Hyponyms:
+	
+Linked Word: downtown
+	Part of Speech: ADJ
+	Synset: downtown.a.01
+	Definition: of or located in the lower part of a town, or in the business center
+	Hyponyms:
+	
+Linked Word: famous
+	Part of Speech: ADJ
+	Synset: celebrated.s.01
+	Definition: widely known and esteemed
+	Hyponyms:
+	
+Linked Word: hip
+	Part of Speech: ADJ
+	Synset: hep.s.01
+	Definition: informed about the latest trends
+	Hyponyms:
+	
+Linked Word: local
+	Part of Speech: ADJ
+	Synset: local.a.02
+	Definition: of or belonging to or characteristic of a particular locality or neighborhood
+	Hyponyms:
+	
+Linked Word: local
+	Part of Speech: ADJ
+	Synset: local.a.03
+	Definition: affecting only a restricted part or area of the body
+	Hyponyms:
+	
+Linked Word: mural
+	Part of Speech: ADJ
+	Synset: mural.a.01
+	Definition: of or relating to walls
+	Hyponyms:
+	
+Linked Word: quick
+	Part of Speech: ADJ
+	Synset: agile.s.01
+	Definition: moving quickly and lightly
+	Hyponyms:
+	
+Linked Word: quick
+	Part of Speech: ADJ
+	Synset: immediate.s.05
+	Definition: performed with little or no delay
+	Hyponyms:
+	
+Linked Word: quick
+	Part of Speech: ADJ
+	Synset: quick.s.01
+	Definition: accomplished rapidly and without delay
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.a.01
+	Definition: relating to human society and its members
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.a.02
+	Definition: living together or enjoying life in communities or organized groups
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.a.03
+	Definition: relating to or belonging to or characteristic of high society
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.s.04
+	Definition: composed of sociable people or formed for the purpose of sociability
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.s.05
+	Definition: tending to move or live together in groups or colonies of the same kind
+	Hyponyms:
+	
+Linked Word: social
+	Part of Speech: ADJ
+	Synset: social.s.06
+	Definition: marked by friendly companionship with others
+	Hyponyms:
+	
+Linked Word: traditional
+	Part of Speech: ADJ
+	Synset: traditional.a.01
+	Definition: consisting of or derived from tradition
+	Hyponyms:
+	
+Linked Word: traditional
+	Part of Speech: ADJ
+	Synset: traditional.s.02
+	Definition: pertaining to time-honored orthodox doctrines
+	Hyponyms:
+	
+Linked Word: unique
+	Part of Speech: ADJ
+	Synset: alone.s.04
+	Definition: radically distinctive and without equal
+	Hyponyms:
+	
+Linked Word: unique
+	Part of Speech: ADJ
+	Synset: singular.s.06
+	Definition: the single one of its kind
+	Hyponyms:
+	
+Linked Word: unique
+	Part of Speech: ADJ
+	Synset: unique.s.04
+	Definition: highly unusual or rare but not the single instance
+	Hyponyms:
+	
+Linked Word: downtown
+	Part of Speech: ADV
+	Synset: downtown.r.01
+	Definition: toward or in the lower or central part of town
+	Hyponyms:
+	

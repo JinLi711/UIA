@@ -1,0 +1,15 @@
+{
+    "VERBS": [
+        "bicycle", "bus", "church", "dog", "kid", "park",
+              "style", "table", "painting", "school", "transit"
+            ],
+    "NOUNS": [
+        "commute", "hang", "hip", "walk", "work"
+    ],
+    "ADJ": [
+
+    ],
+    "ADV": [
+        "quick"
+    ]
+}

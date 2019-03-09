@@ -1634,6 +1634,7 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * I also had to fix the y-axis so it shows density rather than raw frequency (as the amount of words differ in each sample size)
 
 * However, I was still able to generate some plots for the three categories that measures the frequency. I was able to produce 6 plots in total (2 for each category). The first plot that was created for (say Bohemian cafes) were just the frequencies of the original keyword list. The second graph for bohemian cafes contains the same x axis, but the frequencies of synonyms of each keyword was added onto that keyword. For example, if the keyword is art, and say the frequency of the appearance is 5. And lets say a synonym of the word art is "artwork", and that frequency of appearance is 10. Then the total frequency that I attached to the word art is 15. That was how the second plot was generated.
+  * Here is the link to the plots that I created: [HERE](https://github.com/JinLi711/UIA/tree/master/Yelp/NLP_NEW/plots/key_word_frequency_plots)
   * Some observations: the plots are that much different, which was a bit of a dissapointment.
   * There are some differences that come up. For example, bakeries appear a lot more often in neighborly cafes, which is very interesting because that would imply that there are more backeries in neightborly cafes, and we can consider bakeries as an amenity.
 

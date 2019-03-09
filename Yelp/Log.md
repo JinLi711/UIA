@@ -1620,7 +1620,7 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
 
 * Notes on Hyesun's Typology of cafe culture:
   * [LINK](https://www.dropbox.com/home/Cafes2/Hyesun%20Jeong?preview=Typology+of+caf%C3%A9+culture_v8.docx)
-  * Notes on the first 10 pages.
+  * Notes on the first 17 pages. I took notes on what I thought was important, so there's not that much on Paris and Seoul.
 
   * cafe: playing a huge role in face-to-face interactions, innovative ideas,and cultural mobilizations
     * allows for artistic, cultural, or work-related interactions when in different surrounding contexts (like painters and writers)
@@ -1628,7 +1628,7 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * compares chicago, Paris, Seoul
   * Cafes has always been a key place for social gathering, even from 1600s to nowadays.
     * "coffee shops provided realm between society and state, and established institutional ground for public voices" - Habarnas
-      * interesting note, hard to verify with Yelp reviews as it seems that there isn't much on social issues.
+      * interesting note, hard to verify with Yelp reviews as it seems that there isn't much on social issues. 
   * "Jane Jacobs (1961) argued that street activities around amenities, she termed “eyes on the street,” are believed to foster economic inter-dependence, social interaction and neighborhood stability."
   * nowadays, more emphasis on clustering amenities together, possibly around cafes
   * need to combine food, visual art, music, and conversation for a better sensory experience
@@ -1663,10 +1663,28 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * There are some differences that come up. For example, bakeries appear a lot more often in neighborly cafes, which is very interesting because that would imply that there are more backeries in neightborly cafes, and we can consider bakeries as an amenity.
   * Also, barista appeared significantly more in Bohemian related cafes. I'm not exact sure what to make of this, maybe it's because in Bohemian cafes, there's a lot more interactions going on between the barista and the customers. However, will need to still connect this to amenities.
   * The word community showed up a lot more in neighborly areas, which makes sense.
-  * The word gallery showed up a lot more in Bohemian cafes, which is expected because Bohemian cafes are more likely to have emphasis on artworks (and thus galleries).
+  * The words gallery and hip showed up a lot more in Bohemian cafes. This is expected because Bohemian cafes are more likely to have emphasis on artworks (and thus galleries). Bohemian cafes are also more hip.
   * There's significantly less mentions of labtops in neighborly cafes, which may indicate that neighborly cafes are focused on more personal interactions.
   * In corporate cafes, the word study appears more often in bohemian cafes, which was expected. However, it is interesting that the word work appears most often in Bohemian cafes, which was unexpected. One would expect Bohemian cafes to be a place for chilling, not working.
-  * A lot of the more specific words relating to justice does not even show up. We need to have a greater sample size to do more technical analysis
+  * Park is less frequent in corporate cafes.
+  * A lot of the more specific words relating to justice do not even show up. We need to have a greater sample size to do more technical analysis.
+
+* Email with Hyesun:
+  * HYESUN:
+    >> How are you doing with running frequency of extended keywords on Yelp? Can you send us some progress?
+  * JIN:
+    >> I made some plots and wrote down some analysis in my log. I'll send the log when I'm done. The most important plot is the combined.png. The graph is pretty simple to understand, and the y-axis is the density of the keyword (keyword frequency divided by the total number of words in the reviews).
+    >> There does not seem to be any statistically significant results yet, but the plot does confirm some expectations that we have, like higher frequencies of the word hip and gallery in Bohemian cafes. However, there are some unexpected results, like Bohemian cafes have higher frequencies of the word "work" than even corporate cafes.
+
+    >> I also spent some time reading and taking notes on your Typology of cafe culture in the cafe Dropbox. Haven't finished it yet, but will plan to continue reading it.
+
+    >> I was thinking next time, I will find categories to group the keywords together, and find frequencies of those.
+
+    >> It also seems like Dan Silver was able to start gathering data on Yelp reviews in Canada, and we expect in a few days, that we will have access to that data. I'll need to change my code to take into account whatever file format Dan Silver uses to store his data. 
+  * HYESUN:
+    >> Thanks for graphs. Looks good. Could you send me the raw numbers of frequencies? probably as excel table?
+  * JIN:
+    >> On average, there were about 50000-60000 words for each type of neighborhood (so about 170000 words in total). frequencies.xlsx is the density. frequencies2.xlsx is the raw occurences.
 
 * My next goal is to group the keywords into categories then do some more analysis (by counting frequency of those categories of words)
 

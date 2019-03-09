@@ -1637,6 +1637,20 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * "quality of living needs to consider new dimensions that relate to health, social connections, cultural activities, political engagement, education and environmental sustainability, adding on the traditional measures of gross income and productivity"
     * I wonder if I can somehow extract healthy related words in Yelp, like salad or whatnot. However, I think it would be difficult to do this in cafes, as people usually don't think about healthiness when going to cafes.
 
+  * SCENES DISCUSSION:
+  * Bohemian:
+    * self-expressive and transgressive element can be viewed through the menu and decoration 
+    * want to see if there are clusters of bookstore, music store, tattoo parlor, or LGBT
+    * there may also be mentions of transportations like bikes and trains
+  * Corporate:
+    * mainly a place for working
+    * chains of cafes like Starbucks and Intelligensia
+  * Local/traditional:
+    *  churches, family-oriented amenities, cemeteries, town hall, picnic places, and somewhat distant from urban core of the city
+  
+  * coffee industry in Korea has been crucial for commercial businesses
+    * I'm wondering if that is the cause or the effect.
+
 * Some challenges that I faced while trying to create plots:
   * I needed to be able to somehow plot the associated synonyms with each keyword. That meant that I had to link each synonym to that keyword and count the frequencies together.
   * I also needed to make a new class that seperates keywords based on their properties, such as their upper level category.

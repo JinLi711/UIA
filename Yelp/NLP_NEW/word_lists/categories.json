@@ -1,8 +1,8 @@
-WORDS
-espresso
-coffee
-latte
-pastry
+{
+    "drink": ["espresso", "coffee", "latte"],
+    "food": ["pastry"],
+    "travel": [],
+    "art": ["graffiti", "gallery", "painting"],
 bakery
 art
 music
@@ -15,10 +15,8 @@ style
 street
 comic
 mural
-graffiti
 studio
 gallery
-painting
 entertainment
 festival
 LGBT
@@ -36,7 +34,6 @@ entrepreneur
 espresso
 coffee
 latte
-pastry
 bakery
 art
 music
@@ -111,3 +108,4 @@ money
 efficient
 quirky
 dope
+}

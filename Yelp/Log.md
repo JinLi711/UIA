@@ -1605,6 +1605,40 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
 * Today I just fixed some code problems, optimized my code, and integrated the synonym generator with word counter.
 
 
+# March 9, 2019
+
+* Just to summarize things that I have done for last week:
+  * I was able to integrate the synonym generator (which allowed me to generate synonyms for each keyword) with the frequency counter. This allows me, when finding the frequencies of keywords, to also associate frequencies of synynoyms with the original set of keywords.
+  * I also looked through some Yelp reviews and tried to find related keywords that we may look into. I found that this is very difficult because using Yelp to define culture is very limiting, especially when what most people are talking about is food, and not so much on Bohemian ideas, like tattoos, etc.
+
+* My next goals are to: 
+  * generate frequency plots to compare and contrast Bohemian neighborhoods with corporate neighborhoods, etc.
+  * change code so it counts densities rather than raw amounts
+  * read Hyesun's Typology of cafe culture
+
+* Notes on Hyesun's Typology of cafe culture:
+  * [LINK](https://www.dropbox.com/home/Cafes2/Hyesun%20Jeong?preview=Typology+of+caf%C3%A9+culture_v8.docx)
+
+  * cafe: playing a huge role in face-to-face interactions, innovative ideas,and cultural mobilizations
+    * allows for artistic, cultural, or work-related interactions when in different surrounding contexts
+  * leisure: very important in metropolis
+  * compares chicago, Paris, Seoul
+  * Cafes has always been a key place for social gathering, even from 1600s to nowadays.
+    * "coffee shops provided realm between society and state, and established institutional ground for public voices" - Habarnas
+      * interesting note, hard to verify with Yelp reviews as it seems that there isn't much on social issues.
+
+* Some challenges that I faced while trying to create plots:
+  * I needed to be able to somehow plot the associated synonyms with each keyword. That meant that I had to link each synonym to that keyword and count the frequencies together.
+  * I also needed to make a new class that seperates keywords based on their properties, such as their upper level category.
+  * I realized that I made the mistake of plotting in 3 different graphs, and it was really hard to make comparisons when the y-axis is not aligned. I had to do some recoding to plot everything in one graph.
+  * I also had to fix the y-axis so it shows density rather than raw frequency (as the amount of words differ in each sample size)
+
+* However, I was still able to generate some plots for the three categories that measures the frequency. I was able to produce 6 plots in total (2 for each category). The first plot that was created for (say Bohemian cafes) were just the frequencies of the original keyword list. The second graph for bohemian cafes contains the same x axis, but the frequencies of synonyms of each keyword was added onto that keyword. For example, if the keyword is art, and say the frequency of the appearance is 5. And lets say a synonym of the word art is "artwork", and that frequency of appearance is 10. Then the total frequency that I attached to the word art is 15. That was how the second plot was generated.
+  * Some observations: the plots are that much different, which was a bit of a dissapointment.
+  * There are some differences that come up. For example, bakeries appear a lot more often in neighborly cafes, which is very interesting because that would imply that there are more backeries in neightborly cafes, and we can consider bakeries as an amenity.
+
+* My next goal is to group the keywords into categories then do some more analysis (by counting frequency of those categories of words)
+
 
 
 

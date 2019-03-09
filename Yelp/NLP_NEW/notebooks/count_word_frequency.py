@@ -322,6 +322,8 @@ def extract_relevant_words(business, dict_keywords):
     all_frequencies = business.all_word_freq
     total_count = sum(all_frequencies.values()) + \
         sum(business.key_word_freq.values())
+
+    total_count = 1
     print(total_count)
 
     for k, v in dict_keywords.items():

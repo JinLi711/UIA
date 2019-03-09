@@ -50,7 +50,9 @@ def normalize_text(text):
 
 class KeyWords:
     """
-    Keywords to search in Yelp reviews.
+    Keywords to search in Yelp reviews. 
+    This class contains aggregated keywords 
+    together that will later be split up.
     """
 
     def __init__(self, word_list):
@@ -106,6 +108,46 @@ class KeyWords:
         synsets = gs.find_hypo_for_all_synsets(pos_synsets_rm)
 
         self.synsets = synsets
+
+
+class KeyWord:
+    """
+    This is a simpler class for all the keywords, 
+    and their associated synonyms.
+    
+    This is built from the class KeyWords.
+    """
+    
+    def __init__(self, word):
+        self.word = word
+#         self.category = category
+        self.synonyms = []
+
+
+def create_dict_of_keyword(keywords):
+    """
+    Create a dictionary associating a keyword
+    with a class containing its information.
+    
+    :param keywords: a class containing all keywords
+    :type  keywords: KeyWords
+    :returns: dictionary where keys are keywords
+              and values are an instance of KeyWord
+    :rtype:   dict
+    """
+    
+    keyword_dict = {}
+    
+    for keyword in keywords.word_set:
+        word_info = KeyWord(keyword)
+        keyword_dict[keyword] = word_info
+    
+    for synset in keywords.synsets:
+        item = keyword_dict[synset.linked_word]
+        item.synonyms = set (synset.hyponyms)
+        keyword_dict[synset.linked_word] = item
+        
+    return keyword_dict
 
 
 
@@ -200,7 +242,9 @@ class Business:
         all_reviews = []
         for review in reviews:
             review_ins = Review(review)
-            review_ins.normalized_text = normalize_text(review_ins.raw_text)
+            review_ins.normalized_text = normalize_text(
+                review_ins.raw_text
+            )
             review_ins.count_word_freq(keywords.word_set)
             all_reviews.append(review_ins)
 #         self.review_info = set(all_reviews)
@@ -242,15 +286,56 @@ class Business:
         :type  keywords: KeyWords
         """
 
+        print("Normalizing Text: ")
         all_reviews = ' '.join(reviews)
         all_reviews = normalize_text(all_reviews)
 
+
+        print("Counting Frequency of All Words: ")
         self.all_word_freq = Counter(all_reviews.split())
 
+        print("Counting Frequency of Key Words: ")
         key_word_freq = {}
         for keyword in keywords.word_set:
-            key_word_freq[keyword] = all_reviews.count(keyword)
+            if ' ' in keyword:
+                key_word_freq[keyword] = all_reviews.count(keyword)
         self.key_word_freq = key_word_freq
+
+
+def extract_relevant_words(business, dict_keywords):
+    """
+    Extract only the keyword frequencies that we need.
+    Returns the frequencies of keywords,
+    and frequencies of keywords added to frequencies
+    of all synonyms for that particular keyword
+
+    :param business: class containing all information regarding that business
+    :type  business: Business
+    :param dict_keywords: dictionary mapping keywords to a KeyWord class
+    :type  dict_keywords: dict
+    """
+
+    keyword_count = {}
+    keyword_with_synonyms_count = {}
+    freq_dict = {}
+
+    all_frequencies = business.all_word_freq
+    total_count = sum(all_frequencies.values()) + \
+        sum(business.key_word_freq.values())
+    print(total_count)
+
+    for k, v in dict_keywords.items():
+        keyword_count[k] = all_frequencies[k] / total_count
+        synonym_count = all_frequencies[k]
+        for synonym in v.synonyms:
+            synonym_count += all_frequencies[synonym]
+        keyword_with_synonyms_count[k] = synonym_count / total_count
+
+    for k, v in business.key_word_freq.items():
+        keyword_count[k] = v / total_count
+        keyword_with_synonyms_count[k] = v / total_count
+
+    return keyword_count, keyword_with_synonyms_count
 
 
 

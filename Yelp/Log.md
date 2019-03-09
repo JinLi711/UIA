@@ -1611,6 +1611,8 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * I was able to integrate the synonym generator (which allowed me to generate synonyms for each keyword) with the frequency counter. This allows me, when finding the frequencies of keywords, to also associate frequencies of synynoyms with the original set of keywords.
   * I also looked through some Yelp reviews and tried to find related keywords that we may look into. I found that this is very difficult because using Yelp to define culture is very limiting, especially when what most people are talking about is food, and not so much on Bohemian ideas, like tattoos, etc.
 
+* Possibly Interesting Things to look at:
+  * [The great good place: Cafes, coffee shops, bookstores, bars, hair salons, and other hangouts at the heart of a community](https://books.google.com/books?hl=en&lr=&id=o4ZFCgAAQBAJ&oi=fnd&pg=PR7&dq=cafes&ots=ML_NBVdW7u&sig=9JePOJl5ZQ84FcWbbYYcceBw8UQ#v=onepage&q=cafes&f=false)
 * My next goals are to: 
   * generate frequency plots to compare and contrast Bohemian neighborhoods with corporate neighborhoods, etc.
   * change code so it counts densities rather than raw amounts
@@ -1618,14 +1620,22 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
 
 * Notes on Hyesun's Typology of cafe culture:
   * [LINK](https://www.dropbox.com/home/Cafes2/Hyesun%20Jeong?preview=Typology+of+caf%C3%A9+culture_v8.docx)
+  * Notes on the first 10 pages.
 
   * cafe: playing a huge role in face-to-face interactions, innovative ideas,and cultural mobilizations
-    * allows for artistic, cultural, or work-related interactions when in different surrounding contexts
+    * allows for artistic, cultural, or work-related interactions when in different surrounding contexts (like painters and writers)
   * leisure: very important in metropolis
   * compares chicago, Paris, Seoul
   * Cafes has always been a key place for social gathering, even from 1600s to nowadays.
     * "coffee shops provided realm between society and state, and established institutional ground for public voices" - Habarnas
       * interesting note, hard to verify with Yelp reviews as it seems that there isn't much on social issues.
+  * "Jane Jacobs (1961) argued that street activities around amenities, she termed “eyes on the street,” are believed to foster economic inter-dependence, social interaction and neighborhood stability."
+  * nowadays, more emphasis on clustering amenities together, possibly around cafes
+  * need to combine food, visual art, music, and conversation for a better sensory experience
+  * cafes have an even larger impact on street life than larger infrastructures like mesueums and concert halls
+  * "city as an entertainment machine is a cluster of consumption amenities, such as hip cafes, art galleries, and fusion restaurants that attract more vibrant street activities."
+  * "quality of living needs to consider new dimensions that relate to health, social connections, cultural activities, political engagement, education and environmental sustainability, adding on the traditional measures of gross income and productivity"
+    * I wonder if I can somehow extract healthy related words in Yelp, like salad or whatnot. However, I think it would be difficult to do this in cafes, as people usually don't think about healthiness when going to cafes.
 
 * Some challenges that I faced while trying to create plots:
   * I needed to be able to somehow plot the associated synonyms with each keyword. That meant that I had to link each synonym to that keyword and count the frequencies together.
@@ -1637,6 +1647,12 @@ I also noticed some variational words, like ultra-hipster, hipstery, but this is
   * Here is the link to the plots that I created: [HERE](https://github.com/JinLi711/UIA/tree/master/Yelp/NLP_NEW/plots/key_word_frequency_plots)
   * Some observations: the plots are that much different, which was a bit of a dissapointment.
   * There are some differences that come up. For example, bakeries appear a lot more often in neighborly cafes, which is very interesting because that would imply that there are more backeries in neightborly cafes, and we can consider bakeries as an amenity.
+  * Also, barista appeared significantly more in Bohemian related cafes. I'm not exact sure what to make of this, maybe it's because in Bohemian cafes, there's a lot more interactions going on between the barista and the customers. However, will need to still connect this to amenities.
+  * The word community showed up a lot more in neighborly areas, which makes sense.
+  * The word gallery showed up a lot more in Bohemian cafes, which is expected because Bohemian cafes are more likely to have emphasis on artworks (and thus galleries).
+  * There's significantly less mentions of labtops in neighborly cafes, which may indicate that neighborly cafes are focused on more personal interactions.
+  * In corporate cafes, the word study appears more often in bohemian cafes, which was expected. However, it is interesting that the word work appears most often in Bohemian cafes, which was unexpected. One would expect Bohemian cafes to be a place for chilling, not working.
+  * A lot of the more specific words relating to justice does not even show up. We need to have a greater sample size to do more technical analysis
 
 * My next goal is to group the keywords into categories then do some more analysis (by counting frequency of those categories of words)
 
